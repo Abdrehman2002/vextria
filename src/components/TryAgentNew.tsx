@@ -165,7 +165,7 @@ export function TryAgentNew() {
 
   return (
     <section className="py-16 md:py-20 pb-80 md:pb-96 bg-gradient-to-b from-black via-[#0A0510] to-black relative overflow-visible" style={{ zIndex: 60 }}>
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(123,97,255,0.08),transparent_50%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(74, 154, 232, 0.2),transparent_50%)]"></div>
 
       <div className="max-w-5xl mx-auto px-4 md:px-6 relative overflow-visible" style={{ zIndex: 60 }}>
         <motion.div
@@ -174,7 +174,7 @@ export function TryAgentNew() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="bg-black/40 backdrop-blur-xl rounded-2xl md:rounded-[32px] border border-white/10 shadow-2xl p-6 md:p-8 lg:p-12 relative overflow-visible"
-          style={{ boxShadow: '0 0 60px rgba(123, 97, 255, 0.15)', zIndex: 60 }}
+          style={{ boxShadow: '0 0 25px rgba(74, 154, 232, 0.4), 0 0 60px rgba(26, 96, 171, 0.25)', zIndex: 60 }}
         >
           <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
             {/* Left Side - Text */}
@@ -183,7 +183,7 @@ export function TryAgentNew() {
                 Try Your Agent for Free
               </h3>
               <p className="text-sm sm:text-base md:text-lg text-gray-400 leading-relaxed">
-                Experience Clario AI in action — choose an agent and start a live demo call
+                Experience Vextria AI in action — choose an agent and start a live demo call
               </p>
             </div>
 
@@ -198,7 +198,7 @@ export function TryAgentNew() {
                   disabled={callStatus !== "idle"}
                   className={cn(
                     "w-full px-4 md:px-6 py-3 md:py-4 rounded-2xl border-2 transition-all duration-300 text-left flex items-center justify-between",
-                    "bg-white/5 border-white/10 text-white hover:bg-white/10 hover:border-purple-500/50 backdrop-blur-sm",
+                    "bg-white/5 border-white/10 text-white hover:bg-white/10 hover:border-sky-600/50 backdrop-blur-sm",
                     callStatus !== "idle" && "opacity-50 cursor-not-allowed"
                   )}
                 >
@@ -221,7 +221,7 @@ export function TryAgentNew() {
                       exit={{ opacity: 0, y: -10 }}
                       transition={{ duration: 0.2 }}
                       className="absolute top-full left-0 right-0 mt-2 rounded-2xl border-2 border-white/20 overflow-hidden shadow-2xl bg-[#0F0F1E] backdrop-blur-xl z-[9999]"
-                      style={{ boxShadow: '0 8px 32px rgba(123, 97, 255, 0.3)' }}
+                      style={{ boxShadow: '0 0 15px rgba(74, 154, 232, 0.5), 0 8px 40px rgba(26, 96, 171, 0.4)' }}
                     >
                       {AGENTS.map((agent, index) => (
                         <motion.button
@@ -234,7 +234,7 @@ export function TryAgentNew() {
                             "w-full px-4 md:px-6 py-3 md:py-4 text-left transition-all duration-200 flex items-center justify-between group",
                             "border-b border-white/5 last:border-b-0",
                             selected?.id === agent.id
-                              ? "bg-purple-600/20 text-purple-300 border-purple-500/30"
+                              ? "bg-sky-700/20 text-sky-300 border-sky-600/30"
                               : "text-white hover:bg-white/5"
                           )}
                         >
@@ -251,7 +251,7 @@ export function TryAgentNew() {
                               transition={{ type: "spring", stiffness: 500, damping: 30 }}
                               className="flex-shrink-0 ml-2"
                             >
-                              <Check className="w-4 h-4 md:w-5 md:h-5 text-purple-400" />
+                              <Check className="w-4 h-4 md:w-5 md:h-5 text-sky-400" />
                             </motion.div>
                           )}
                         </motion.button>
@@ -290,8 +290,8 @@ export function TryAgentNew() {
                       : "opacity-50 cursor-not-allowed"
                   )}
                   style={{
-                    background: 'linear-gradient(135deg, #7B61FF 0%, #6B4CFF 100%)',
-                    boxShadow: '0px 0px 24px rgba(125, 76, 255, 0.6)',
+                    background: 'linear-gradient(135deg, #4A9AE8 0%, #1A60AB 100%)',
+                    boxShadow: '0 0 12px rgba(74, 154, 232, 0.8), 0 0 30px rgba(26, 96, 171, 0.55)',
                     color: 'white',
                   }}
                 >

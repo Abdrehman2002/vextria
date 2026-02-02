@@ -50,13 +50,13 @@ const Footer = () => {
       onMouseMove={handleMouseMove}
     >
       {/* Background matching FrameworksSection */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(123,97,255,0.08),transparent_50%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(74, 154, 232, 0.2),transparent_50%)]"></div>
 
       {/* Animated Grid Pattern */}
       <div className="absolute inset-0 opacity-[0.04]" style={{
         backgroundImage: `
-          linear-gradient(to right, #7B61FF 1px, transparent 1px),
-          linear-gradient(to bottom, #7B61FF 1px, transparent 1px)
+          linear-gradient(to right, #1A60AB 1px, transparent 1px),
+          linear-gradient(to bottom, #1A60AB 1px, transparent 1px)
         `,
         backgroundSize: '60px 60px'
       }}></div>
@@ -65,7 +65,7 @@ const Footer = () => {
       <div
         className="absolute inset-0 opacity-30 pointer-events-none transition-opacity duration-700"
         style={{
-          background: `radial-gradient(600px circle at ${mousePosition.x}% ${mousePosition.y}%, rgba(123, 97, 255, 0.15), transparent 60%)`
+          background: `radial-gradient(600px circle at ${mousePosition.x}% ${mousePosition.y}%, rgba(74, 154, 232, 0.35), transparent 60%)`
         }}
       ></div>
 
@@ -81,14 +81,14 @@ const Footer = () => {
           <motion.div variants={itemVariants} className="space-y-2 sm:space-y-3 md:space-y-4">
             <div className="flex items-center space-x-2">
               <motion.img
-                src="/logo.svg (2).svg"
-                alt="Clario AI"
+                src="/vextrialogo.svg"
+                alt="Vextria AI"
                 className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
                 whileHover={{ rotate: 360 }}
                 transition={{ duration: 0.6 }}
               />
-              <span className="text-white text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#7B61FF] to-[#A16BFF] bg-clip-text text-transparent">
-                Clario AI
+              <span className="text-white text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#5AADE8] via-[#A8D8F0] to-[#4A9AE8] bg-clip-text text-transparent">
+                Vextria AI
               </span>
             </div>
             <p className="text-xs sm:text-sm text-gray-400 max-w-xs leading-relaxed">
@@ -101,7 +101,7 @@ const Footer = () => {
             <h4 className="text-white text-sm md:text-base font-semibold flex items-center gap-2">
               Solutions
               <motion.div
-                className="h-px bg-gradient-to-r from-[#7B61FF] to-transparent flex-1"
+                className="h-px bg-gradient-to-r from-[#1A60AB] to-transparent flex-1"
                 initial={{ scaleX: 0 }}
                 whileInView={{ scaleX: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
@@ -116,10 +116,10 @@ const Footer = () => {
                 >
                   <a
                     href={link.href}
-                    className="group flex items-center text-xs md:text-sm text-gray-400 hover:text-[#8B5CF6] transition-all duration-300"
+                    className="group flex items-center text-xs md:text-sm text-gray-400 hover:text-[#2E7BD4] transition-all duration-300"
                   >
                     <motion.span
-                      className="inline-block mr-1.5 md:mr-2 text-[#7B61FF]"
+                      className="inline-block mr-1.5 md:mr-2 text-[#1A60AB]"
                       whileHover={{ x: 3 }}
                     >
                       →
@@ -137,7 +137,7 @@ const Footer = () => {
             <h4 className="text-white text-sm md:text-base font-semibold flex items-center gap-2">
               Get in Touch
               <motion.div
-                className="h-px bg-gradient-to-r from-[#7B61FF] to-transparent flex-1"
+                className="h-px bg-gradient-to-r from-[#1A60AB] to-transparent flex-1"
                 initial={{ scaleX: 0 }}
                 whileInView={{ scaleX: 1 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
@@ -146,10 +146,10 @@ const Footer = () => {
             </h4>
             <motion.a
               href="mailto:George@clario.ai"
-              className="group flex items-center gap-2 text-xs md:text-sm text-gray-400 hover:text-[#8B5CF6] transition-colors"
+              className="group flex items-center gap-2 text-xs md:text-sm text-gray-400 hover:text-[#2E7BD4] transition-colors"
               whileHover={{ x: 5 }}
             >
-              <Mail size={14} className="text-[#7B61FF] md:w-4 md:h-4" />
+              <Mail size={14} className="text-[#1A60AB] md:w-4 md:h-4" />
               <span className="truncate">George@clario.ai</span>
             </motion.a>
 
@@ -160,13 +160,13 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 md:px-6 py-2.5 md:py-3 mt-3 md:mt-4 rounded-xl font-semibold text-xs md:text-sm transition-all duration-300"
               style={{
-                background: 'linear-gradient(135deg, #7B61FF 0%, #6B4CFF 100%)',
-                boxShadow: '0px 0px 20px rgba(125, 76, 255, 0.4)',
+                background: 'linear-gradient(135deg, #4A9AE8 0%, #1A60AB 100%)',
+                boxShadow: '0 0 10px rgba(74, 154, 232, 0.7), 0 0 25px rgba(26, 96, 171, 0.45)',
                 color: '#FFFFFF'
               }}
               whileHover={{
                 scale: 1.05,
-                boxShadow: '0px 0px 30px rgba(139, 76, 255, 0.6)',
+                boxShadow: '0 0 15px rgba(74, 154, 232, 0.85), 0 0 35px rgba(26, 96, 171, 0.55)',
               }}
               whileTap={{ scale: 0.95 }}
             >
@@ -183,7 +183,7 @@ const Footer = () => {
 
         {/* Divider with gradient */}
         <motion.div
-          className="h-px bg-gradient-to-r from-transparent via-[#7B61FF]/30 to-transparent mb-8"
+          className="h-px bg-gradient-to-r from-transparent via-[#1A60AB]/30 to-transparent mb-8"
           initial={{ scaleX: 0 }}
           whileInView={{ scaleX: 1 }}
           transition={{ duration: 1 }}
@@ -199,7 +199,7 @@ const Footer = () => {
         >
           {/* Copyright */}
           <motion.p variants={itemVariants} className="text-xs text-gray-500">
-            © {new Date().getFullYear()} Clario AI. All rights reserved.
+            © {new Date().getFullYear()} Vextria AI. All rights reserved.
           </motion.p>
 
           {/* Social Icons */}
@@ -209,7 +209,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="w-9 h-9 md:w-10 md:h-10 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#8B5CF6] hover:border-[#8B5CF6]/50 transition-all duration-300"
+              className="w-9 h-9 md:w-10 md:h-10 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#2E7BD4] hover:border-[#2E7BD4]/50 transition-all duration-300"
               whileHover={{ scale: 1.1, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -223,7 +223,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Twitter"
-              className="w-9 h-9 md:w-10 md:h-10 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#8B5CF6] hover:border-[#8B5CF6]/50 transition-all duration-300"
+              className="w-9 h-9 md:w-10 md:h-10 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#2E7BD4] hover:border-[#2E7BD4]/50 transition-all duration-300"
               whileHover={{ scale: 1.1, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -235,7 +235,7 @@ const Footer = () => {
             <motion.a
               href="mailto:George@clario.ai"
               aria-label="Email"
-              className="w-9 h-9 md:w-10 md:h-10 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#8B5CF6] hover:border-[#8B5CF6]/50 transition-all duration-300"
+              className="w-9 h-9 md:w-10 md:h-10 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#2E7BD4] hover:border-[#2E7BD4]/50 transition-all duration-300"
               whileHover={{ scale: 1.1, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -247,7 +247,7 @@ const Footer = () => {
 
       {/* Text Hover Effect */}
       <div className="lg:flex hidden h-[30rem] -mt-52 -mb-36">
-        <TextHoverEffect text="CLARIO" className="z-50" />
+        <TextHoverEffect text="VEXTRIA" className="z-50" />
       </div>
     </footer>
   );

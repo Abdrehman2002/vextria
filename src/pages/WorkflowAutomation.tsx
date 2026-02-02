@@ -87,7 +87,7 @@ const WorkflowAutomation = () => {
   const painPoints = [
     { icon: AlertTriangle, title: "Manual Processes Eating Profits", desc: "Employees spending 20+ hours/week on repetitive tasks", color: "#EF4444" },
     { icon: DollarSign, title: "Losing $200K Monthly to Errors", desc: "Human errors causing costly mistakes and delays", color: "#F59E0B" },
-    { icon: Timer, title: "Slow Response Times", desc: "Manual approvals taking days instead of minutes", color: "#8B5CF6" },
+    { icon: Timer, title: "Slow Response Times", desc: "Manual approvals taking days instead of minutes", color: "#2E7BD4" },
     { icon: Users, title: "Team Burnout & Turnover", desc: "Employees quitting due to repetitive, boring work", color: "#06B6D4" }
   ];
 
@@ -96,22 +96,22 @@ const WorkflowAutomation = () => {
     { icon: Brain, title: "AI-Powered Decisions", desc: "Intelligent automation with human-like reasoning", color: "#0066FF" },
     { icon: Shield, title: "99.9% Accuracy", desc: "Eliminate human errors completely", color: "#25D366" },
     { icon: TrendingUp, title: "300% Productivity Boost", desc: "Scale operations without adding headcount", color: "#FF6B6B" },
-    { icon: Settings, title: "500+ Integrations", desc: "Connect with any tool in your stack", color: "#8B5CF6" },
+    { icon: Settings, title: "500+ Integrations", desc: "Connect with any tool in your stack", color: "#2E7BD4" },
     { icon: BarChart3, title: "Real-time Analytics", desc: "Monitor and optimize performance live", color: "#06B6D4" },
     { icon: Users, title: "Team Collaboration", desc: "Multi-user workflow management", color: "#10B981" },
     { icon: Database, title: "Data Processing", desc: "Handle millions of records automatically", color: "#F59E0B" }
   ];
 
   const features = [
-    { icon: Settings, title: "500+ Integrations", desc: "Connect with any tool in your stack", color: "#8B5CF6" },
+    { icon: Settings, title: "500+ Integrations", desc: "Connect with any tool in your stack", color: "#2E7BD4" },
     { icon: BarChart3, title: "Real-time Analytics", desc: "Monitor and optimize performance live", color: "#06B6D4" },
     { icon: Shield, title: "Enterprise Security", desc: "SOC 2 compliant with end-to-end encryption", color: "#10B981" },
     { icon: Users, title: "Team Collaboration", desc: "Multi-user workflow management", color: "#F59E0B" },
-    { icon: Brain, title: "AI Decision Making", desc: "Intelligent automation with machine learning", color: "#8B5CF6" },
+    { icon: Brain, title: "AI Decision Making", desc: "Intelligent automation with machine learning", color: "#2E7BD4" },
     { icon: Database, title: "Data Processing", desc: "Handle millions of records automatically", color: "#06B6D4" },
     { icon: Calendar, title: "Scheduling Automation", desc: "Automated task scheduling and reminders", color: "#10B981" },
     { icon: Mail, title: "Email Automation", desc: "Automated email workflows and responses", color: "#F59E0B" },
-    { icon: FileText, title: "Document Processing", desc: "Automated document creation and management", color: "#8B5CF6" },
+    { icon: FileText, title: "Document Processing", desc: "Automated document creation and management", color: "#2E7BD4" },
     { icon: Activity, title: "Process Monitoring", desc: "Real-time workflow monitoring and alerts", color: "#06B6D4" },
     { icon: Globe, title: "Multi-Platform Support", desc: "Works across web, mobile, and desktop", color: "#10B981" },
     { icon: Timer, title: "Time Tracking", desc: "Automated time tracking and reporting", color: "#F59E0B" }
@@ -123,7 +123,7 @@ const WorkflowAutomation = () => {
       role: "Operations Manager", 
       company: "DataFlow Inc.", 
       rating: 5, 
-      quote: "We were losing $200K/month due to manual processes. After implementing Clario's workflow automation, we saved 80% of our time and eliminated costly errors. The ROI was immediate.", 
+      quote: "We were losing $200K/month due to manual processes. After implementing Vextria's workflow automation, we saved 80% of our time and eliminated costly errors. The ROI was immediate.", 
       avatar: "AR",
       results: "80% time savings, $200K/month saved"
     },
@@ -146,7 +146,7 @@ const WorkflowAutomation = () => {
   ];
 
   const fomoElements = [
-    { icon: Users, text: "1000+ companies automated with Clario", color: "#8B5CF6" },
+    { icon: Users, text: "1000+ companies automated with Vextria", color: "#2E7BD4" },
     { icon: TrendingUp, text: "Average 80% time savings", color: "#06B6D4" },
     { icon: Clock, text: "See results in 30 days", color: "#10B981" },
     { icon: DollarSign, text: "ROI within first quarter", color: "#F59E0B" }
@@ -352,7 +352,7 @@ const WorkflowAutomation = () => {
                   
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Timer className="w-6 h-6 text-purple-600" />
+                      <Timer className="w-6 h-6 text-sky-700" />
                     </div>
                     <div>
                       <h4 className="text-xl font-semibold mb-2">Slow Response Times</h4>
@@ -424,7 +424,7 @@ const WorkflowAutomation = () => {
                     </div>
                     <div>
                       <h4 className="text-xl font-semibold mb-2">AI-Powered Automation</h4>
-                      <p className="text-[#666666]">Implemented Clario's workflow automation that handles complex processes in milliseconds with 99.9% accuracy.</p>
+                      <p className="text-[#666666]">Implemented Vextria's workflow automation that handles complex processes in milliseconds with 99.9% accuracy.</p>
                     </div>
                   </div>
                   
@@ -440,7 +440,7 @@ const WorkflowAutomation = () => {
                   
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <TrendingUp className="w-6 h-6 text-purple-600" />
+                      <TrendingUp className="w-6 h-6 text-sky-700" />
                     </div>
                     <div>
                       <h4 className="text-xl font-semibold mb-2">Scalable Operations</h4>
@@ -640,7 +640,7 @@ const WorkflowAutomation = () => {
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
                 <div className="text-3xl font-bold text-white mb-2">1000+</div>
-                <div className="text-white/80">Companies automated with Clario</div>
+                <div className="text-white/80">Companies automated with Vextria</div>
               </div>
               <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
                 <div className="text-3xl font-bold text-white mb-2">80%</div>

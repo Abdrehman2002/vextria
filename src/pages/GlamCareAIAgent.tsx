@@ -54,31 +54,31 @@ const GlamCareAIAgent = () => {
   const painPoints = [
     { icon: AlertTriangle, title: "Missing Luxury Appointments", desc: "Losing 45% of potential clients when salon is closed", color: "#EF4444" },
     { icon: DollarSign, title: "Empty Appointment Slots", desc: "Premium slots sitting empty due to missed calls", color: "#F59E0B" },
-    { icon: Clock, title: "Limited Reception Hours", desc: "Can't take bookings 24/7 like competitors", color: "#8B5CF6" },
+    { icon: Clock, title: "Limited Reception Hours", desc: "Can't take bookings 24/7 like competitors", color: "#2E7BD4" },
     { icon: Users, title: "Staff Too Busy for Calls", desc: "Stylists can't answer phones during treatments", color: "#06B6D4" }
   ];
 
   const solutions = [
-    { icon: Brain, title: "24/7 Luxury Booking", desc: "Never miss a premium appointment", color: "#8B5CF6" },
+    { icon: Brain, title: "24/7 Luxury Booking", desc: "Never miss a premium appointment", color: "#2E7BD4" },
     { icon: Clock, title: "70% Fewer No-Shows", desc: "Elegant reminders and confirmations", color: "#06B6D4" },
     { icon: Crown, title: "Beauty-Trained AI", desc: "Knows treatments, products, and luxury services", color: "#10B981" },
     { icon: DollarSign, title: "55% More Bookings", desc: "Capture calls even when closed", color: "#F59E0B" },
-    { icon: Gem, title: "Package Upselling", desc: "Recommend premium treatments and packages", color: "#8B5CF6" },
+    { icon: Gem, title: "Package Upselling", desc: "Recommend premium treatments and packages", color: "#2E7BD4" },
     { icon: Users, title: "Multi-Client Handling", desc: "Handle multiple bookings simultaneously", color: "#06B6D4" },
     { icon: Heart, title: "Personalized Service", desc: "Remember client preferences and history", color: "#10B981" },
     { icon: Award, title: "Membership Management", desc: "Track loyalty programs and reward points", color: "#F59E0B" }
   ];
 
   const features = [
-    { icon: Shield, title: "Privacy & Discretion", desc: "Secure client information and preferences", color: "#8B5CF6" },
+    { icon: Shield, title: "Privacy & Discretion", desc: "Secure client information and preferences", color: "#2E7BD4" },
     { icon: BarChart3, title: "Appointment Analytics", desc: "Track booking patterns and popular services", color: "#06B6D4" },
     { icon: Users, title: "Multi-Service Booking", desc: "Coordinate complex treatment schedules", color: "#10B981" },
     { icon: Clock, title: "Elegant Reminders", desc: "Sophisticated SMS and call reminders", color: "#F59E0B" },
-    { icon: Brain, title: "Beauty Expertise", desc: "Trained on treatments, products, and trends", color: "#8B5CF6" },
+    { icon: Brain, title: "Beauty Expertise", desc: "Trained on treatments, products, and trends", color: "#2E7BD4" },
     { icon: Phone, title: "VIP Priority", desc: "Special routing for premium clients", color: "#06B6D4" },
     { icon: Calendar, title: "Salon Software Integration", desc: "Sync with Vagaro, Booker, and others", color: "#10B981" },
     { icon: Mail, title: "Luxury Communications", desc: "Elegant confirmations and special offers", color: "#F59E0B" },
-    { icon: Database, title: "Client Preferences", desc: "Remember favorite treatments and stylists", color: "#8B5CF6" },
+    { icon: Database, title: "Client Preferences", desc: "Remember favorite treatments and stylists", color: "#2E7BD4" },
     { icon: TrendingUp, title: "Package Optimization", desc: "AI learns what packages clients love", color: "#06B6D4" },
     { icon: Activity, title: "Treatment Sequencing", desc: "Optimize appointments for best results", color: "#10B981" },
     { icon: Wifi, title: "Digital Integration", desc: "Connect with social media and review platforms", color: "#F59E0B" }
@@ -106,14 +106,14 @@ const GlamCareAIAgent = () => {
   ];
 
   const stats = [
-    { icon: Users, value: "50K+", label: "Clients Served", color: "#8B5CF6" },
+    { icon: Users, value: "50K+", label: "Clients Served", color: "#2E7BD4" },
     { icon: TrendingUp, value: "90%", label: "Faster Response", color: "#06B6D4" },
     { icon: Sparkles, value: "500+", label: "Salons & Spas Trust Us", color: "#10B981" },
     { icon: Clock, value: "24/7", label: "Luxury Service", color: "#F59E0B" }
   ];
 
   const fomoElements = [
-    { icon: Users, text: "500+ salons & spas using GlamCare AI", color: "#8B5CF6" },
+    { icon: Users, text: "500+ salons & spas using GlamCare AI", color: "#2E7BD4" },
     { icon: TrendingUp, text: "Average 55% increase in bookings", color: "#06B6D4" },
     { icon: Clock, text: "See results in first 3 days", color: "#10B981" },
     { icon: DollarSign, text: "70% reduction in no-shows", color: "#F59E0B" }
@@ -144,7 +144,7 @@ const GlamCareAIAgent = () => {
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-[#8B5CF6]/10 to-[#7C3AED]/10 rounded-full blur-3xl" />
+          <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-[#2E7BD4]/10 to-[#1557A0]/10 rounded-full blur-3xl" />
           <div className="absolute bottom-20 right-20 w-64 h-64 bg-gradient-to-r from-[#C4B5FD]/15 to-[#A5F3FC]/15 rounded-full blur-2xl" />
         </div>
 
@@ -189,7 +189,7 @@ const GlamCareAIAgent = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-[#8B5CF6] to-[#7C3AED] hover:from-[#7C3AED] hover:to-[#6D28D9] text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl"
+                className="bg-gradient-to-r from-[#2E7BD4] to-[#1557A0] hover:from-[#1557A0] hover:to-[#0F4E95] text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl"
                 onClick={handleTryFree}
               >
                 <Play className="w-5 h-5 mr-2" />
@@ -199,7 +199,7 @@ const GlamCareAIAgent = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white px-8 py-4 text-lg font-semibold rounded-xl"
+                className="border-2 border-[#2E7BD4] text-[#2E7BD4] hover:bg-[#2E7BD4] hover:text-white px-8 py-4 text-lg font-semibold rounded-xl"
               >
                 <ArrowRight className="w-5 h-5 mr-2" />
                 See How It Works
@@ -253,7 +253,7 @@ const GlamCareAIAgent = () => {
               <h2 className="text-4xl lg:text-5xl font-bold mb-6">
                 <span className="text-foreground">How GlamCare AI</span>
                 <br />
-                <span className="bg-gradient-to-r from-[#8B5CF6] to-[#7C3AED] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#2E7BD4] to-[#1557A0] bg-clip-text text-transparent">
                   Elevates Client Experience
                 </span>
               </h2>
@@ -289,7 +289,7 @@ const GlamCareAIAgent = () => {
               <h2 className="text-4xl lg:text-5xl font-bold mb-6">
                 <span className="text-foreground">Honest Assessment:</span>
                 <br />
-                <span className="bg-gradient-to-r from-[#8B5CF6] to-[#7C3AED] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#2E7BD4] to-[#1557A0] bg-clip-text text-transparent">
                   Pros & Considerations
                 </span>
               </h2>
@@ -349,15 +349,15 @@ const GlamCareAIAgent = () => {
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-[#8B5CF6]/10 to-[#7C3AED]/10 border border-[#8B5CF6]/20 rounded-full px-6 py-3 mb-6">
-                <Users className="w-5 h-5 text-[#8B5CF6]" />
-                <span className="text-lg text-[#8B5CF6] font-semibold">Beauty Businesses Like Yours</span>
+              <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-[#2E7BD4]/10 to-[#1557A0]/10 border border-[#2E7BD4]/20 rounded-full px-6 py-3 mb-6">
+                <Users className="w-5 h-5 text-[#2E7BD4]" />
+                <span className="text-lg text-[#2E7BD4] font-semibold">Beauty Businesses Like Yours</span>
               </div>
 
               <h2 className="text-4xl lg:text-5xl font-bold mb-6">
                 <span className="text-foreground">Already Elevating Client Experience with</span>
                 <br />
-                <span className="bg-gradient-to-r from-[#8B5CF6] to-[#7C3AED] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#2E7BD4] to-[#1557A0] bg-clip-text text-transparent">
                   GlamCare AI
                 </span>
               </h2>
@@ -370,7 +370,7 @@ const GlamCareAIAgent = () => {
                   className="bg-background rounded-2xl p-8 border border-border hover:shadow-lg"
                 >
                   <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#8B5CF6] to-[#7C3AED] flex items-center justify-center text-white font-bold">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-r from-[#2E7BD4] to-[#1557A0] flex items-center justify-center text-white font-bold">
                       {testimonial.avatar}
                     </div>
                     <div>
@@ -397,7 +397,7 @@ const GlamCareAIAgent = () => {
       </section>
 
       {/* VAPI Widget Section */}
-      <section className="py-20 bg-gradient-to-br from-[#8B5CF6] to-[#7C3AED]">
+      <section className="py-20 bg-gradient-to-br from-[#2E7BD4] to-[#1557A0]">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
@@ -420,7 +420,7 @@ const GlamCareAIAgent = () => {
               >
                 <Button
                   size="lg"
-                  className="bg-white/20 border-2 border-white text-white hover:bg-white hover:text-[#8B5CF6] px-8 py-4 text-lg font-semibold rounded-xl backdrop-blur-sm"
+                  className="bg-white/20 border-2 border-white text-white hover:bg-white hover:text-[#2E7BD4] px-8 py-4 text-lg font-semibold rounded-xl backdrop-blur-sm"
                   onClick={() => {
                     // Create and load VAPI widget
                     const script = document.createElement('script');
@@ -459,7 +459,7 @@ const GlamCareAIAgent = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button
                 size="lg"
-                className="bg-white text-[#8B5CF6] hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl"
+                className="bg-white text-[#2E7BD4] hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl"
                 onClick={handleTryFree}
               >
                 <Rocket className="w-5 h-5 mr-2" />
@@ -469,7 +469,7 @@ const GlamCareAIAgent = () => {
               <Button
                 variant="outline"
                 size="lg"
-                className="border-2 border-white text-white hover:bg-white hover:text-[#8B5CF6] px-8 py-4 text-lg font-semibold rounded-xl"
+                className="border-2 border-white text-white hover:bg-white hover:text-[#2E7BD4] px-8 py-4 text-lg font-semibold rounded-xl"
               >
                 <Phone className="w-5 h-5 mr-2" />
                 Book a Demo

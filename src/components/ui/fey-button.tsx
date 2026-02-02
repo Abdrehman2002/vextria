@@ -10,7 +10,7 @@ interface FeyButtonProps
 }
 
 const LockIcon = ({ className, variant = "default" }: { className?: string; variant?: "default" | "purple" }) => {
-  const strokeColor = variant === "purple" ? "#7B61FF" : "#868F97"
+  const strokeColor = variant === "purple" ? "#1A60AB" : "#868F97"
 
   return (
     <svg
@@ -55,17 +55,17 @@ export function FeyButton({
         isPurple ? "text-white" : "text-white",
         // Base gradient
         isPurple
-          ? "bg-gradient-to-br from-[#7B61FF] to-[#6B4CFF]"
+          ? "bg-gradient-to-br from-[#4A9AE8] to-[#1A60AB]"
           : "bg-[radial-gradient(61.35%_50.07%_at_48.58%_50%,rgb(0,0,0)_0%,rgba(255,255,255,0.04)_100%)]",
         // Shadows
         isPurple
-          ? "shadow-[0_0_25px_rgba(123,97,255,0.6)] hover:shadow-[0_0_35px_rgba(139,76,255,0.8)]"
+          ? "shadow-[0_0_12px_rgba(74,154,232,0.75)_0_0_30px_rgba(26,96,171,0.5)] hover:shadow-[0_0_18px_rgba(74,154,232,0.8)_0_0_40px_rgba(26,96,171,0.55)]"
           : "[box-shadow:inset_0_0_0_0.5px_rgba(134,143,151,0.2),inset_1px_1px_0_-0.5px_rgba(134,143,151,0.4),inset_-1px_-1px_0_-0.5px_rgba(134,143,151,0.4)]",
         // Hover effect pseudo-element
         "after:absolute after:inset-0 after:rounded-[28px] after:opacity-0 after:transition-opacity after:duration-200",
         // Hover gradient
         isPurple
-          ? "after:bg-gradient-to-br after:from-[#8A71FF] after:to-[#7B61FF]"
+          ? "after:bg-gradient-to-br after:from-[#2E7BD4] after:to-[#1A60AB]"
           : "after:bg-[radial-gradient(61.35%_50.07%_at_48.58%_50%,rgb(0,0,0)_0%,rgb(24,24,24)_100%)]",
         // Hover shadows
         isPurple

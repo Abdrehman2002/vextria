@@ -1,27 +1,42 @@
-import { RulerCarousel, type CarouselItem } from "@/components/ui/ruler-carousel";
+"use client";
 
-const partnerTechnologies: CarouselItem[] = [
-  { id: 1, title: "HUBSPOT" },
-  { id: 2, title: "SALESFORCE" },
-  { id: 3, title: "ZOHO CRM" },
-  { id: 4, title: "PIPEDRIVE" },
-  { id: 5, title: "GOHIGHLEVEL" },
-  { id: 6, title: "MONDAY CRM" },
-  { id: 7, title: "AIRTABLE" },
-  { id: 8, title: "FRESHSALES" },
-  { id: 9, title: "CLOSE CRM" },
-  { id: 10, title: "COPPER CRM" },
+import { RulerCarousel, CarouselItem } from "@/components/ui/ruler-carousel";
+
+const CRM_ITEMS: CarouselItem[] = [
+  { id: 1, title: "Shopmonkey" },
+  { id: 2, title: "Tekmetric" },
+  { id: 3, title: "Mitchell 1" },
+  { id: 4, title: "AutoLeap" },
+  { id: 5, title: "Shopware" },
+  { id: 6, title: "ROWriter" },
+  { id: 7, title: "ALLDATA" },
+  { id: 8, title: "HubSpot" },
 ];
 
 const LogoCarouselSection = () => {
   return (
-    <div className="w-full bg-[#000000] py-12 sm:py-16 md:py-20 lg:py-24">
-      <div className="container mx-auto px-4 sm:px-6 mb-8 sm:mb-10 md:mb-12">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white leading-tight px-2">
-          Powering Innovation with Leading Technologies
+    <div className="relative w-full bg-black overflow-hidden py-12 md:py-16">
+      {/* Grid BG */}
+      <div
+        className="absolute inset-0 opacity-[0.04] pointer-events-none"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, #1F242C 1px, transparent 1px), linear-gradient(to bottom, #1F242C 1px, transparent 1px)",
+          backgroundSize: "6rem 5rem",
+        }}
+      />
+
+      <div className="relative z-10 w-full">
+        {/* Simple Heading */}
+        <h2 className="text-center text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-8 md:mb-12 px-4">
+          Integrates easily with
         </h2>
+
+        {/* CRM Carousel - Full Width */}
+        <div className="w-full">
+          <RulerCarousel originalItems={CRM_ITEMS} />
+        </div>
       </div>
-      <RulerCarousel originalItems={partnerTechnologies} />
     </div>
   );
 };

@@ -36,7 +36,7 @@ const ParallaxBackground = () => {
           style={{ animationDelay: '0s' }}
         />
         <div 
-          className="orb w-24 h-24 bg-violet-red/10 top-3/4 right-1/4 animate-drift"
+          className="orb w-24 h-24 bg-sky-600/10 top-3/4 right-1/4 animate-drift"
           style={{ animationDelay: '2s' }}
         />
         <div 

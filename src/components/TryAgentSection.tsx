@@ -116,13 +116,13 @@ const TryAgentSection = () => {
   return (
     <section className="relative py-20 pb-32 bg-gradient-to-b from-black via-[#0A0510] to-black overflow-visible">
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(123,97,255,0.08),transparent_50%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(74, 154, 232, 0.2),transparent_50%)]"></div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-5xl mx-auto">
           {/* Main Card */}
           <div className="relative bg-black/40 backdrop-blur-xl rounded-[32px] border border-white/10 shadow-2xl p-12 md:p-16"
-            style={{ boxShadow: '0 0 60px rgba(123, 97, 255, 0.15)' }}>
+            style={{ boxShadow: '0 0 25px rgba(74, 154, 232, 0.4), 0 0 60px rgba(26, 96, 171, 0.25)' }}>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               {/* Left Side - Text */}
               <div>
@@ -130,7 +130,7 @@ const TryAgentSection = () => {
                   Try Your Agent for Free
                 </h2>
                 <p className="text-lg text-gray-400 leading-relaxed">
-                  Experience Clario AI in action — choose an agent and start a live demo call
+                  Experience Vextria AI in action — choose an agent and start a live demo call
                 </p>
               </div>
 
@@ -143,7 +143,7 @@ const TryAgentSection = () => {
                       <button
                         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                         disabled={isConnecting}
-                        className="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-2xl text-left flex items-center justify-between hover:bg-white/10 hover:border-purple-500/50 transition-all disabled:opacity-50 disabled:cursor-not-allowed backdrop-blur-sm"
+                        className="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-2xl text-left flex items-center justify-between hover:bg-white/10 hover:border-sky-600/50 transition-all disabled:opacity-50 disabled:cursor-not-allowed backdrop-blur-sm"
                       >
                         <span className="text-white font-medium">
                           {currentAgent?.name || 'Select an agent'}
@@ -154,7 +154,7 @@ const TryAgentSection = () => {
                       {/* Dropdown Menu */}
                       {isDropdownOpen && (
                         <div className="absolute top-full left-0 right-0 mt-2 bg-[#0F0F1E] backdrop-blur-xl rounded-2xl shadow-2xl border border-white/20 overflow-hidden z-40"
-                          style={{ boxShadow: '0 8px 32px rgba(123, 97, 255, 0.3)' }}>
+                          style={{ boxShadow: '0 0 15px rgba(74, 154, 232, 0.5), 0 8px 40px rgba(26, 96, 171, 0.4)' }}>
                           {RETELL_AGENTS.map((agent) => (
                             <button
                               key={agent.id}
@@ -164,7 +164,7 @@ const TryAgentSection = () => {
                               }}
                               className={`w-full px-6 py-4 text-left transition-all border-b border-white/5 last:border-b-0 ${
                                 selectedAgent === agent.id
-                                  ? 'bg-purple-600/20 text-purple-300 border-purple-500/30'
+                                  ? 'bg-sky-700/20 text-sky-300 border-sky-600/30'
                                   : 'text-white hover:bg-white/5'
                               }`}
                             >
@@ -182,8 +182,8 @@ const TryAgentSection = () => {
                       disabled={isConnecting}
                       className="w-full px-8 py-4 rounded-2xl font-bold text-white transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3 hover:scale-105"
                       style={{
-                        background: 'linear-gradient(135deg, #7B61FF 0%, #6B4CFF 100%)',
-                        boxShadow: '0px 0px 24px rgba(125, 76, 255, 0.6)',
+                        background: 'linear-gradient(135deg, #4A9AE8 0%, #1A60AB 100%)',
+                        boxShadow: '0 0 12px rgba(74, 154, 232, 0.8), 0 0 30px rgba(26, 96, 171, 0.55)',
                       }}
                     >
                       {isConnecting ? (
@@ -213,7 +213,7 @@ const TryAgentSection = () => {
                           <Phone className="w-8 h-8 text-white" />
                         </div>
                         <h3 className="text-xl font-bold text-white mb-2">
-                          Clario AI Talking
+                          Vextria AI Talking
                         </h3>
                         <p className="text-sm text-gray-400">
                           Connected with {currentAgent?.name}

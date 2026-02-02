@@ -87,37 +87,37 @@ const WhatsAppIntegration = () => {
   const painPoints = [
     { icon: AlertTriangle, title: "Missing Orders After Hours", desc: "Losing 40% of potential sales when closed", color: "#EF4444" },
     { icon: DollarSign, title: "High Booking Friction", desc: "Complex booking process loses customers", color: "#F59E0B" },
-    { icon: Clock, title: "Slow Response Times", desc: "Customers wait hours for responses", color: "#8B5CF6" },
+    { icon: Clock, title: "Slow Response Times", desc: "Customers wait hours for responses", color: "#2E7BD4" },
     { icon: Users, title: "Poor Customer Experience", desc: "Fragmented communication channels", color: "#06B6D4" }
   ];
 
   const solutions = [
-    { icon: Headphones, title: "Voice Note Understanding", desc: "AI understands and responds to voice messages", color: "#8B5CF6" },
+    { icon: Headphones, title: "Voice Note Understanding", desc: "AI understands and responds to voice messages", color: "#2E7BD4" },
     { icon: Calendar, title: "Automated Booking & Orders", desc: "Makes bookings and processes orders automatically", color: "#06B6D4" },
     { icon: MessageSquare, title: "24/7 Order Processing", desc: "Never miss a customer order", color: "#10B981" },
     { icon: Brain, title: "70% Faster Booking", desc: "Simplified WhatsApp booking process", color: "#F59E0B" },
-    { icon: Zap, title: "Instant Responses", desc: "AI-powered instant customer service", color: "#8B5CF6" },
+    { icon: Zap, title: "Instant Responses", desc: "AI-powered instant customer service", color: "#2E7BD4" },
     { icon: DollarSign, title: "45% More Orders", desc: "Capture sales even when closed", color: "#06B6D4" },
     { icon: Globe, title: "180+ Countries", desc: "Works worldwide with local compliance", color: "#10B981" },
     { icon: Users, title: "Multi-Channel Support", desc: "Email, phone, and social media integration", color: "#F59E0B" },
-    { icon: Shield, title: "Enterprise Security", desc: "End-to-end encryption and GDPR compliant", color: "#8B5CF6" },
+    { icon: Shield, title: "Enterprise Security", desc: "End-to-end encryption and GDPR compliant", color: "#2E7BD4" },
     { icon: BarChart3, title: "Real-time Analytics", desc: "Track conversions and optimize performance", color: "#06B6D4" }
   ];
 
   const features = [
-    { icon: Headphones, title: "Voice Note Understanding", desc: "AI understands and responds to voice messages", color: "#8B5CF6" },
+    { icon: Headphones, title: "Voice Note Understanding", desc: "AI understands and responds to voice messages", color: "#2E7BD4" },
     { icon: Calendar, title: "Automated Booking & Orders", desc: "Makes bookings and processes orders automatically", color: "#06B6D4" },
     { icon: Shield, title: "Multi-Language Support", desc: "Works in 180+ countries worldwide", color: "#10B981" },
     { icon: BarChart3, title: "Real-time Analytics", desc: "Track orders, bookings, and customer behavior", color: "#F59E0B" },
-    { icon: Users, title: "Automated Responses", desc: "Handle customer inquiries instantly", color: "#8B5CF6" },
+    { icon: Users, title: "Automated Responses", desc: "Handle customer inquiries instantly", color: "#2E7BD4" },
     { icon: Clock, title: "Smart Reminders", desc: "Automatic appointment and order confirmations", color: "#06B6D4" },
     { icon: Brain, title: "AI Chatbot", desc: "Intelligent responses to customer queries", color: "#10B981" },
     { icon: Database, title: "CRM Integration", desc: "Seamless integration with Salesforce, HubSpot", color: "#F59E0B" },
-    { icon: Calendar, title: "Appointment Scheduling", desc: "Automated booking and calendar sync", color: "#8B5CF6" },
+    { icon: Calendar, title: "Appointment Scheduling", desc: "Automated booking and calendar sync", color: "#2E7BD4" },
     { icon: Mail, title: "Email Marketing", desc: "Automated follow-ups and campaigns", color: "#06B6D4" },
     { icon: CreditCard, title: "Payment Processing", desc: "Secure payment collection via WhatsApp", color: "#10B981" },
     { icon: TrendingUp, title: "Campaign Management", desc: "Create and track marketing campaigns", color: "#F59E0B" },
-    { icon: Globe, title: "Global Compliance", desc: "GDPR, CCPA, and local data protection", color: "#8B5CF6" },
+    { icon: Globe, title: "Global Compliance", desc: "GDPR, CCPA, and local data protection", color: "#2E7BD4" },
     { icon: Activity, title: "Workflow Automation", desc: "Automate repetitive customer interactions", color: "#06B6D4" }
   ];
 
@@ -143,14 +143,14 @@ const WhatsAppIntegration = () => {
   ];
 
   const stats = [
-    { icon: MessageSquare, value: "2B+", label: "Messages Sent", color: "#8B5CF6" },
+    { icon: MessageSquare, value: "2B+", label: "Messages Sent", color: "#2E7BD4" },
     { icon: TrendingUp, value: "300%", label: "Engagement Boost", color: "#06B6D4" },
     { icon: Globe, value: "180+", label: "Countries", color: "#10B981" },
     { icon: Clock, value: "24/7", label: "Availability", color: "#F59E0B" }
   ];
 
   const fomoElements = [
-    { icon: Users, text: "4,000+ businesses using Clario AI", color: "#8B5CF6" },
+    { icon: Users, text: "4,000+ businesses using Vextria AI", color: "#2E7BD4" },
     { icon: Headphones, text: "AI understands voice notes perfectly", color: "#06B6D4" },
     { icon: Clock, text: "Get results in 30 days or less", color: "#10B981" },
     { icon: Calendar, text: "Automated booking and orders", color: "#F59E0B" }
@@ -165,7 +165,7 @@ const WhatsAppIntegration = () => {
         {/* Futuristic Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
-            className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-[#8B5CF6]/10 to-[#06B6D4]/10 rounded-full blur-3xl"
+            className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-[#2E7BD4]/10 to-[#06B6D4]/10 rounded-full blur-3xl"
             variants={floatingVariants}
             animate="animate"
           />
@@ -203,7 +203,7 @@ const WhatsAppIntegration = () => {
             >
               <span className="text-[#1A1A1A]">AI WhatsApp Agent</span>
               <br />
-              <span className="bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] bg-clip-text text-transparent">
                 Understands Voice Notes
               </span>
               <br />
@@ -249,7 +249,7 @@ const WhatsAppIntegration = () => {
               >
                 <Button 
                   size="lg" 
-                  className="bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] hover:from-[#7C3AED] hover:to-[#0891B2] text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] hover:from-[#1557A0] hover:to-[#0891B2] text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   <Play className="w-5 h-5 mr-2" />
                   See How Fresh Bites Did It
@@ -264,7 +264,7 @@ const WhatsAppIntegration = () => {
                 <Button 
                   variant="outline" 
                   size="lg" 
-                  className="border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
+                  className="border-2 border-[#2E7BD4] text-[#2E7BD4] hover:bg-[#2E7BD4] hover:text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
                 >
                   <ArrowRight className="w-5 h-5 mr-2" />
                   Start Your AI WhatsApp Agent
@@ -288,14 +288,14 @@ const WhatsAppIntegration = () => {
             {/* Case Study Header */}
             <div className="text-center mb-16">
               <motion.div
-                className="inline-flex items-center space-x-3 bg-gradient-to-r from-[#8B5CF6]/10 to-[#06B6D4]/10 border border-[#8B5CF6]/20 rounded-full px-6 py-3 mb-6"
+                className="inline-flex items-center space-x-3 bg-gradient-to-r from-[#2E7BD4]/10 to-[#06B6D4]/10 border border-[#2E7BD4]/20 rounded-full px-6 py-3 mb-6"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <Star className="w-5 h-5 text-[#8B5CF6]" />
-                <span className="text-lg text-[#8B5CF6] font-semibold">Success Story</span>
+                <Star className="w-5 h-5 text-[#2E7BD4]" />
+                <span className="text-lg text-[#2E7BD4] font-semibold">Success Story</span>
               </motion.div>
               
               <motion.h2 
@@ -305,7 +305,7 @@ const WhatsAppIntegration = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                <span className="bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] bg-clip-text text-transparent">
                   Fresh Bites Restaurant
                 </span>
                 <br />
@@ -380,7 +380,7 @@ const WhatsAppIntegration = () => {
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-green-600">The Solution</h3>
-                      <p className="text-green-600/80">How Clario AI helped</p>
+                      <p className="text-green-600/80">How Vextria AI helped</p>
                     </div>
                   </div>
                   
@@ -423,7 +423,7 @@ const WhatsAppIntegration = () => {
                 <div className="text-[#666666] font-medium">Faster Booking</div>
               </div>
               <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 text-center border border-purple-200">
-                <div className="text-3xl font-bold text-purple-600 mb-2">+35%</div>
+                <div className="text-3xl font-bold text-sky-700 mb-2">+35%</div>
                 <div className="text-[#666666] font-medium">Revenue Increase</div>
               </div>
               <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-6 text-center border border-orange-200">
@@ -507,7 +507,7 @@ const WhatsAppIntegration = () => {
               >
                 <span className="text-[#1A1A1A]">How Our AI</span>
                 <br />
-                <span className="bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] bg-clip-text text-transparent">
                   Solves These Problems
                 </span>
               </motion.h2>
@@ -559,7 +559,7 @@ const WhatsAppIntegration = () => {
               >
                 <span className="text-[#1A1A1A]">Powerful Features</span>
                 <br />
-                <span className="bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] bg-clip-text text-transparent">
                   Built for Results
                 </span>
               </motion.h2>
@@ -611,7 +611,7 @@ const WhatsAppIntegration = () => {
               >
                 <span className="text-[#1A1A1A]">What Our</span>
                 <br />
-                <span className="bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] bg-clip-text text-transparent">
                   Customers Say
                 </span>
               </motion.h2>
@@ -628,7 +628,7 @@ const WhatsAppIntegration = () => {
                   viewport={{ once: true }}
                 >
                   <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] rounded-full flex items-center justify-center text-white font-bold">
+                    <div className="w-12 h-12 bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] rounded-full flex items-center justify-center text-white font-bold">
                       {testimonial.avatar}
                     </div>
                     <div>
@@ -655,7 +655,7 @@ const WhatsAppIntegration = () => {
       </section>
 
       {/* FOMO CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-[#8B5CF6] to-[#06B6D4]">
+      <section className="py-20 bg-gradient-to-br from-[#2E7BD4] to-[#06B6D4]">
         <div className="container mx-auto px-4 sm:px-6">
           <motion.div 
             className="text-center max-w-4xl mx-auto"
@@ -680,7 +680,7 @@ const WhatsAppIntegration = () => {
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
                 <div className="text-3xl font-bold text-white mb-2">4,000+</div>
-                <div className="text-white/80">Businesses using Clario</div>
+                <div className="text-white/80">Businesses using Vextria</div>
               </div>
               <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
                 <div className="text-3xl font-bold text-white mb-2">45%</div>
@@ -706,7 +706,7 @@ const WhatsAppIntegration = () => {
               >
                 <Button 
                   size="lg" 
-                  className="bg-white text-[#8B5CF6] hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-white text-[#2E7BD4] hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   <Rocket className="w-5 h-5 mr-2" />
                   Start AI WhatsApp Agent Now
@@ -721,7 +721,7 @@ const WhatsAppIntegration = () => {
                 <Button 
                   variant="outline" 
                   size="lg" 
-                  className="border-2 border-white text-white hover:bg-white hover:text-[#8B5CF6] px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
+                  className="border-2 border-white text-white hover:bg-white hover:text-[#2E7BD4] px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
                 >
                   <Phone className="w-5 h-5 mr-2" />
                   Book a Demo

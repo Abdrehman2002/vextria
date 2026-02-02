@@ -164,7 +164,7 @@ const Navbar1 = ({
                 <a href={auth.login.url}>{auth.login.text}</a>
               </Button>
             )}
-            <Button asChild size="sm" className="bg-gradient-to-br from-[#7B61FF] to-[#6B4CFF] hover:from-[#8A71FF] hover:to-[#7B61FF] text-white rounded-lg px-6 font-bold shadow-[0_0_20px_rgba(123,97,255,0.6)] hover:shadow-[0_0_30px_rgba(161,107,255,0.8)] transition-all">
+            <Button asChild size="sm" className="bg-gradient-to-br from-[#4A9AE8] to-[#1A60AB] hover:from-[#5AADE8] hover:to-[#2E7BD4] text-white rounded-lg px-6 font-bold shadow-[0_0_10px_rgba(74,154,232,0.7)_0_0_25px_rgba(26,96,171,0.5)] hover:shadow-[0_0_15px_rgba(74,154,232,0.8)_0_0_35px_rgba(26,96,171,0.55)] transition-all">
               <a href={auth.signup.url}>{auth.signup.text}</a>
             </Button>
           </div>
@@ -221,7 +221,7 @@ const Navbar1 = ({
                         <a href={auth.login.url}>{auth.login.text}</a>
                       </Button>
                     )}
-                    <Button asChild className="bg-gradient-to-br from-[#7B61FF] to-[#6B4CFF] text-white font-bold shadow-[0_0_20px_rgba(123,97,255,0.6)]">
+                    <Button asChild className="bg-gradient-to-br from-[#4A9AE8] to-[#1A60AB] text-white font-bold shadow-[0_0_10px_rgba(74,154,232,0.7)_0_0_25px_rgba(26,96,171,0.5)]">
                       <a href={auth.signup.url}>{auth.signup.text}</a>
                     </Button>
                   </div>
@@ -314,7 +314,7 @@ const renderMobileMenuItem = (item: MenuItem) => {
   }
 
   return (
-    <a key={item.title} href={item.url} className="font-semibold text-white py-2 hover:text-purple-400 transition-colors">
+    <a key={item.title} href={item.url} className="font-semibold text-white py-2 hover:text-sky-400 transition-colors">
       {item.title}
     </a>
   );

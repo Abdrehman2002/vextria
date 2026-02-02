@@ -34,8 +34,8 @@ export function ModernNavbar({
   logo = {
     url: "/",
     src: "/favicon.svg",
-    alt: "Clario AI",
-    title: "Clario AI",
+    alt: "Vextria AI",
+    title: "Vextria AI",
   },
   menu = [
     { title: "Home", url: "#hero" },
@@ -110,13 +110,13 @@ export function ModernNavbar({
               >
                 {item.title}
                 <span
-                  className="absolute bottom-1 left-0 w-0 h-[2px] bg-gradient-to-r from-[#7B61FF] to-[#A16BFF] transition-all duration-300 group-hover:w-full"
+                  className="absolute bottom-1 left-0 w-0 h-[2px] bg-gradient-to-r from-[#1A60AB] to-[#4A9AE8] transition-all duration-300 group-hover:w-full"
                   style={{ transformOrigin: 'left' }}
                 />
                 {activeSection === item.title && (
                   <motion.div
                     layoutId="activeSection"
-                    className="absolute bottom-1 left-0 right-0 h-[2px] bg-gradient-to-r from-[#7B61FF] to-[#A16BFF]"
+                    className="absolute bottom-1 left-0 right-0 h-[2px] bg-gradient-to-r from-[#1A60AB] to-[#4A9AE8]"
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
                   />
                 )}
@@ -138,7 +138,7 @@ export function ModernNavbar({
             )}
             <Button
               size="sm"
-              className="bg-gradient-to-br from-[#7B61FF] to-[#6B4CFF] hover:from-[#8A71FF] hover:to-[#7B61FF] text-white rounded-lg px-6 font-bold shadow-[0_0_20px_rgba(123,97,255,0.6)] hover:shadow-[0_0_30px_rgba(161,107,255,0.8)] transition-all"
+              className="bg-gradient-to-br from-[#4A9AE8] to-[#1A60AB] hover:from-[#5AADE8] hover:to-[#2E7BD4] text-white rounded-lg px-6 font-bold shadow-[0_0_10px_rgba(74,154,232,0.7)_0_0_25px_rgba(26,96,171,0.5)] hover:shadow-[0_0_15px_rgba(74,154,232,0.8)_0_0_35px_rgba(26,96,171,0.55)] transition-all"
               asChild
             >
               <a href={auth.signup.url}>{auth.signup.text}</a>
@@ -181,7 +181,7 @@ export function ModernNavbar({
                   }}
                   className={`block px-4 py-3 rounded-lg text-base font-medium transition-colors ${
                     activeSection === item.title
-                      ? "bg-[#7B61FF]/20 text-[#7B61FF]"
+                      ? "bg-[#1A60AB]/20 text-[#1A60AB]"
                       : "text-gray-300 hover:bg-white/5 hover:text-white"
                   }`}
                 >
@@ -199,7 +199,7 @@ export function ModernNavbar({
                   </Button>
                 )}
                 <Button
-                  className="w-full bg-gradient-to-br from-[#7B61FF] to-[#6B4CFF] text-white font-bold shadow-[0_0_20px_rgba(123,97,255,0.6)]"
+                  className="w-full bg-gradient-to-br from-[#4A9AE8] to-[#1A60AB] text-white font-bold shadow-[0_0_10px_rgba(74,154,232,0.7)_0_0_25px_rgba(26,96,171,0.5)]"
                   asChild
                 >
                   <a href={auth.signup.url}>{auth.signup.text}</a>

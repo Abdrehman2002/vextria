@@ -43,10 +43,10 @@ const RulerLines = ({
 
     if (isCenter) {
       height = "h-8";
-      color = "bg-[#7B61FF] dark:bg-[#7B61FF]";
+      color = "bg-[#1A60AB] dark:bg-[#1A60AB]";
     } else if (isFifth) {
       height = "h-4";
-      color = "bg-[#7B61FF] dark:bg-[#7B61FF]";
+      color = "bg-[#1A60AB] dark:bg-[#1A60AB]";
     }
 
     const positionClass = top ? "" : "bottom-0";
@@ -195,7 +195,7 @@ export function RulerCarousel({
                   onClick={() => handleItemClick(index)}
                   className={`text-4xl md:text-6xl font-bold whitespace-nowrap cursor-pointer flex items-center justify-center ${
                     isActive
-                      ? "text-[#7B61FF] dark:text-[#7B61FF] text-glow-purple"
+                      ? "text-[#1A60AB] dark:text-[#1A60AB] text-glow-purple"
                       : "text-gray-500 dark:text-gray-600 hover:text-gray-400 dark:hover:text-gray-500"
                   }`}
                   animate={{
@@ -234,7 +234,7 @@ export function RulerCarousel({
           className="flex items-center justify-center cursor-pointer hover:opacity-80 transition-opacity"
           aria-label="Previous item"
         >
-          <Rewind className="w-6 h-6 text-[#7B61FF]" />
+          <Rewind className="w-6 h-6 text-[#1A60AB]" />
         </button>
 
         <div className="flex items-center gap-2">
@@ -255,7 +255,7 @@ export function RulerCarousel({
           className="flex items-center justify-center cursor-pointer hover:opacity-80 transition-opacity"
           aria-label="Next item"
         >
-          <FastForward className="w-6 h-6 text-[#7B61FF]" />
+          <FastForward className="w-6 h-6 text-[#1A60AB]" />
         </button>
       </div>
     </div>

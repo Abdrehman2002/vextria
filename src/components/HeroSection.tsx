@@ -88,9 +88,9 @@ const HeroSection = () => {
 
           {/* Tag Line */}
           <div className="mb-6 pointer-events-auto inline-block" style={{ animationDelay: '0.2s', opacity: 0, animation: 'fadeInUp 0.8s ease-out 0.2s forwards' }}>
-            <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-white/90 px-4 py-2 rounded-full border border-[#7B61FF]/30 backdrop-blur-xl"
-                  style={{ background: 'rgba(123, 97, 255, 0.1)' }}>
-              <span className="w-2 h-2 rounded-full bg-[#7B61FF] animate-pulse"></span>
+            <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider uppercase text-white/90 px-4 py-2 rounded-full border border-[#1A60AB]/30 backdrop-blur-xl"
+                  style={{ background: 'rgba(74, 154, 232, 0.15)' }}>
+              <span className="w-2 h-2 rounded-full bg-[#1A60AB] animate-pulse"></span>
               AI-Powered Business Automation
             </span>
           </div>
@@ -103,7 +103,7 @@ const HeroSection = () => {
                 animation: 'fadeInUp 0.8s ease-out 0.3s forwards'
               }}>
             Transform your business
-            <span className="block bg-gradient-to-r from-[#7B61FF] via-[#8B5CF6] to-[#A16BFF] bg-clip-text text-transparent pb-2">
+            <span className="block bg-gradient-to-r from-[#5AADE8] via-[#A8D8F0] to-[#4A9AE8] bg-clip-text text-transparent pb-2">
               with AI Intelligence.
             </span>
           </h1>
@@ -126,7 +126,7 @@ const HeroSection = () => {
                }}>
             {['24/7 Availability', 'Instant Responses', 'Zero Missed Calls'].map((feature, i) => (
               <div key={i} className="flex items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 md:px-4 py-1.5 sm:py-2 md:py-2.5 rounded-lg sm:rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                <CheckCircle className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-[#7B61FF]" />
+                <CheckCircle className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-[#1A60AB]" />
                 <span className="text-xs sm:text-sm md:text-base text-white/90 font-medium">{feature}</span>
               </div>
             ))}
@@ -140,14 +140,14 @@ const HeroSection = () => {
                }}>
             <a href="https://calendly.com/abdurrehman1711/30min" target="_blank" rel="noopener noreferrer" className="group flex items-center justify-center gap-2 px-6 sm:px-7 md:px-8 lg:px-10 py-3 sm:py-3.5 md:py-4 rounded-xl lg:rounded-2xl font-bold text-sm sm:text-base md:text-lg text-white transition-all duration-300 hover:scale-105"
                     style={{
-                      background: 'linear-gradient(135deg, #7B61FF 0%, #6B4CFF 100%)',
-                      boxShadow: '0 0 30px rgba(123, 97, 255, 0.5)',
+                      background: 'linear-gradient(135deg, #4A9AE8 0%, #1A60AB 100%)',
+                      boxShadow: '0 0 15px rgba(74, 154, 232, 0.8), 0 0 40px rgba(26, 96, 171, 0.5)',
                     }}
                     onMouseEnter={(e) => {
-                      e.currentTarget.style.boxShadow = '0 0 40px rgba(123, 97, 255, 0.7)';
+                      e.currentTarget.style.boxShadow = '0 0 20px rgba(74, 154, 232, 0.9), 0 0 50px rgba(26, 96, 171, 0.6)';
                     }}
                     onMouseLeave={(e) => {
-                      e.currentTarget.style.boxShadow = '0 0 30px rgba(123, 97, 255, 0.5)';
+                      e.currentTarget.style.boxShadow = '0 0 15px rgba(74, 154, 232, 0.8), 0 0 40px rgba(26, 96, 171, 0.5)';
                     }}>
               Get Started Free
               <ArrowRight className="w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" />
@@ -171,17 +171,17 @@ const HeroSection = () => {
                  animation: 'fadeInUp 0.8s ease-out 0.7s forwards'
                }}>
             <div className="text-center">
-              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#7B61FF] to-[#8B5CF6] bg-clip-text text-transparent mb-1 sm:mb-1.5 md:mb-2">200+</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#5AADE8] via-[#A8D8F0] to-[#4A9AE8] bg-clip-text text-transparent mb-1 sm:mb-1.5 md:mb-2">200+</div>
               <div className="text-xs sm:text-sm md:text-base text-gray-400">Active Businesses</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#8B5CF6] to-[#A16BFF] bg-clip-text text-transparent mb-1 sm:mb-1.5 md:mb-2">40%</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#5AADE8] via-[#A8D8F0] to-[#4A9AE8] bg-clip-text text-transparent mb-1 sm:mb-1.5 md:mb-2">40%</div>
               <div className="text-xs sm:text-sm md:text-base text-gray-400">Revenue Increase</div>
             </div>
             <div className="text-center">
               <div className="flex items-center gap-0.5 sm:gap-1 mb-1 sm:mb-1.5 md:mb-2 justify-center">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 fill-[#7B61FF] text-[#7B61FF]" />
+                  <Star key={i} className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 fill-[#1A60AB] text-[#1A60AB]" />
                 ))}
               </div>
               <div className="text-xs sm:text-sm md:text-base text-gray-400">4.9/5 Rating</div>
@@ -207,13 +207,13 @@ const HeroSection = () => {
   return (
     <section className="relative min-h-screen bg-gradient-to-b from-black via-[#0A0510] to-black overflow-hidden">
       {/* Background Effects */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(123,97,255,0.08),transparent_50%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(74, 154, 232, 0.2),transparent_50%)]"></div>
 
       {/* Animated Grid Pattern */}
       <div className="absolute inset-0 opacity-[0.04]" style={{
         backgroundImage: `
-          linear-gradient(to right, #7B61FF 1px, transparent 1px),
-          linear-gradient(to bottom, #7B61FF 1px, transparent 1px)
+          linear-gradient(to right, #1A60AB 1px, transparent 1px),
+          linear-gradient(to bottom, #1A60AB 1px, transparent 1px)
         `,
         backgroundSize: '60px 60px'
       }}></div>
@@ -223,9 +223,9 @@ const HeroSection = () => {
 
           {/* Tag Line */}
           <div className="mb-5 sm:mb-6">
-            <span className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold tracking-wider uppercase text-white/90 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-[#7B61FF]/30 backdrop-blur-xl"
-                  style={{ background: 'rgba(123, 97, 255, 0.1)' }}>
-              <span className="w-2 h-2 rounded-full bg-[#7B61FF] animate-pulse"></span>
+            <span className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold tracking-wider uppercase text-white/90 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-[#1A60AB]/30 backdrop-blur-xl"
+                  style={{ background: 'rgba(74, 154, 232, 0.15)' }}>
+              <span className="w-2 h-2 rounded-full bg-[#1A60AB] animate-pulse"></span>
               AI-Powered Business Automation
             </span>
           </div>
@@ -233,7 +233,7 @@ const HeroSection = () => {
           {/* Main Headline */}
           <h1 className="text-3xl xs:text-4xl sm:text-5xl font-bold text-white leading-tight mb-5 sm:mb-6 px-2">
             Transform your business
-            <span className="block bg-gradient-to-r from-[#7B61FF] via-[#8B5CF6] to-[#A16BFF] bg-clip-text text-transparent pt-1">
+            <span className="block bg-gradient-to-r from-[#5AADE8] via-[#A8D8F0] to-[#4A9AE8] bg-clip-text text-transparent pt-1">
               with AI Intelligence.
             </span>
           </h1>
@@ -247,7 +247,7 @@ const HeroSection = () => {
           <div className="flex flex-wrap gap-2 sm:gap-2.5 mb-6 sm:mb-7 justify-center px-2">
             {['24/7 Availability', 'Instant Responses', 'Zero Missed Calls'].map((feature, i) => (
               <div key={i} className="flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-lg sm:rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
-                <CheckCircle className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#7B61FF]" />
+                <CheckCircle className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#1A60AB]" />
                 <span className="text-xs sm:text-sm text-white/90 font-medium">{feature}</span>
               </div>
             ))}
@@ -259,8 +259,8 @@ const HeroSection = () => {
               href="https://calendly.com/abdurrehman1711/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-[#7B61FF] to-[#6B4CFF] hover:from-[#8A71FF] hover:to-[#7B61FF] text-white px-6 sm:px-8 py-4 sm:py-5 rounded-xl font-bold text-base sm:text-lg flex items-center justify-center transition-all duration-300"
-              style={{ boxShadow: '0 0 30px rgba(123, 97, 255, 0.5)' }}
+              className="bg-gradient-to-r from-[#4A9AE8] to-[#1A60AB] hover:from-[#5AADE8] hover:to-[#2E7BD4] text-white px-6 sm:px-8 py-4 sm:py-5 rounded-xl font-bold text-base sm:text-lg flex items-center justify-center transition-all duration-300"
+              style={{ boxShadow: '0 0 15px rgba(74, 154, 232, 0.8), 0 0 40px rgba(26, 96, 171, 0.5)' }}
             >
               Get Started Free
               <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 ml-2" />
@@ -283,17 +283,17 @@ const HeroSection = () => {
           {/* Stats Section */}
           <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 px-2">
             <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-[#7B61FF] to-[#8B5CF6] bg-clip-text text-transparent mb-1">200+</div>
+              <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-[#5AADE8] via-[#A8D8F0] to-[#4A9AE8] bg-clip-text text-transparent mb-1">200+</div>
               <div className="text-xs sm:text-sm text-gray-400">Active Businesses</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-[#8B5CF6] to-[#A16BFF] bg-clip-text text-transparent mb-1">40%</div>
+              <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-[#5AADE8] via-[#A8D8F0] to-[#4A9AE8] bg-clip-text text-transparent mb-1">40%</div>
               <div className="text-xs sm:text-sm text-gray-400">Revenue Increase</div>
             </div>
             <div className="text-center">
               <div className="flex items-center gap-0.5 sm:gap-1 mb-1 justify-center">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-3 h-3 sm:w-4 sm:h-4 fill-[#7B61FF] text-[#7B61FF]" />
+                  <Star key={i} className="w-3 h-3 sm:w-4 sm:h-4 fill-[#1A60AB] text-[#1A60AB]" />
                 ))}
               </div>
               <div className="text-xs sm:text-sm text-gray-400">4.9/5 Rating</div>

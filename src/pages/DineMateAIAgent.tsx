@@ -55,7 +55,7 @@ const DineMateAIAgent = () => {
   const painPoints = [
     { icon: AlertTriangle, title: "Missing Reservations After Hours", desc: "Losing 35% of potential diners when restaurant is closed", color: "#EF4444" },
     { icon: DollarSign, title: "Empty Tables During Peak", desc: "Tables sitting empty due to missed calls", color: "#F59E0B" },
-    { icon: Clock, title: "Limited Reservation Hours", desc: "Can't take bookings 24/7 like competitors", color: "#8B5CF6" },
+    { icon: Clock, title: "Limited Reservation Hours", desc: "Can't take bookings 24/7 like competitors", color: "#2E7BD4" },
     { icon: Users, title: "Staff Too Busy to Answer", desc: "Kitchen staff can't handle calls during rush", color: "#06B6D4" }
   ];
 

@@ -55,7 +55,7 @@ const AutoCareAIReceptionist = () => {
   const painPoints = [
     { icon: AlertTriangle, title: "Missing Service Calls After Hours", desc: "Losing 40% of potential customers when shop is closed", color: "#EF4444" },
     { icon: DollarSign, title: "Empty Service Bays", desc: "Bays sitting empty due to missed calls", color: "#F59E0B" },
-    { icon: Clock, title: "Limited Phone Coverage", desc: "Can't take service calls 24/7", color: "#8B5CF6" },
+    { icon: Clock, title: "Limited Phone Coverage", desc: "Can't take service calls 24/7", color: "#2E7BD4" },
     { icon: Users, title: "Mechanics Too Busy", desc: "Technicians can't answer phones during repairs", color: "#06B6D4" }
   ];
 

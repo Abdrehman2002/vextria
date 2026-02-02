@@ -88,31 +88,31 @@ const AIWebsite = () => {
   const painPoints = [
     { icon: AlertTriangle, title: "Outdated Website Losing Customers", desc: "Poor mobile experience causing 60% bounce rate", color: "#EF4444" },
     { icon: DollarSign, title: "Missing Online Revenue", desc: "No online ordering = lost sales opportunities", color: "#F59E0B" },
-    { icon: Clock, title: "Months of Development Time", desc: "Traditional websites take 3-6 months to build", color: "#8B5CF6" },
+    { icon: Clock, title: "Months of Development Time", desc: "Traditional websites take 3-6 months to build", color: "#2E7BD4" },
     { icon: Users, title: "Poor Conversion Rates", desc: "Generic templates don't convert visitors", color: "#06B6D4" }
   ];
 
   const solutions = [
-    { icon: Zap, title: "15-Minute Website Creation", desc: "From idea to live website in under an hour", color: "#8B5CF6" },
+    { icon: Zap, title: "15-Minute Website Creation", desc: "From idea to live website in under an hour", color: "#2E7BD4" },
     { icon: Eye, title: "40% Higher Conversions", desc: "AI-optimized for maximum visitor conversion", color: "#06B6D4" },
     { icon: Mobile, title: "Mobile-First Design", desc: "Responsive design that works on all devices", color: "#10B981" },
     { icon: DollarSign, title: "90% Cost Savings", desc: "No developers, no agencies, no delays", color: "#F59E0B" },
-    { icon: Search, title: "Built-in SEO Optimization", desc: "Automatically optimized for search engines", color: "#8B5CF6" },
+    { icon: Search, title: "Built-in SEO Optimization", desc: "Automatically optimized for search engines", color: "#2E7BD4" },
     { icon: Shield, title: "Enterprise Security", desc: "SSL certificates and security built-in", color: "#06B6D4" },
     { icon: TrendingUp, title: "Real-time Analytics", desc: "Track performance and optimize continuously", color: "#10B981" },
     { icon: Globe, title: "Global CDN", desc: "Lightning-fast loading worldwide", color: "#F59E0B" }
   ];
 
   const features = [
-    { icon: Brain, title: "AI-Powered Design", desc: "Automatically creates conversion-optimized layouts", color: "#8B5CF6" },
+    { icon: Brain, title: "AI-Powered Design", desc: "Automatically creates conversion-optimized layouts", color: "#2E7BD4" },
     { icon: Search, title: "Built-in SEO", desc: "Optimized for search engines from day one", color: "#06B6D4" },
     { icon: Shield, title: "Enterprise Security", desc: "SSL certificates and security built-in", color: "#10B981" },
     { icon: TrendingUp, title: "Analytics Dashboard", desc: "Track performance and optimize continuously", color: "#F59E0B" },
-    { icon: Palette, title: "Custom Branding", desc: "Match your brand colors and fonts perfectly", color: "#8B5CF6" },
+    { icon: Palette, title: "Custom Branding", desc: "Match your brand colors and fonts perfectly", color: "#2E7BD4" },
     { icon: Database, title: "Content Management", desc: "Easy-to-use CMS for non-technical users", color: "#06B6D4" },
     { icon: Wifi, title: "Automatic Backups", desc: "Daily backups and version control included", color: "#10B981" },
     { icon: Cpu, title: "AI Content Generation", desc: "Automatically generate compelling copy", color: "#F59E0B" },
-    { icon: Smartphone, title: "Mobile App Ready", desc: "PWA capabilities for app-like experience", color: "#8B5CF6" },
+    { icon: Smartphone, title: "Mobile App Ready", desc: "PWA capabilities for app-like experience", color: "#2E7BD4" },
     { icon: BarChart3, title: "A/B Testing Tools", desc: "Test different layouts and optimize conversions", color: "#06B6D4" },
     { icon: Mail, title: "Email Integration", desc: "Built-in contact forms and email marketing", color: "#10B981" },
     { icon: Calendar, title: "Booking Integration", desc: "Appointment scheduling and calendar sync", color: "#F59E0B" }
@@ -140,14 +140,14 @@ const AIWebsite = () => {
   ];
 
   const stats = [
-    { icon: Clock, value: "15min", label: "Build Time", color: "#8B5CF6" },
+    { icon: Clock, value: "15min", label: "Build Time", color: "#2E7BD4" },
     { icon: TrendingUp, value: "40%", label: "Conversion Boost", color: "#06B6D4" },
     { icon: Users, value: "90%", label: "Cost Savings", color: "#10B981" },
     { icon: Eye, value: "24/7", label: "Live Website", color: "#F59E0B" }
   ];
 
   const fomoElements = [
-    { icon: Users, text: "1,000+ websites built with Clario AI", color: "#8B5CF6" },
+    { icon: Users, text: "1,000+ websites built with Vextria AI", color: "#2E7BD4" },
     { icon: TrendingUp, text: "Average 40% increase in conversions", color: "#06B6D4" },
     { icon: Clock, text: "Get your website live in 15 minutes", color: "#10B981" },
     { icon: DollarSign, text: "90% savings vs traditional development", color: "#F59E0B" }
@@ -162,7 +162,7 @@ const AIWebsite = () => {
         {/* Futuristic Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
-            className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-[#8B5CF6]/10 to-[#06B6D4]/10 rounded-full blur-3xl"
+            className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-[#2E7BD4]/10 to-[#06B6D4]/10 rounded-full blur-3xl"
             variants={floatingVariants}
             animate="animate"
           />
@@ -246,7 +246,7 @@ const AIWebsite = () => {
               >
                 <Button 
                   size="lg" 
-                  className="bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] hover:from-[#7C3AED] hover:to-[#0891B2] text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] hover:from-[#1557A0] hover:to-[#0891B2] text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   <Play className="w-5 h-5 mr-2" />
                   See How Fresh Bites Did It
@@ -261,7 +261,7 @@ const AIWebsite = () => {
                 <Button 
                   variant="outline" 
                   size="lg" 
-                  className="border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
+                  className="border-2 border-[#2E7BD4] text-[#2E7BD4] hover:bg-[#2E7BD4] hover:text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
                 >
                   <ArrowRight className="w-5 h-5 mr-2" />
                   Build Your Website Now
@@ -285,14 +285,14 @@ const AIWebsite = () => {
             {/* Case Study Header */}
             <div className="text-center mb-16">
               <motion.div
-                className="inline-flex items-center space-x-3 bg-gradient-to-r from-[#8B5CF6]/10 to-[#06B6D4]/10 border border-[#8B5CF6]/20 rounded-full px-6 py-3 mb-6"
+                className="inline-flex items-center space-x-3 bg-gradient-to-r from-[#2E7BD4]/10 to-[#06B6D4]/10 border border-[#2E7BD4]/20 rounded-full px-6 py-3 mb-6"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <Star className="w-5 h-5 text-[#8B5CF6]" />
-                <span className="text-lg text-[#8B5CF6] font-semibold">Success Story</span>
+                <Star className="w-5 h-5 text-[#2E7BD4]" />
+                <span className="text-lg text-[#2E7BD4] font-semibold">Success Story</span>
               </motion.div>
               
               <motion.h2 
@@ -302,7 +302,7 @@ const AIWebsite = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                <span className="bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] bg-clip-text text-transparent">
                   Fresh Bites Restaurant
                 </span>
                 <br />
@@ -377,7 +377,7 @@ const AIWebsite = () => {
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-green-600">The Solution</h3>
-                      <p className="text-green-600/80">How Clario AI helped</p>
+                      <p className="text-green-600/80">How Vextria AI helped</p>
                     </div>
                   </div>
                   
@@ -420,7 +420,7 @@ const AIWebsite = () => {
                 <div className="text-[#666666] font-medium">Higher Conversions</div>
               </div>
               <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 text-center border border-purple-200">
-                <div className="text-3xl font-bold text-purple-600 mb-2">15min</div>
+                <div className="text-3xl font-bold text-sky-700 mb-2">15min</div>
                 <div className="text-[#666666] font-medium">Build Time</div>
               </div>
               <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-6 text-center border border-orange-200">
@@ -504,7 +504,7 @@ const AIWebsite = () => {
               >
                 <span className="text-[#1A1A1A]">How Our AI</span>
                 <br />
-                <span className="bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] bg-clip-text text-transparent">
                   Solves These Problems
                 </span>
               </motion.h2>
@@ -556,7 +556,7 @@ const AIWebsite = () => {
               >
                 <span className="text-[#1A1A1A]">Powerful Features</span>
                 <br />
-                <span className="bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] bg-clip-text text-transparent">
                   Built for Results
                 </span>
               </motion.h2>
@@ -608,7 +608,7 @@ const AIWebsite = () => {
               >
                 <span className="text-[#1A1A1A]">What Our</span>
                 <br />
-                <span className="bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] bg-clip-text text-transparent">
                   Customers Say
                 </span>
               </motion.h2>
@@ -633,7 +633,7 @@ const AIWebsite = () => {
                           className="w-full h-full object-cover"
                         />
                       ) : (
-                        <div className="w-full h-full bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] flex items-center justify-center text-white font-bold">
+                        <div className="w-full h-full bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] flex items-center justify-center text-white font-bold">
                           {testimonial.avatar}
                         </div>
                       )}
@@ -662,7 +662,7 @@ const AIWebsite = () => {
       </section>
 
       {/* FOMO CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-[#8B5CF6] to-[#06B6D4]">
+      <section className="py-20 bg-gradient-to-br from-[#2E7BD4] to-[#06B6D4]">
         <div className="container mx-auto px-4 sm:px-6">
           <motion.div 
             className="text-center max-w-4xl mx-auto"
@@ -687,7 +687,7 @@ const AIWebsite = () => {
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
                 <div className="text-3xl font-bold text-white mb-2">1,000+</div>
-                <div className="text-white/80">Websites built with Clario</div>
+                <div className="text-white/80">Websites built with Vextria</div>
               </div>
               <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
                 <div className="text-3xl font-bold text-white mb-2">40%</div>
@@ -713,7 +713,7 @@ const AIWebsite = () => {
               >
                 <Button 
                   size="lg" 
-                  className="bg-white text-[#8B5CF6] hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-white text-[#2E7BD4] hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   <Rocket className="w-5 h-5 mr-2" />
                   Build Your Website Now
@@ -728,7 +728,7 @@ const AIWebsite = () => {
                 <Button 
                   variant="outline" 
                   size="lg" 
-                  className="border-2 border-white text-white hover:bg-white hover:text-[#8B5CF6] px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
+                  className="border-2 border-white text-white hover:bg-white hover:text-[#2E7BD4] px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
                 >
                   <Phone className="w-5 h-5 mr-2" />
                   Book a Demo

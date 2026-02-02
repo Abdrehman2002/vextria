@@ -96,7 +96,7 @@ function HeroGeometric({
 
     return (
         <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#030303]">
-            <div className="absolute inset-0 bg-gradient-to-br from-purple-500/[0.06] via-transparent to-pink-500/[0.06] blur-3xl" />
+            <div className="absolute inset-0 bg-gradient-to-br from-sky-600/[0.06] via-transparent to-pink-500/[0.06] blur-3xl" />
 
             <div className="absolute inset-0 overflow-hidden">
                 <ElegantShape
@@ -122,7 +122,7 @@ function HeroGeometric({
                     width={300}
                     height={80}
                     rotate={-8}
-                    gradient="from-purple-500/[0.15]"
+                    gradient="from-sky-600/[0.15]"
                     className="left-[5%] md:left-[10%] bottom-[5%] md:bottom-[10%]"
                 />
 
@@ -154,7 +154,7 @@ function HeroGeometric({
                         animate="visible"
                         className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/[0.03] border border-white/[0.08] mb-8 md:mb-12"
                     >
-                        <Circle className="h-2 w-2 fill-purple-500/80" />
+                        <Circle className="h-2 w-2 fill-sky-600/80" />
                         <span className="text-sm text-white/60 tracking-wide">
                             {badge}
                         </span>
@@ -173,7 +173,7 @@ function HeroGeometric({
                             <br />
                             <span
                                 className={cn(
-                                    "bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-fuchsia-300 to-pink-400"
+                                    "bg-clip-text text-transparent bg-gradient-to-r from-sky-400 via-fuchsia-300 to-pink-400"
                                 )}
                             >
                                 {title2}

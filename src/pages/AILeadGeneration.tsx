@@ -88,31 +88,31 @@ const AILeadGeneration = () => {
   const painPoints = [
     { icon: AlertTriangle, title: "Low-Quality Leads Wasting Time", desc: "80% of leads never convert to customers", color: "#EF4444" },
     { icon: DollarSign, title: "High Customer Acquisition Costs", desc: "Spending $500+ per qualified lead", color: "#F59E0B" },
-    { icon: Clock, title: "Manual Prospecting Takes Forever", desc: "Sales team spends 60% of time on research", color: "#8B5CF6" },
+    { icon: Clock, title: "Manual Prospecting Takes Forever", desc: "Sales team spends 60% of time on research", color: "#2E7BD4" },
     { icon: Users, title: "Poor Conversion Rates", desc: "Only 2% of leads become customers", color: "#06B6D4" }
   ];
 
   const solutions = [
-    { icon: Brain, title: "AI-Powered Targeting", desc: "Automatically find high-quality prospects", color: "#8B5CF6" },
+    { icon: Brain, title: "AI-Powered Targeting", desc: "Automatically find high-quality prospects", color: "#2E7BD4" },
     { icon: Search, title: "Advanced Prospecting", desc: "Identify decision-makers in seconds", color: "#06B6D4" },
     { icon: Zap, title: "Automated Outreach", desc: "Multi-channel campaigns that convert", color: "#10B981" },
     { icon: DollarSign, title: "60% Cost Reduction", desc: "Lower customer acquisition costs", color: "#F59E0B" },
-    { icon: Shield, title: "GDPR Compliant", desc: "Full compliance with data protection laws", color: "#8B5CF6" },
+    { icon: Shield, title: "GDPR Compliant", desc: "Full compliance with data protection laws", color: "#2E7BD4" },
     { icon: BarChart3, title: "Predictive Analytics", desc: "AI predicts which leads will convert", color: "#06B6D4" },
     { icon: Users, title: "Multi-Channel Campaigns", desc: "Email, phone, social media, and LinkedIn", color: "#10B981" },
     { icon: Clock, title: "Real-time Lead Scoring", desc: "Instant qualification and prioritization", color: "#F59E0B" }
   ];
 
   const features = [
-    { icon: Shield, title: "Data Privacy Compliant", desc: "GDPR and CCPA compliant lead generation", color: "#8B5CF6" },
+    { icon: Shield, title: "Data Privacy Compliant", desc: "GDPR and CCPA compliant lead generation", color: "#2E7BD4" },
     { icon: BarChart3, title: "Real-time Analytics", desc: "Track conversion rates and ROI", color: "#06B6D4" },
     { icon: Users, title: "Multi-channel Outreach", desc: "Email, phone, and social media campaigns", color: "#10B981" },
     { icon: Clock, title: "Automated Follow-ups", desc: "Never miss a follow-up opportunity", color: "#F59E0B" },
-    { icon: Brain, title: "AI Lead Scoring", desc: "Automatically rank leads by conversion probability", color: "#8B5CF6" },
+    { icon: Brain, title: "AI Lead Scoring", desc: "Automatically rank leads by conversion probability", color: "#2E7BD4" },
     { icon: Search, title: "Advanced Filters", desc: "Target by industry, company size, and role", color: "#06B6D4" },
     { icon: Mail, title: "Personalized Messaging", desc: "AI-generated personalized outreach", color: "#10B981" },
     { icon: Calendar, title: "Meeting Scheduler", desc: "Automated appointment booking", color: "#F59E0B" },
-    { icon: Database, title: "CRM Integration", desc: "Seamless integration with Salesforce, HubSpot", color: "#8B5CF6" },
+    { icon: Database, title: "CRM Integration", desc: "Seamless integration with Salesforce, HubSpot", color: "#2E7BD4" },
     { icon: TrendingUp, title: "Campaign Optimization", desc: "AI continuously improves performance", color: "#06B6D4" },
     { icon: Globe, title: "Global Database", desc: "Access to 500M+ business contacts", color: "#10B981" },
     { icon: Phone, title: "Call Intelligence", desc: "Track call outcomes and optimize scripts", color: "#F59E0B" }
@@ -140,14 +140,14 @@ const AILeadGeneration = () => {
   ];
 
   const stats = [
-    { icon: Target, value: "300%", label: "More Leads", color: "#8B5CF6" },
+    { icon: Target, value: "300%", label: "More Leads", color: "#2E7BD4" },
     { icon: TrendingUp, value: "60%", label: "Cost Reduction", color: "#06B6D4" },
     { icon: Users, value: "5K+", label: "Leads Generated", color: "#10B981" },
     { icon: Clock, value: "24/7", label: "Automation", color: "#F59E0B" }
   ];
 
   const fomoElements = [
-    { icon: Users, text: "2,000+ companies using Clario AI", color: "#8B5CF6" },
+    { icon: Users, text: "2,000+ companies using Vextria AI", color: "#2E7BD4" },
     { icon: TrendingUp, text: "Average 300% increase in leads", color: "#06B6D4" },
     { icon: Clock, text: "Get results in 30 days or less", color: "#10B981" },
     { icon: DollarSign, text: "60% reduction in acquisition costs", color: "#F59E0B" }
@@ -162,7 +162,7 @@ const AILeadGeneration = () => {
         {/* Futuristic Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
           <motion.div
-            className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-[#8B5CF6]/10 to-[#06B6D4]/10 rounded-full blur-3xl"
+            className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-[#2E7BD4]/10 to-[#06B6D4]/10 rounded-full blur-3xl"
             variants={floatingVariants}
             animate="animate"
           />
@@ -246,7 +246,7 @@ const AILeadGeneration = () => {
               >
                 <Button 
                   size="lg" 
-                  className="bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] hover:from-[#7C3AED] hover:to-[#0891B2] text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] hover:from-[#1557A0] hover:to-[#0891B2] text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   <Play className="w-5 h-5 mr-2" />
                   See How LeadFlow Did It
@@ -261,7 +261,7 @@ const AILeadGeneration = () => {
                 <Button 
                   variant="outline" 
                   size="lg" 
-                  className="border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
+                  className="border-2 border-[#2E7BD4] text-[#2E7BD4] hover:bg-[#2E7BD4] hover:text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
                 >
                   <ArrowRight className="w-5 h-5 mr-2" />
                   Start Your Lead Generation
@@ -285,14 +285,14 @@ const AILeadGeneration = () => {
             {/* Case Study Header */}
             <div className="text-center mb-16">
               <motion.div
-                className="inline-flex items-center space-x-3 bg-gradient-to-r from-[#8B5CF6]/10 to-[#06B6D4]/10 border border-[#8B5CF6]/20 rounded-full px-6 py-3 mb-6"
+                className="inline-flex items-center space-x-3 bg-gradient-to-r from-[#2E7BD4]/10 to-[#06B6D4]/10 border border-[#2E7BD4]/20 rounded-full px-6 py-3 mb-6"
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
               >
-                <Star className="w-5 h-5 text-[#8B5CF6]" />
-                <span className="text-lg text-[#8B5CF6] font-semibold">Success Story</span>
+                <Star className="w-5 h-5 text-[#2E7BD4]" />
+                <span className="text-lg text-[#2E7BD4] font-semibold">Success Story</span>
               </motion.div>
               
               <motion.h2 
@@ -302,7 +302,7 @@ const AILeadGeneration = () => {
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
               >
-                <span className="bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] bg-clip-text text-transparent">
                   LeadFlow Solutions
                 </span>
                 <br />
@@ -377,7 +377,7 @@ const AILeadGeneration = () => {
                     </div>
                     <div>
                       <h3 className="text-2xl font-bold text-green-600">The Solution</h3>
-                      <p className="text-green-600/80">How Clario AI helped</p>
+                      <p className="text-green-600/80">How Vextria AI helped</p>
                     </div>
                   </div>
                   
@@ -420,7 +420,7 @@ const AILeadGeneration = () => {
                 <div className="text-[#666666] font-medium">Cost Reduction</div>
               </div>
               <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 text-center border border-purple-200">
-                <div className="text-3xl font-bold text-purple-600 mb-2">45%</div>
+                <div className="text-3xl font-bold text-sky-700 mb-2">45%</div>
                 <div className="text-[#666666] font-medium">Higher Conversion</div>
               </div>
               <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-xl p-6 text-center border border-orange-200">
@@ -504,7 +504,7 @@ const AILeadGeneration = () => {
               >
                 <span className="text-[#1A1A1A]">How Our AI</span>
                 <br />
-                <span className="bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] bg-clip-text text-transparent">
                   Solves These Problems
                 </span>
               </motion.h2>
@@ -556,7 +556,7 @@ const AILeadGeneration = () => {
               >
                 <span className="text-[#1A1A1A]">Powerful Features</span>
                 <br />
-                <span className="bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] bg-clip-text text-transparent">
                   Built for Results
                 </span>
               </motion.h2>
@@ -608,7 +608,7 @@ const AILeadGeneration = () => {
               >
                 <span className="text-[#1A1A1A]">What Our</span>
                 <br />
-                <span className="bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] bg-clip-text text-transparent">
                   Customers Say
                 </span>
               </motion.h2>
@@ -625,7 +625,7 @@ const AILeadGeneration = () => {
                   viewport={{ once: true }}
                 >
                   <div className="flex items-center space-x-4 mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] rounded-full flex items-center justify-center text-white font-bold">
+                    <div className="w-12 h-12 bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] rounded-full flex items-center justify-center text-white font-bold">
                       {testimonial.avatar}
                     </div>
                     <div>
@@ -652,7 +652,7 @@ const AILeadGeneration = () => {
       </section>
 
       {/* FOMO CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-[#8B5CF6] to-[#06B6D4]">
+      <section className="py-20 bg-gradient-to-br from-[#2E7BD4] to-[#06B6D4]">
         <div className="container mx-auto px-4 sm:px-6">
           <motion.div 
             className="text-center max-w-4xl mx-auto"
@@ -677,7 +677,7 @@ const AILeadGeneration = () => {
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
                 <div className="text-3xl font-bold text-white mb-2">2,000+</div>
-                <div className="text-white/80">Companies using Clario</div>
+                <div className="text-white/80">Companies using Vextria</div>
               </div>
               <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
                 <div className="text-3xl font-bold text-white mb-2">300%</div>
@@ -703,7 +703,7 @@ const AILeadGeneration = () => {
               >
                 <Button 
                   size="lg" 
-                  className="bg-white text-[#8B5CF6] hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-white text-[#2E7BD4] hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   <Rocket className="w-5 h-5 mr-2" />
                   Start Lead Generation Now
@@ -718,7 +718,7 @@ const AILeadGeneration = () => {
                 <Button 
                   variant="outline" 
                   size="lg" 
-                  className="border-2 border-white text-white hover:bg-white hover:text-[#8B5CF6] px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
+                  className="border-2 border-white text-white hover:bg-white hover:text-[#2E7BD4] px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
                 >
                   <Phone className="w-5 h-5 mr-2" />
                   Book a Demo

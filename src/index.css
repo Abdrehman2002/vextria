@@ -14,7 +14,7 @@ section[id] {
   scroll-margin-top: 80px;
 }
 
-/* Clario AI Futuristic Design System - Dark Mode Default */
+/* Vextria AI Futuristic Design System - Dark Mode Default */
 
 @layer base {
   :root {
@@ -29,35 +29,35 @@ section[id] {
     --background: 0 0% 0%; /* #000000 */
     --foreground: 0 0% 100%; /* #FFFFFF */
 
-    /* 🔥 Primary Accent - Neon Purple (from Spline) */
-    --primary: 250 100% 69%; /* #7B61FF */
+    /* 🔥 Primary Accent - Ocean Blue */
+    --primary: 210 73% 39%; /* #1A60AB */
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 250 100% 69%;
-    --primary-light: 250 100% 72%;
+    --primary-glow: 210 73% 39%;
+    --primary-light: 210 65% 50%; /* #2E7BD4 */
 
-    /* 🔥 Secondary Palette - Purple Glows */
-    --secondary: 250 100% 71%; /* #A16BFF - Glow Purple */
+    /* 🔥 Secondary Palette - Blue Glows */
+    --secondary: 210 75% 56%; /* #4A9AE8 */
     --secondary-foreground: 0 0% 100%;
-    --violet-glow: 250 100% 71%; /* #A16BFF */
-    --electric-blue: 228 100% 70%; /* #627DFF - Light Beam Blue */
-    --cyber-purple: 249 100% 68%; /* #7E57FF - Particle Glow */
+    --violet-glow: 210 75% 56%; /* #4A9AE8 */
+    --electric-blue: 210 80% 62%; /* #5AADE8 */
+    --cyber-purple: 210 70% 45%; /* #1557A0 */
 
     /* Digital Accent Colors */
-    --accent: 250 100% 69%; /* #7B61FF */
+    --accent: 210 73% 39%; /* #1A60AB */
     --accent-foreground: 0 0% 100%;
 
     /* 🧊 Glass & Card Effects */
     --card: 240 26% 9%; /* #151521 */
     --card-foreground: 0 0% 100%;
     --glass: rgba(18, 18, 32, 0.65);
-    --glass-border: rgba(161, 107, 255, 0.2);
+    --glass-border: rgba(26, 96, 171, 0.3);
 
     /* Interactive States - Dark Mode */
     --muted: 240 17% 12%; /* #1F1F2E */
     --muted-foreground: 240 15% 65%; /* #A5A5C2 */
     --border: 240 17% 12%; /* #1F1F2E */
     --input: 240 26% 9%; /* #151521 */
-    --ring: 250 100% 69%; /* #7B61FF */
+    --ring: 210 73% 39%; /* #1A60AB */
 
     /* ✨ Functional UI Colors */
     --success: 168 100% 39%; /* #00C9A7 */
@@ -70,25 +70,25 @@ section[id] {
     --text-low: #A0A0B0;
     --text-muted: #777799;
 
-    /* 🌌 Shadows & Glows - Purple Theme */
-    --glow-primary: 0 0 25px rgba(161, 107, 255, 0.45);
-    --glow-secondary: 0 0 35px rgba(123, 97, 255, 0.45);
-    --glow-hover: 0 0 20px rgba(161, 107, 255, 0.6);
-    --glow-card: 0 0 50px rgba(140, 90, 255, 0.25);
-    --glow-ambient: 0 0 50px rgba(140, 90, 255, 0.25);
+    /* 🌌 Shadows & Glows - Blue Theme (layered: bright core + wide bloom) */
+    --glow-primary: 0 0 15px rgba(74, 154, 232, 0.7), 0 0 40px rgba(26, 96, 171, 0.4);
+    --glow-secondary: 0 0 18px rgba(74, 154, 232, 0.6), 0 0 50px rgba(26, 96, 171, 0.35);
+    --glow-hover: 0 0 18px rgba(74, 154, 232, 0.8), 0 0 45px rgba(26, 96, 171, 0.5);
+    --glow-card: 0 0 20px rgba(74, 154, 232, 0.4), 0 0 55px rgba(26, 96, 171, 0.3);
+    --glow-ambient: 0 0 20px rgba(74, 154, 232, 0.35), 0 0 60px rgba(26, 96, 171, 0.25);
 
     /* 🌈 Gradients - Purple Cosmic Theme */
-    --gradient-hero: radial-gradient(circle at center, rgba(58, 28, 112, 0.4), rgba(0, 0, 0, 1));
-    --gradient-cta: linear-gradient(135deg, #7B61FF 0%, #6B4CFF 100%);
-    --gradient-cta-hover: linear-gradient(135deg, #8A71FF 0%, #7B61FF 100%);
-    --gradient-purple-glow: radial-gradient(circle at center, rgba(161, 107, 255, 0.5), rgba(0, 0, 0, 1));
-    --gradient-electric: linear-gradient(90deg, #627DFF 0%, #7B61FF 100%);
+    --gradient-hero: radial-gradient(circle at center, rgba(74, 154, 232, 0.25), rgba(26, 96, 171, 0.15) 40%, rgba(0, 0, 0, 1));
+    --gradient-cta: linear-gradient(135deg, #2E7BD4 0%, #1A60AB 100%);
+    --gradient-cta-hover: linear-gradient(135deg, #4A9AE8 0%, #2E7BD4 100%);
+    --gradient-purple-glow: radial-gradient(circle at center, rgba(74, 154, 232, 0.45), rgba(26, 96, 171, 0.2) 50%, rgba(0, 0, 0, 1));
+    --gradient-electric: linear-gradient(90deg, #5AADE8 0%, #4A9AE8 50%, #1A60AB 100%);
 
     /* Shadows */
     --shadow-glow: var(--glow-primary);
     --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.5);
     --shadow-button: var(--glow-hover);
-    
+
     /* Animations removed */
 
     --radius: 0.5rem;
@@ -480,11 +480,11 @@ section[id] {
 
   /* Accent Color Classes - Purple Theme */
   .text-neon-purple {
-    color: #7B61FF;
+    color: #1A60AB;
   }
 
   .text-glow-purple {
-    color: #A16BFF;
+    color: #4A9AE8;
   }
 
   .text-electric-blue {
@@ -492,11 +492,11 @@ section[id] {
   }
 
   .bg-neon-purple {
-    background-color: #7B61FF;
+    background-color: #1A60AB;
   }
 
   .bg-glow-purple {
-    background-color: #A16BFF;
+    background-color: #4A9AE8;
   }
 
   .bg-electric-blue {
@@ -505,11 +505,11 @@ section[id] {
 
   /* Border Classes */
   .border-neon-purple {
-    border-color: #7B61FF;
+    border-color: #1A60AB;
   }
 
   .border-glow-purple {
-    border-color: #A16BFF;
+    border-color: #4A9AE8;
   }
 
   .border-electric-blue {
@@ -535,19 +535,19 @@ section[id] {
 
   /* 🎯 Button Styles - Neon Purple CTA */
   .btn-neon-purple {
-    background: linear-gradient(135deg, #7B61FF 0%, #6B4CFF 100%);
+    background: linear-gradient(135deg, #2E7BD4 0%, #1A60AB 100%);
     color: #FFFFFF;
     border-radius: 12px;
-    box-shadow: 0 0 20px rgba(123, 97, 255, 0.6);
+    box-shadow: 0 0 12px rgba(74, 154, 232, 0.7), 0 0 30px rgba(26, 96, 171, 0.4);
     font-family: 'Inter', system-ui, sans-serif;
     font-weight: 700;
     transition: all 0.3s ease;
-    text-shadow: 0 0 30px rgba(140, 90, 255, 0.35);
+    text-shadow: 0 0 20px rgba(74, 154, 232, 0.5);
   }
 
   .btn-neon-purple:hover {
-    background: linear-gradient(135deg, #8A71FF 0%, #7B61FF 100%);
-    box-shadow: 0 0 30px rgba(161, 107, 255, 0.8);
+    background: linear-gradient(135deg, #4A9AE8 0%, #2E7BD4 100%);
+    box-shadow: 0 0 18px rgba(74, 154, 232, 0.85), 0 0 45px rgba(26, 96, 171, 0.5);
     transform: translateY(-2px);
   }
 
@@ -573,24 +573,24 @@ section[id] {
     background: rgba(10, 10, 22, 0.6);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(161, 107, 255, 0.2);
-    box-shadow: 0 0 50px rgba(140, 90, 255, 0.25);
+    border: 1px solid rgba(74, 154, 232, 0.25);
+    box-shadow: 0 0 20px rgba(74, 154, 232, 0.3), 0 0 55px rgba(26, 96, 171, 0.25);
     border-radius: 16px;
   }
 
-  /* Text Glow Effects - Purple Theme */
+  /* Text Glow Effects - Blue Theme */
   .text-glow-purple {
-    color: #7B61FF;
-    text-shadow: 0 0 20px rgba(123, 97, 255, 0.5);
+    color: #4A9AE8;
+    text-shadow: 0 0 15px rgba(74, 154, 232, 0.7), 0 0 30px rgba(26, 96, 171, 0.4);
   }
 
   .text-glow-violet {
-    color: #A16BFF;
-    text-shadow: 0 0 25px rgba(161, 107, 255, 0.5);
+    color: #5AADE8;
+    text-shadow: 0 0 18px rgba(74, 154, 232, 0.75), 0 0 35px rgba(26, 96, 171, 0.4);
   }
 
   .text-glow-hero {
-    text-shadow: 0 0 30px rgba(140, 90, 255, 0.35);
+    text-shadow: 0 0 20px rgba(74, 154, 232, 0.6), 0 0 40px rgba(26, 96, 171, 0.35);
   }
 
   /* Fade-in Animation */
@@ -623,6 +623,57 @@ section[id] {
     animation: float 2s ease-in-out infinite alternate;
   }
 
+  /* Hero Component Animations */
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-up {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 1s ease-out forwards;
+  }
+
+  .animate-fade-up {
+    animation: fade-up 1.2s ease-out forwards;
+  }
+
+  /* Sound wave animation for live call */
+  @keyframes soundWave {
+    0%, 100% {
+      height: 6px;
+    }
+    50% {
+      height: 48px;
+    }
+  }
+
+  /* Pulsing glow on idle CTA button */
+  @keyframes ctaGlow {
+    0%, 100% {
+      box-shadow: 0 4px 24px rgba(107, 76, 255, 0.5);
+    }
+    50% {
+      box-shadow: 0 4px 36px rgba(107, 76, 255, 0.75);
+    }
+  }
+
   /* Performance Optimizations */
   * {
     -webkit-font-smoothing: antialiased;
@@ -646,13 +697,13 @@ section[id] {
   }
 
   /* Additional scroll performance optimizations */
-  * {
+  *:not(#hero):not(#hero *) {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0) scale(1.0, 1.0);
   }
 
   /* Optimize heavy elements */
-  section,
+  section:not(#hero),
   .hero-content,
   .spline-container {
     transform: translateZ(0);
@@ -670,7 +721,7 @@ section[id] {
   }
 
   /* CSS Containment for better rendering performance */
-  section:not([style*="zIndex: 60"]) {
+  section:not([style*="zIndex: 60"]):not(#hero) {
     contain: layout style paint;
   }
 
@@ -722,5 +773,28 @@ section[id] {
 
   .lenis.lenis-scrolling iframe {
     pointer-events: none;
+  }
+}
+
+@theme inline {
+  @keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    }
+  }
+  @keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    }
   }
 }

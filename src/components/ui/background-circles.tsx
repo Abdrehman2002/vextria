@@ -23,11 +23,11 @@ const COLOR_VARIANTS = {
     },
     secondary: {
         border: [
-            "border-violet-500/60",
+            "border-sky-600/60",
             "border-fuchsia-400/50",
             "border-slate-600/30",
         ],
-        gradient: "from-violet-500/30",
+        gradient: "from-sky-600/30",
     },
     tertiary: {
         border: [
@@ -39,11 +39,11 @@ const COLOR_VARIANTS = {
     },
     quaternary: {
         border: [
-            "border-purple-500/60",
+            "border-sky-600/60",
             "border-pink-400/50",
             "border-slate-600/30",
         ],
-        gradient: "from-purple-500/30",
+        gradient: "from-sky-600/30",
     },
     quinary: {
         border: [

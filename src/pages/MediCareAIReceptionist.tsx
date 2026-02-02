@@ -53,31 +53,31 @@ const MediCareAIReceptionist = () => {
   const painPoints = [
     { icon: AlertTriangle, title: "Missing Patient Calls After Hours", desc: "Losing 40% of potential patients when clinic is closed", color: "#EF4444" },
     { icon: DollarSign, title: "High No-Show Rates", desc: "30% of appointments are no-shows costing revenue", color: "#F59E0B" },
-    { icon: Clock, title: "Limited Reception Hours", desc: "Can't take patient calls 24/7", color: "#8B5CF6" },
+    { icon: Clock, title: "Limited Reception Hours", desc: "Can't take patient calls 24/7", color: "#2E7BD4" },
     { icon: Users, title: "Staff Overwhelmed", desc: "Receptionists can't handle call volume during busy periods", color: "#06B6D4" }
   ];
 
   const solutions = [
-    { icon: Brain, title: "24/7 Patient Call Handling", desc: "Never miss a patient call again", color: "#8B5CF6" },
+    { icon: Brain, title: "24/7 Patient Call Handling", desc: "Never miss a patient call again", color: "#2E7BD4" },
     { icon: Clock, title: "70% Fewer No-Shows", desc: "Smart appointment reminders and confirmations", color: "#06B6D4" },
     { icon: Stethoscope, title: "Healthcare-Trained AI", desc: "Understands medical terminology and procedures", color: "#10B981" },
     { icon: DollarSign, title: "40% More Appointments", desc: "Capture patient calls even when closed", color: "#F59E0B" },
-    { icon: Shield, title: "HIPAA Compliant", desc: "Secure patient data handling", color: "#8B5CF6" },
+    { icon: Shield, title: "HIPAA Compliant", desc: "Secure patient data handling", color: "#2E7BD4" },
     { icon: Users, title: "Multi-Call Handling", desc: "Handle multiple patient calls simultaneously", color: "#06B6D4" },
     { icon: HeartHandshake, title: "Professional Patient Care", desc: "Compassionate and helpful interactions", color: "#10B981" },
     { icon: UserCheck, title: "Instant Appointment Booking", desc: "Schedule appointments in real-time with calendar sync", color: "#F59E0B" }
   ];
 
   const features = [
-    { icon: Shield, title: "HIPAA Compliance", desc: "Full healthcare data protection and privacy", color: "#8B5CF6" },
+    { icon: Shield, title: "HIPAA Compliance", desc: "Full healthcare data protection and privacy", color: "#2E7BD4" },
     { icon: BarChart3, title: "Patient Analytics", desc: "Track appointment patterns and no-show rates", color: "#06B6D4" },
     { icon: Users, title: "Multi-Patient Handling", desc: "Handle multiple calls simultaneously", color: "#10B981" },
     { icon: Clock, title: "Appointment Reminders", desc: "Automated SMS and call reminders", color: "#F59E0B" },
-    { icon: Brain, title: "Medical Understanding", desc: "Trained on healthcare terminology", color: "#8B5CF6" },
+    { icon: Brain, title: "Medical Understanding", desc: "Trained on healthcare terminology", color: "#2E7BD4" },
     { icon: Phone, title: "Emergency Routing", desc: "Smart routing for urgent patient needs", color: "#06B6D4" },
     { icon: Calendar, title: "EHR Integration", desc: "Sync with Epic, Cerner, and other systems", color: "#10B981" },
     { icon: Mail, title: "Patient Communications", desc: "Automated confirmations and follow-ups", color: "#F59E0B" },
-    { icon: Database, title: "Insurance Verification", desc: "Real-time insurance verification", color: "#8B5CF6" },
+    { icon: Database, title: "Insurance Verification", desc: "Real-time insurance verification", color: "#2E7BD4" },
     { icon: TrendingUp, title: "Performance Optimization", desc: "AI continuously improves patient interactions", color: "#06B6D4" },
     { icon: Activity, title: "Vital Signs Scheduling", desc: "Schedule routine check-ups and screenings", color: "#10B981" },
     { icon: Wifi, title: "Telehealth Integration", desc: "Book virtual appointments seamlessly", color: "#F59E0B" }
@@ -105,14 +105,14 @@ const MediCareAIReceptionist = () => {
   ];
 
   const stats = [
-    { icon: Users, value: "50K+", label: "Patients Served", color: "#8B5CF6" },
+    { icon: Users, value: "50K+", label: "Patients Served", color: "#2E7BD4" },
     { icon: TrendingUp, value: "90%", label: "Faster Response", color: "#06B6D4" },
     { icon: Stethoscope, value: "500+", label: "Clinics Trust Us", color: "#10B981" },
     { icon: Clock, value: "24/7", label: "Availability", color: "#F59E0B" }
   ];
 
   const fomoElements = [
-    { icon: Users, text: "500+ healthcare practices using MediCare AI", color: "#8B5CF6" },
+    { icon: Users, text: "500+ healthcare practices using MediCare AI", color: "#2E7BD4" },
     { icon: TrendingUp, text: "Average 40% increase in appointments", color: "#06B6D4" },
     { icon: Clock, text: "See results in first week", color: "#10B981" },
     { icon: DollarSign, text: "70% reduction in no-shows", color: "#F59E0B" }

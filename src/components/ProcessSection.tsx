@@ -20,9 +20,9 @@ const ProcessSection = () => {
       icon: Search,
       title: "Analyze Operations",
       description: "We identify inefficiencies and uncover automation opportunities instantly.",
-      color: "#7B61FF",
-      gradient: "from-[#7B61FF] via-[#6B4CFF] to-[#5B3CFF]",
-      glowColor: "rgba(123, 97, 255, 0.5)",
+      color: "#1A60AB",
+      gradient: "from-[#1A60AB] via-[#1557A0] to-[#0F4E95]",
+      glowColor: "rgba(74, 154, 232, 0.6)",
       details: [
         "Deep-dive operational audit",
         "Identify bottlenecks & inefficiencies",
@@ -35,9 +35,9 @@ const ProcessSection = () => {
       icon: Settings,
       title: "Design Frameworks",
       description: "We create intelligent structures precisely tailored for operational excellence.",
-      color: "#8B5CF6",
-      gradient: "from-[#8B5CF6] via-[#7C3AED] to-[#6D28D9]",
-      glowColor: "rgba(139, 92, 246, 0.5)",
+      color: "#2E7BD4",
+      gradient: "from-[#2E7BD4] via-[#1557A0] to-[#0F4E95]",
+      glowColor: "rgba(74, 154, 232, 0.65)",
       details: [
         "Custom automation blueprints",
         "System integration mapping",
@@ -50,9 +50,9 @@ const ProcessSection = () => {
       icon: Zap,
       title: "Optimize Performance",
       description: "We launch, monitor, and continuously optimize for measurable growth.",
-      color: "#A16BFF",
-      gradient: "from-[#A16BFF] via-[#8B5CF6] to-[#7B61FF]",
-      glowColor: "rgba(161, 107, 255, 0.5)",
+      color: "#4A9AE8",
+      gradient: "from-[#4A9AE8] via-[#2E7BD4] to-[#1A60AB]",
+      glowColor: "rgba(74, 154, 232, 0.6)",
       details: [
         "Seamless deployment & launch",
         "Real-time performance monitoring",
@@ -67,37 +67,37 @@ const ProcessSection = () => {
       icon: TrendingUp,
       title: "Increased Efficiency",
       description: "Automate repetitive tasks to save hours and streamline daily operations effortlessly.",
-      color: "#7B61FF"
+      color: "#1A60AB"
     },
     {
       icon: Target,
       title: "Smarter Decisions",
       description: "Gain real-time insights and make data-backed choices with confidence.",
-      color: "#8B5CF6"
+      color: "#2E7BD4"
     },
     {
       icon: Link2,
       title: "Seamless Integration",
       description: "Connect every system you use from CRM to communication in one automated flow.",
-      color: "#A16BFF"
+      color: "#4A9AE8"
     },
     {
       icon: MessageSquare,
       title: "Consistent Communication",
       description: "Ensure every message, response, and client interaction stays fast and accurate.",
-      color: "#7B61FF"
+      color: "#1A60AB"
     },
     {
       icon: Layers,
       title: "Scalable Growth",
       description: "Systems that evolve with your business, no limits, just continuous improvements.",
-      color: "#8B5CF6"
+      color: "#2E7BD4"
     },
     {
       icon: Zap,
       title: "Cost Reduction",
       description: "Reduce manual labor and eliminate inefficiencies that drain time and budget.",
-      color: "#A16BFF"
+      color: "#4A9AE8"
     }
   ];
 
@@ -187,13 +187,13 @@ const ProcessSection = () => {
       onMouseMove={handleSectionMouseMove}
     >
       {/* Background matching FrameworksSection */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(123,97,255,0.08),transparent_50%)]"></div>
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(74, 154, 232, 0.2),transparent_50%)]"></div>
 
       {/* Animated Grid Pattern */}
       <div className="absolute inset-0 opacity-[0.04]" style={{
         backgroundImage: `
-          linear-gradient(to right, #7B61FF 1px, transparent 1px),
-          linear-gradient(to bottom, #7B61FF 1px, transparent 1px)
+          linear-gradient(to right, #1A60AB 1px, transparent 1px),
+          linear-gradient(to bottom, #1A60AB 1px, transparent 1px)
         `,
         backgroundSize: '60px 60px'
       }}></div>
@@ -202,7 +202,7 @@ const ProcessSection = () => {
       <div
         className="absolute inset-0 opacity-30 pointer-events-none transition-opacity duration-700"
         style={{
-          background: `radial-gradient(600px circle at ${sectionMousePosition.x}% ${sectionMousePosition.y}%, rgba(123, 97, 255, 0.15), transparent 60%)`
+          background: `radial-gradient(600px circle at ${sectionMousePosition.x}% ${sectionMousePosition.y}%, rgba(74, 154, 232, 0.35), transparent 60%)`
         }}
       ></div>
 
@@ -210,8 +210,8 @@ const ProcessSection = () => {
         {/* Header */}
         <div ref={headingRef} className="text-center mb-10 sm:mb-12 md:mb-16 lg:mb-20">
           <div className="inline-block mb-3 sm:mb-4 md:mb-6">
-            <span className="text-xs sm:text-sm font-semibold tracking-widest uppercase text-[#A16BFF] px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 rounded-full border border-[#7B61FF]/30 backdrop-blur-sm"
-              style={{ background: 'rgba(123, 97, 255, 0.1)' }}>
+            <span className="text-xs sm:text-sm font-semibold tracking-widest uppercase text-[#4A9AE8] px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 rounded-full border border-[#1A60AB]/30 backdrop-blur-sm"
+              style={{ background: 'rgba(74, 154, 232, 0.15)' }}>
               Process
             </span>
           </div>
@@ -219,8 +219,11 @@ const ProcessSection = () => {
             The blueprint.
           </h2>
           <h3 className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 md:mb-8 px-2">
-            <span className="bg-gradient-to-r from-[#7B61FF] via-[#8B5CF6] to-[#A16BFF] bg-clip-text text-transparent">
-              Behind every system.
+            <span className="relative inline-block">
+              <span className="bg-gradient-to-r from-[#5AADE8] via-[#A8D8F0] to-[#4A9AE8] bg-clip-text text-transparent">
+                Behind every system.
+              </span>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#5AADE8] via-[#A8D8F0] to-[#4A9AE8] blur-2xl opacity-40 -z-10"></div>
             </span>
           </h3>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed px-4 sm:px-6">
@@ -289,7 +292,7 @@ const ProcessSection = () => {
                 {/* Arrow indicator */}
                 {index < processSteps.length - 1 && (
                   <div className="hidden md:block absolute -right-4 top-1/2 transform -translate-y-1/2 z-20">
-                    <ArrowRight className="w-8 h-8 text-[#7B61FF] opacity-50" />
+                    <ArrowRight className="w-8 h-8 text-[#1A60AB] opacity-50" />
                   </div>
                 )}
               </div>
@@ -303,8 +306,11 @@ const ProcessSection = () => {
             Every benefit.
           </h2>
           <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-5 sm:mb-6 md:mb-8">
-            <span className="bg-gradient-to-r from-[#7B61FF] via-[#8B5CF6] to-[#A16BFF] bg-clip-text text-transparent">
+            <span className="relative inline-block">
+            <span className="bg-gradient-to-r from-[#5AADE8] via-[#A8D8F0] to-[#4A9AE8] bg-clip-text text-transparent">
               Backed by design.
+            </span>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#5AADE8] via-[#A8D8F0] to-[#4A9AE8] blur-2xl opacity-40 -z-10"></div>
             </span>
           </h3>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed px-4">
@@ -320,7 +326,7 @@ const ProcessSection = () => {
               key={benefit.title}
               className="benefit-card text-center p-4 sm:p-5"
             >
-              <benefit.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-[#7B61FF] mx-auto mb-2 sm:mb-2.5 md:mb-3" />
+              <benefit.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-[#1A60AB] mx-auto mb-2 sm:mb-2.5 md:mb-3" />
               <h3 className="text-base sm:text-lg font-bold text-white mb-1.5 sm:mb-2">
                 {benefit.title}
               </h3>

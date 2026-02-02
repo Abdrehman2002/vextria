@@ -49,8 +49,8 @@ const products = [
     benefits: ["Luxury appointment booking", "Treatment recommendations", "24/7 client service", "Increase repeat bookings"],
     painPoints: ["Missed booking opportunities", "Manual appointment management", "Inconsistent service quality", "Lost clients to competitors"],
     icon: Sparkles,
-    gradient: "from-[#8B5CF6] to-[#7C3AED]",
-    color: "#8B5CF6",
+    gradient: "from-[#2E7BD4] to-[#1557A0]",
+    color: "#2E7BD4",
     category: "Beauty AI",
     href: "/glamcare-ai-agent",
     widgetId: "6282c5c1-f2d2-453b-a033-569b4c45f6b2"

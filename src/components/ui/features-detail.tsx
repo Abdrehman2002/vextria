@@ -3,95 +3,132 @@
 import { useEffect, useRef, useState } from "react"
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import { Activity, DollarSign, Users, TrendingUp, BarChart3, Clock, Zap, CheckCircle, Play } from "lucide-react"
+import { Phone, DollarSign, Settings, Play } from "lucide-react"
 
 gsap.registerPlugin(ScrollTrigger)
 
 export default function FeaturesDetail() {
   const sectionRef = useRef<HTMLDivElement>(null)
-  const headingRef = useRef<HTMLHeadingElement>(null)
-  const subtitleRef = useRef<HTMLParagraphElement>(null)
-  const dashboardRef = useRef<HTMLDivElement>(null)
-  const statsRef = useRef<HTMLDivElement>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
   const [isPlaying, setIsPlaying] = useState(false)
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Simplified animation
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 80%",
-          toggleActions: "play none none none",
-          once: true
+      gsap.fromTo(
+        ".fd-header",
+        { y: 24, opacity: 0 },
+        {
+          y: 0, opacity: 1, duration: 0.7, ease: "power3.out",
+          scrollTrigger: { trigger: sectionRef.current, start: "top 85%", once: true },
         }
-      })
-
-      tl.fromTo(
-        headingRef.current,
-        { y: 40, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.6, ease: "power2.out" }
       )
-        .fromTo(
-          subtitleRef.current,
-          { y: 20, opacity: 0 },
-          { y: 0, opacity: 1, duration: 0.6, ease: "power2.out" },
-          "-=0.3"
-        )
-        .fromTo(
-          dashboardRef.current,
-          { y: 40, opacity: 0 },
-          { y: 0, opacity: 1, duration: 0.8, ease: "power2.out" },
-          "-=0.3"
-        )
-        .fromTo(
-          ".stat-card",
-          { y: 30, opacity: 0 },
-          {
-            y: 0,
-            opacity: 1,
-            duration: 0.5,
-            stagger: 0.1,
-            ease: "power2.out",
-          },
-          "-=0.4"
-        )
-    })
+      gsap.fromTo(
+        ".fd-video",
+        { y: 32, opacity: 0 },
+        {
+          y: 0, opacity: 1, duration: 0.7, ease: "power2.out",
+          scrollTrigger: { trigger: ".fd-video", start: "top 78%", once: true },
+        }
+      )
+      gsap.fromTo(
+        ".fd-feature",
+        { y: 24, opacity: 0 },
+        {
+          y: 0, opacity: 1, duration: 0.6, ease: "power2.out", stagger: 0.14,
+          scrollTrigger: { trigger: ".fd-features", start: "top 78%", once: true },
+        }
+      )
+    }, sectionRef)
 
     return () => ctx.revert()
   }, [])
 
   return (
-    <div ref={sectionRef} className="py-12 sm:py-16 md:py-20 lg:py-24 bg-gradient-to-b from-black via-[#0A0510] to-black relative overflow-hidden">
-      {/* Background Effects */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(123,97,255,0.08),transparent_50%)]"></div>
+    <div ref={sectionRef} className="relative w-full bg-black overflow-hidden" style={{ paddingTop: "96px", paddingBottom: "96px" }}>
+      {/* Grid BG */}
+      <div
+        className="absolute inset-0 opacity-[0.12] pointer-events-none"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, #1F242C 1px, transparent 1px), linear-gradient(to bottom, #1F242C 1px, transparent 1px)",
+          backgroundSize: "6rem 5rem",
+          maskImage:
+            "radial-gradient(ellipse 70% 60% at 50% 50%, #000 50%, transparent 100%)",
+          WebkitMaskImage:
+            "radial-gradient(ellipse 70% 60% at 50% 50%, #000 50%, transparent 100%)",
+        }}
+      />
 
-      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-16 max-w-4xl mx-auto px-2 sm:px-4">
-          <h2 ref={headingRef} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-white mb-3 sm:mb-4 md:mb-6 leading-tight">
-            The command center.
-            <br className="hidden sm:block" />
-            <span className="bg-gradient-to-r from-[#7B61FF] to-[#8B5CF6] bg-clip-text text-transparent">
-              Your business, made visible.
-            </span>
+        <div className="fd-header text-center" style={{ marginBottom: "64px" }}>
+          <h2
+            className="text-white"
+            style={{
+              fontSize: "3rem",
+              fontWeight: 600,
+              lineHeight: 1.1,
+              letterSpacing: "-0.02em",
+              marginBottom: "16px",
+            }}
+          >
+            Dashboard?
           </h2>
-          <p ref={subtitleRef} className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed">
-            A unified dashboard that gives you real-time visibility into calls, messages,
-            automations, and performance, so every decision is data-driven.
+          <h3
+            style={{
+              fontSize: "2.5rem",
+              fontWeight: 700,
+              lineHeight: 1.1,
+              marginBottom: "16px",
+            }}
+          >
+            <span className="relative inline-block">
+              <span className="bg-gradient-to-r from-[#5AADE8] via-[#A8D8F0] to-[#4A9AE8] bg-clip-text text-transparent">
+                Everything your shop needs — in one place.
+              </span>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#5AADE8] via-[#A8D8F0] to-[#4A9AE8] blur-2xl opacity-40 -z-10"></div>
+            </span>
+          </h3>
+          <p
+            className="mx-auto"
+            style={{
+              fontSize: "1.125rem",
+              fontWeight: 400,
+              lineHeight: 1.6,
+              color: "#9CA3AF",
+              maxWidth: "640px",
+            }}
+          >
+            See every call, every booked job, and every missed opportunity — in real time.
           </p>
         </div>
 
-        {/* Main Dashboard */}
-        <div ref={dashboardRef} className="max-w-6xl mx-auto mb-8 sm:mb-10 md:mb-12 lg:mb-16 px-2 sm:px-0">
-          <div className="relative bg-black/60 backdrop-blur-xl rounded-xl sm:rounded-2xl md:rounded-3xl border-2 sm:border-3 md:border-4 border-[#7B61FF] overflow-hidden"
-               style={{ boxShadow: '0 0 60px rgba(123, 97, 255, 0.4), 0 0 100px rgba(123, 97, 255, 0.2)' }}>
-
-            {/* Dashboard Video */}
+        {/* Video */}
+        <div className="fd-video" style={{ marginBottom: "64px" }}>
+          {/* Label above video */}
+          <p
+            style={{
+              fontSize: "14px",
+              fontWeight: 600,
+              letterSpacing: "0.15em",
+              color: "#4A9AE8",
+              textTransform: "uppercase",
+              marginBottom: "16px",
+            }}
+          >
+            What your front desk sees
+          </p>
+          <div
+            className="relative overflow-hidden"
+            style={{
+              borderRadius: "12px",
+              border: "1px solid rgba(255,255,255,0.08)",
+              background: "#0a0a0a",
+            }}
+          >
             <video
               ref={videoRef}
-              className="w-full h-auto"
+              className="w-full h-auto block"
               controls
               poster="/dashboard.png"
               onPlay={() => setIsPlaying(true)}
@@ -102,65 +139,115 @@ export default function FeaturesDetail() {
               Your browser does not support the video tag.
             </video>
 
-            {/* Play Button Overlay */}
+            {/* Play overlay */}
             {!isPlaying && (
               <button
                 onClick={() => {
                   if (videoRef.current) {
-                    videoRef.current.play();
-                    setIsPlaying(true);
+                    videoRef.current.play()
+                    setIsPlaying(true)
                   }
                 }}
-                className="absolute inset-0 flex items-center justify-center group cursor-pointer"
+                className="absolute inset-0 flex items-center justify-center cursor-pointer"
                 aria-label="Play video"
               >
-                <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 bg-[#7B61FF]/90 hover:bg-[#7B61FF] rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110"
-                     style={{ boxShadow: '0 0 40px rgba(123, 97, 255, 0.6)' }}>
-                  <Play className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white ml-1" fill="white" />
+                <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.3)" }} />
+                <div
+                  className="relative flex items-center justify-center transition-transform duration-300 hover:scale-110"
+                  style={{
+                    width: "64px",
+                    height: "64px",
+                    borderRadius: "50%",
+                    background: "linear-gradient(135deg, #4A9AE8, #1A60AB)",
+                    boxShadow: "0 0 15px rgba(74, 154, 232, 0.8), 0 0 35px rgba(26, 96, 171, 0.45)",
+                  }}
+                >
+                  <Play className="text-white ml-0.5" style={{ width: "24px", height: "24px" }} fill="white" />
                 </div>
               </button>
             )}
-
-            {/* Glow overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#7B61FF]/10 via-transparent to-transparent pointer-events-none"></div>
           </div>
+          {/* Caption below video */}
+          <p
+            style={{
+              fontSize: "15px",
+              fontWeight: 400,
+              lineHeight: 1.7,
+              color: "#9CA3AF",
+              marginTop: "16px",
+            }}
+          >
+            Call activity, bookings, and revenue impact — updated live.
+          </p>
         </div>
 
-        {/* Bottom Features - Simplified */}
-        <div ref={statsRef} className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 md:gap-10 lg:gap-12 max-w-5xl mx-auto px-2 sm:px-4">
-          {/* Unified Intelligence */}
-          <div className="stat-card text-center px-3 sm:px-4">
-            <Zap className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-[#7B61FF] mx-auto mb-2 sm:mb-2.5 md:mb-3" />
-            <h4 className="text-sm sm:text-base md:text-lg font-bold text-white mb-1.5 sm:mb-2">
-              Unified Intelligence
-            </h4>
-            <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
-              See every AI agent, workflow, and data source in one seamless interface.
-            </p>
-          </div>
-
-          {/* Real-Time Insights */}
-          <div className="stat-card text-center px-3 sm:px-4">
-            <Clock className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-[#7B61FF] mx-auto mb-2 sm:mb-2.5 md:mb-3" />
-            <h4 className="text-sm sm:text-base md:text-lg font-bold text-white mb-1.5 sm:mb-2">
-              Real-Time Insights
-            </h4>
-            <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
-              Get instant performance metrics, response rates, and automation impact updated live.
-            </p>
-          </div>
-
-          {/* Total Control */}
-          <div className="stat-card text-center px-3 sm:px-4">
-            <CheckCircle className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-[#7B61FF] mx-auto mb-2 sm:mb-2.5 md:mb-3" />
-            <h4 className="text-sm sm:text-base md:text-lg font-bold text-white mb-1.5 sm:mb-2">
-              Total Control
-            </h4>
-            <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
-              Adjust, pause, or optimize automations instantly, all from your central dashboard.
-            </p>
-          </div>
+        {/* Bottom features — 3 columns, no cards */}
+        <div className="fd-features grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-12">
+          {[
+            {
+              Icon: Phone,
+              title: "Call Visibility",
+              description: "See every answered call, missed call, and booked appointment — all in one place.",
+            },
+            {
+              Icon: DollarSign,
+              title: "Revenue Clarity",
+              description: "Know exactly how many jobs were captured and how much revenue was recovered.",
+            },
+            {
+              Icon: Settings,
+              title: "Simple Control",
+              description: "Pause, adjust, or update call handling anytime — without touching your phone system.",
+            },
+          ].map((feature, i) => {
+            const Icon = feature.Icon
+            return (
+              <div key={i} className="fd-feature">
+                <Icon
+                  style={{ width: "20px", height: "20px", color: "#1A60AB", marginBottom: "16px" }}
+                />
+                <h4
+                  style={{
+                    fontSize: "1.25rem",
+                    fontWeight: 500,
+                    lineHeight: 1.3,
+                    color: "#E5E7EB",
+                    marginBottom: "8px",
+                  }}
+                >
+                  {feature.title}
+                </h4>
+                <p
+                  style={{
+                    fontSize: "15px",
+                    fontWeight: 400,
+                    lineHeight: 1.7,
+                    color: "#9CA3AF",
+                  }}
+                >
+                  {feature.description}
+                </p>
+              </div>
+            )
+          })}
         </div>
+
+        {/* Closing line */}
+        <p
+          className="text-center"
+          style={{
+            fontSize: "16px",
+            fontWeight: 500,
+            lineHeight: 1.6,
+            color: "#CBD5E1",
+            marginTop: "64px",
+            maxWidth: "560px",
+            marginLeft: "auto",
+            marginRight: "auto",
+          }}
+        >
+          You stay focused on the shop floor. Vextria handles the calls and keeps you informed.
+        </p>
       </div>
     </div>
   )

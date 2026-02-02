@@ -54,31 +54,31 @@ const AIChatbots = () => {
   const painPoints = [
     { icon: AlertTriangle, title: "Customers Abandoning Due to Wait Times", desc: "Average 15-minute wait times causing 40% drop-off", color: "#EF4444" },
     { icon: DollarSign, title: "Losing $50K Monthly in Missed Sales", desc: "Slow responses = lost opportunities", color: "#F59E0B" },
-    { icon: Users, title: "Support Team Overwhelmed", desc: "80% of inquiries are repetitive questions", color: "#8B5CF6" },
+    { icon: Users, title: "Support Team Overwhelmed", desc: "80% of inquiries are repetitive questions", color: "#2E7BD4" },
     { icon: Clock, title: "24/7 Support Impossible", desc: "Human teams can't provide round-the-clock service", color: "#06B6D4" }
   ];
 
   const solutions = [
-    { icon: Brain, title: "Instant Response System", desc: "2.3-second response time vs 15-minute human wait", color: "#8B5CF6" },
+    { icon: Brain, title: "Instant Response System", desc: "2.3-second response time vs 15-minute human wait", color: "#2E7BD4" },
     { icon: Clock, title: "24/7 Availability", desc: "Never lose a customer due to time zones", color: "#06B6D4" },
     { icon: TrendingUp, title: "35% Conversion Increase", desc: "Turn visitors into customers instantly", color: "#10B981" },
     { icon: Shield, title: "60% Cost Reduction", desc: "Automate repetitive tasks and scale efficiently", color: "#F59E0B" },
-    { icon: Globe, title: "Multi-Language Support", desc: "Handle customers in 50+ languages", color: "#8B5CF6" },
+    { icon: Globe, title: "Multi-Language Support", desc: "Handle customers in 50+ languages", color: "#2E7BD4" },
     { icon: Users, title: "Human Handoff", desc: "Seamlessly transfer to human agents when needed", color: "#06B6D4" },
     { icon: BarChart3, title: "Conversation Analytics", desc: "Track and optimize every interaction", color: "#10B981" },
     { icon: Database, title: "Knowledge Base Integration", desc: "Access to your complete product database", color: "#F59E0B" }
   ];
 
   const features = [
-    { icon: MessageSquare, title: "Multi-Channel Support", desc: "WhatsApp, Website, Email, Phone", color: "#8B5CF6" },
+    { icon: MessageSquare, title: "Multi-Channel Support", desc: "WhatsApp, Website, Email, Phone", color: "#2E7BD4" },
     { icon: Brain, title: "AI-Powered Responses", desc: "Understands context and provides accurate answers", color: "#06B6D4" },
     { icon: Shield, title: "Enterprise Security", desc: "SOC 2 compliant with end-to-end encryption", color: "#10B981" },
     { icon: BarChart3, title: "Real-time Analytics", desc: "Track performance and optimize continuously", color: "#F59E0B" },
-    { icon: Globe, title: "Multi-Language Support", desc: "Handle customers in 50+ languages", color: "#8B5CF6" },
+    { icon: Globe, title: "Multi-Language Support", desc: "Handle customers in 50+ languages", color: "#2E7BD4" },
     { icon: Users, title: "Human Handoff", desc: "Seamlessly transfer to human agents when needed", color: "#06B6D4" },
     { icon: Database, title: "Knowledge Base Integration", desc: "Access to your complete product database", color: "#10B981" },
     { icon: Calendar, title: "Appointment Booking", desc: "Automated scheduling and calendar integration", color: "#F59E0B" },
-    { icon: Mail, title: "Email Integration", desc: "Send follow-up emails and confirmations", color: "#8B5CF6" },
+    { icon: Mail, title: "Email Integration", desc: "Send follow-up emails and confirmations", color: "#2E7BD4" },
     { icon: TrendingUp, title: "Sentiment Analysis", desc: "Understand customer mood and satisfaction", color: "#06B6D4" },
     { icon: Activity, title: "Conversation Flow", desc: "Design complex conversation paths", color: "#10B981" },
     { icon: Timer, title: "Response Time Optimization", desc: "Continuously improve response speeds", color: "#F59E0B" }
@@ -90,7 +90,7 @@ const AIChatbots = () => {
       role: "CEO", 
       company: "TechFlow Solutions", 
       rating: 5, 
-      quote: "We were losing $50K/month in missed sales. After implementing Clario's AI chatbot, we now generate $150K/month in additional revenue. The ROI was immediate.", 
+      quote: "We were losing $50K/month in missed sales. After implementing Vextria's AI chatbot, we now generate $150K/month in additional revenue. The ROI was immediate.", 
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
       results: "+300% ROI in 3 months"
     },
@@ -106,14 +106,14 @@ const AIChatbots = () => {
   ];
 
   const stats = [
-    { icon: MessageSquare, value: "1M+", label: "Conversations", color: "#8B5CF6" },
+    { icon: MessageSquare, value: "1M+", label: "Conversations", color: "#2E7BD4" },
     { icon: TrendingUp, value: "70%", label: "Auto Resolution", color: "#06B6D4" },
     { icon: Globe, value: "24/7", label: "Availability", color: "#10B981" },
     { icon: Clock, value: "2.3s", label: "Response Time", color: "#F59E0B" }
   ];
 
   const fomoElements = [
-    { icon: Users, text: "500+ companies already using Clario AI", color: "#8B5CF6" },
+    { icon: Users, text: "500+ companies already using Vextria AI", color: "#2E7BD4" },
     { icon: TrendingUp, text: "Average 35% increase in conversions", color: "#06B6D4" },
     { icon: Clock, text: "Get results in 30 days or less", color: "#10B981" },
     { icon: DollarSign, text: "ROI within first month", color: "#F59E0B" }
@@ -127,7 +127,7 @@ const AIChatbots = () => {
       <section className="relative pt-32 pb-20 overflow-hidden">
         {/* Futuristic Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-[#8B5CF6]/10 to-[#06B6D4]/10 rounded-full blur-3xl" />
+          <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-[#2E7BD4]/10 to-[#06B6D4]/10 rounded-full blur-3xl" />
           <div className="absolute bottom-20 right-20 w-64 h-64 bg-gradient-to-r from-[#C4B5FD]/15 to-[#A5F3FC]/15 rounded-full blur-2xl" />
         </div>
 
@@ -173,7 +173,7 @@ const AIChatbots = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
               <Button 
                 size="lg" 
-                className="bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] hover:from-[#7C3AED] hover:to-[#0891B2] text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] hover:from-[#1557A0] hover:to-[#0891B2] text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <Play className="w-5 h-5 mr-2" />
                 See How TechFlow Did It
@@ -182,7 +182,7 @@ const AIChatbots = () => {
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
+                className="border-2 border-[#2E7BD4] text-[#2E7BD4] hover:bg-[#2E7BD4] hover:text-white px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
               >
                 <ArrowRight className="w-5 h-5 mr-2" />
                 Start Your Case Study
@@ -198,13 +198,13 @@ const AIChatbots = () => {
           <div className="max-w-6xl mx-auto">
             {/* Case Study Header */}
             <div className="text-center mb-16">
-              <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-[#8B5CF6]/10 to-[#06B6D4]/10 border border-[#8B5CF6]/20 rounded-full px-6 py-3 mb-6">
-                <Star className="w-5 h-5 text-[#8B5CF6]" />
-                <span className="text-lg text-[#8B5CF6] font-semibold">Success Story</span>
+              <div className="inline-flex items-center space-x-3 bg-gradient-to-r from-[#2E7BD4]/10 to-[#06B6D4]/10 border border-[#2E7BD4]/20 rounded-full px-6 py-3 mb-6">
+                <Star className="w-5 h-5 text-[#2E7BD4]" />
+                <span className="text-lg text-[#2E7BD4] font-semibold">Success Story</span>
               </div>
               
               <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-                <span className="bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] bg-clip-text text-transparent">
                   TechFlow Solutions
                 </span>
                 <br />
@@ -243,7 +243,7 @@ const AIChatbots = () => {
                   
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Clock className="w-6 h-6 text-purple-600" />
+                      <Clock className="w-6 h-6 text-sky-700" />
                     </div>
                     <div>
                       <h4 className="text-xl font-semibold mb-2">24/7 Support Impossible</h4>
@@ -309,7 +309,7 @@ const AIChatbots = () => {
                     </div>
                     <div>
                       <h4 className="text-xl font-semibold mb-2">AI-Powered Chatbot</h4>
-                      <p className="text-muted-foreground">Implemented Clario's AI chatbot that handles 70% of inquiries automatically with human-like responses.</p>
+                      <p className="text-muted-foreground">Implemented Vextria's AI chatbot that handles 70% of inquiries automatically with human-like responses.</p>
                     </div>
                   </div>
                   
@@ -325,7 +325,7 @@ const AIChatbots = () => {
                   
                   <div className="flex items-start space-x-4">
                     <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <TrendingUp className="w-6 h-6 text-purple-600" />
+                      <TrendingUp className="w-6 h-6 text-sky-700" />
                     </div>
                     <div>
                       <h4 className="text-xl font-semibold mb-2">Conversion Optimization</h4>
@@ -373,7 +373,7 @@ const AIChatbots = () => {
         <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] bg-clip-text text-transparent">
                 How We Solve It
               </span>
             </h2>
@@ -406,7 +406,7 @@ const AIChatbots = () => {
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
               <span className="text-foreground">Real Results,</span>
               <br />
-              <span className="bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] bg-clip-text text-transparent">
                 Real Companies
               </span>
             </h2>
@@ -427,7 +427,7 @@ const AIChatbots = () => {
                         className="w-full h-full object-cover"
                       />
                     ) : (
-                      <div className="w-full h-full bg-gradient-to-r from-[#8B5CF6] to-[#06B6D4] flex items-center justify-center text-white font-bold text-xl">
+                      <div className="w-full h-full bg-gradient-to-r from-[#2E7BD4] to-[#06B6D4] flex items-center justify-center text-white font-bold text-xl">
                         {testimonial.avatar}
                       </div>
                     )}
@@ -460,7 +460,7 @@ const AIChatbots = () => {
       </section>
 
       {/* FOMO CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-[#8B5CF6] to-[#06B6D4]">
+      <section className="py-20 bg-gradient-to-br from-[#2E7BD4] to-[#06B6D4]">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
@@ -479,7 +479,7 @@ const AIChatbots = () => {
             <div className="grid md:grid-cols-3 gap-6 mb-12">
               <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
                 <div className="text-3xl font-bold text-white mb-2">500+</div>
-                <div className="text-white/80">Companies already using Clario</div>
+                <div className="text-white/80">Companies already using Vextria</div>
               </div>
               <div className="bg-white/10 rounded-xl p-6 backdrop-blur-sm">
                 <div className="text-3xl font-bold text-white mb-2">35%</div>
@@ -494,7 +494,7 @@ const AIChatbots = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button 
                 size="lg" 
-                className="bg-white text-[#8B5CF6] hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-white text-[#2E7BD4] hover:bg-gray-100 px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <Rocket className="w-5 h-5 mr-2" />
                 Start Your Case Study Now
@@ -503,7 +503,7 @@ const AIChatbots = () => {
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="border-2 border-white text-white hover:bg-white hover:text-[#8B5CF6] px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
+                className="border-2 border-white text-white hover:bg-white hover:text-[#2E7BD4] px-8 py-4 text-lg font-semibold rounded-xl transition-all duration-300"
               >
                 <Phone className="w-5 h-5 mr-2" />
                 Book a Demo
