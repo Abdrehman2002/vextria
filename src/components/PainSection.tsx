@@ -126,9 +126,9 @@ const PainSection = ({ onCallClick, callStatus }: PainSectionProps) => {
                     key={idx}
                     className="pain-item flex items-center gap-4 py-3"
                   >
-                    <Icon className="w-5 h-5 flex-shrink-0 text-[#1A60AB]" />
+                    <Icon className="w-6 h-6 sm:w-7 sm:h-7 flex-shrink-0 text-[#1A60AB]" />
 
-                    <span className="text-base sm:text-lg leading-relaxed">
+                    <span className="text-lg sm:text-xl md:text-2xl leading-relaxed">
                       <span className="font-semibold text-zinc-200">{point.lead}</span>{" "}
                       <span className="text-zinc-400">{point.rest}</span>
                     </span>
@@ -138,7 +138,7 @@ const PainSection = ({ onCallClick, callStatus }: PainSectionProps) => {
             </ul>
 
             <div className="mt-5">
-              <p className="text-sm sm:text-base leading-relaxed text-zinc-600">
+              <p className="text-base sm:text-lg md:text-xl leading-relaxed text-zinc-600">
                 <span className="font-semibold text-zinc-400">Most auto shops miss 20–40%</span> of inbound calls.
               </p>
             </div>

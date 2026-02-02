@@ -167,30 +167,6 @@ export default function FeaturesDetail() {
               </button>
             )}
           </div>
-          {/* Caption below video */}
-          <p
-            style={{
-              fontSize: "15px",
-              fontWeight: 400,
-              lineHeight: 1.7,
-              color: "#9CA3AF",
-              marginTop: "16px",
-              marginBottom: "8px",
-            }}
-          >
-            Call activity, bookings, and revenue impact — updated live.
-          </p>
-          <p
-            style={{
-              fontSize: "15px",
-              fontWeight: 500,
-              lineHeight: 1.7,
-              color: "#CBD5E1",
-              marginTop: "8px",
-            }}
-          >
-            Know exactly how many jobs were captured — and how much revenue was recovered.
-          </p>
         </div>
 
         {/* Bottom features — 3 columns, no cards */}
@@ -244,22 +220,6 @@ export default function FeaturesDetail() {
           })}
         </div>
 
-        {/* Closing line */}
-        <p
-          className="text-center"
-          style={{
-            fontSize: "16px",
-            fontWeight: 500,
-            lineHeight: 1.6,
-            color: "#CBD5E1",
-            marginTop: "64px",
-            maxWidth: "560px",
-            marginLeft: "auto",
-            marginRight: "auto",
-          }}
-        >
-          You stay focused on the shop floor. Vextria handles the calls and keeps you informed.
-        </p>
       </div>
     </div>
   )

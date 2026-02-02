@@ -29,10 +29,10 @@ const Footer = () => {
 
   const solutions = [
     { name: "Home", href: "#hero" },
-    { name: "Features", href: "#features" },
-    { name: "Process", href: "#process" },
-    { name: "Frameworks", href: "#frameworks" },
-    { name: "Try Agent", href: "#try-agent" },
+    { name: "Problem", href: "#pain" },
+    { name: "How It Works", href: "#how-it-works" },
+    { name: "Dashboard", href: "#features" },
+    { name: "Add-Ons", href: "#frameworks" },
     { name: "FAQ", href: "#faq" }
   ];
 
@@ -88,11 +88,11 @@ const Footer = () => {
                 transition={{ duration: 0.6 }}
               />
               <span className="text-white text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#5AADE8] via-[#A8D8F0] to-[#4A9AE8] bg-clip-text text-transparent">
-                Vextria AI
+                Vextria
               </span>
             </div>
             <p className="text-xs sm:text-sm text-gray-400 max-w-xs leading-relaxed">
-              Building the AI infrastructure that powers tomorrow's businesses.
+              Never miss a call. Never miss a job. Auto repair shop phone automation that works 24/7.
             </p>
           </motion.div>
 
@@ -145,12 +145,12 @@ const Footer = () => {
               />
             </h4>
             <motion.a
-              href="mailto:George@clario.ai"
+              href="mailto:vextriaai@gmail.com"
               className="group flex items-center gap-2 text-xs md:text-sm text-gray-400 hover:text-[#2E7BD4] transition-colors"
               whileHover={{ x: 5 }}
             >
               <Mail size={14} className="text-[#1A60AB] md:w-4 md:h-4" />
-              <span className="truncate">George@clario.ai</span>
+              <span className="truncate">vextriaai@gmail.com</span>
             </motion.a>
 
             {/* CTA Button */}
@@ -199,7 +199,7 @@ const Footer = () => {
         >
           {/* Copyright */}
           <motion.p variants={itemVariants} className="text-xs text-gray-500">
-            © {new Date().getFullYear()} Vextria AI. All rights reserved.
+            © {new Date().getFullYear()} Vextria. All rights reserved.
           </motion.p>
 
           {/* Social Icons */}
@@ -233,7 +233,7 @@ const Footer = () => {
             </motion.a>
 
             <motion.a
-              href="mailto:George@clario.ai"
+              href="mailto:vextriaai@gmail.com"
               aria-label="Email"
               className="w-9 h-9 md:w-10 md:h-10 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#2E7BD4] hover:border-[#2E7BD4]/50 transition-all duration-300"
               whileHover={{ scale: 1.1, y: -2 }}
