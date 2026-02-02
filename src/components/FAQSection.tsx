@@ -14,32 +14,12 @@ const faqs = [
     answer: "No. Vextria is there to support your front desk, not replace it. It covers busy hours, overflow calls, lunch breaks, and after-hours calls. Your team stays focused on customers already in the shop."
   },
   {
-    question: "What happens when a customer calls during a rush?",
-    answer: "The call is answered immediately — no ringing, no voicemail. The calling system gathers the details, schedules the appointment if needed, and passes everything to your team so you don't lose the job."
-  },
-  {
-    question: "Can it schedule oil changes, brake jobs, or inspections?",
-    answer: "Yes. Vextria can book common services like oil changes, brake inspections, diagnostics, and more — based on the availability and rules you set."
-  },
-  {
     question: "What happens to after-hours calls?",
     answer: "They no longer go to voicemail. Customers calling at night or on weekends can still get answers and request service, and your shop follows up the next business day with everything already captured."
   },
   {
-    question: "What information do I get after a call?",
-    answer: "You'll see: Who called, What service they needed, Whether an appointment was booked, When to follow up. Nothing gets lost or forgotten."
-  },
-  {
     question: "What if I already use shop software or a scheduling system?",
     answer: "That's fine. Vextria works with what your shop already uses and sends call details and appointment info to your team without forcing you to change systems."
-  },
-  {
-    question: "What kind of calls does this handle best?",
-    answer: "Vextria handles: New customer calls, Service inquiries, Appointment scheduling, Overflow during busy shop hours, Calls that usually go to voicemail."
-  },
-  {
-    question: "What kind of calls should still go to my team?",
-    answer: "Your team can still handle: Complex diagnostics conversations, Long customer discussions, Existing customer follow-ups. Vextria handles the calls that usually get missed."
   },
   {
     question: "Will customers think they're talking to a robot?",
@@ -52,10 +32,6 @@ const faqs = [
   {
     question: "Is it hard to set up or manage?",
     answer: "No. Most shops are up and running quickly, and you can review calls, bookings, and activity from one simple dashboard."
-  },
-  {
-    question: "Can I turn it off or adjust how it works?",
-    answer: "Yes. You're always in control. You can pause, update, or adjust call handling anytime."
   },
   {
     question: "How does this help my shop make more money?",

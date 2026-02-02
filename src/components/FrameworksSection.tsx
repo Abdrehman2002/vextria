@@ -129,6 +129,11 @@ export function FrameworksSection() {
       ></div>
 
       <div className="container mx-auto px-4 sm:px-6 md:px-8 relative z-10">
+        {/* Transition Line */}
+        <p className="text-center text-sm sm:text-base md:text-lg text-gray-400 mb-6 sm:mb-8 md:mb-10">
+          Once calls are handled, these add-ons help you get more value from every job.
+        </p>
+
         {/* Header */}
         <div className="text-center w-full max-w-7xl mx-auto mb-10 sm:mb-12 md:mb-16 lg:mb-20">
           <h2
@@ -154,10 +159,13 @@ export function FrameworksSection() {
           >
             Optional upgrades that help auto repair shops grow their reputation and keep customers coming back.
           </p>
+          <p className="text-xs sm:text-sm md:text-base text-gray-500 max-w-2xl mx-auto mt-3 sm:mt-4 px-4 sm:px-6">
+            Turn these on when you're ready — no changes to your call flow required.
+          </p>
         </div>
 
         {/* Add-On Cards Grid - 2 columns */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-7 md:gap-8 lg:gap-10 max-w-7xl mx-auto px-2 sm:px-0">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6 md:gap-8 lg:gap-10 max-w-7xl mx-auto px-2 sm:px-4">
           {addons.map((addon) => (
             <AddonCard key={addon.id} addon={addon} />
           ))}
@@ -185,7 +193,7 @@ function AddonCard({ addon }: AddonCardProps) {
     >
       {/* Card Container - No glassmorphism, clean dark design */}
       <div
-        className="relative h-full bg-black border border-white/10 rounded-3xl p-6 md:p-8 overflow-hidden transition-all duration-500 hover:border-[#1A60AB]/40"
+        className="relative h-full bg-black border border-white/10 rounded-2xl sm:rounded-3xl p-5 sm:p-6 md:p-8 overflow-hidden transition-all duration-500 hover:border-[#1A60AB]/40"
         style={{
           boxShadow: isHovered
             ? `0 0 30px rgba(26, 96, 171, 0.5), 0 20px 60px rgba(26, 96, 171, 0.3)`

@@ -115,7 +115,7 @@ const ContactSection = () => {
         <div className="w-full max-w-4xl mx-auto space-y-3 sm:space-y-4 md:space-y-6 px-2 sm:px-4">
           {/* Email */}
           <motion.a
-            href="mailto:George@clario.ai"
+            href="mailto:vextriaai@gmail.com"
             className="contact-item group flex items-center justify-between p-4 md:p-6 rounded-2xl border border-white/5 bg-white/[0.02] backdrop-blur-sm hover:bg-white/[0.05] hover:border-[#1A60AB]/30 transition-all duration-300"
             whileHover={{ x: 10 }}
             transition={{ duration: 0.3 }}
@@ -126,7 +126,7 @@ const ContactSection = () => {
               </div>
               <div className="min-w-0">
                 <h3 className="text-base md:text-lg font-semibold text-white mb-0.5 md:mb-1">Email Us</h3>
-                <p className="text-xs md:text-sm text-gray-400 truncate">George@clario.ai</p>
+                <p className="text-xs md:text-sm text-gray-400 truncate">vextriaai@gmail.com</p>
               </div>
             </div>
             <ArrowRight className="w-4 h-4 md:w-5 md:h-5 text-gray-600 group-hover:text-[#1A60AB] group-hover:translate-x-1 transition-all duration-300 flex-shrink-0" />

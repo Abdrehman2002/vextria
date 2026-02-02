@@ -18,11 +18,11 @@ interface SlideTabsProps {
 export const SlideTabs = ({
   tabs = [
     { label: "Home", href: "#hero" },
+    { label: "Problem", href: "#pain" },
     { label: "How It Works", href: "#how-it-works" },
-    { label: "Features", href: "#features" },
-    { label: "Partners", href: "#partners" },
+    { label: "Dashboard", href: "#features" },
+    { label: "Add-Ons", href: "#frameworks" },
     { label: "FAQ", href: "#faq" },
-    { label: "Contact", href: "#contact" },
   ],
   logo = {
     src: "/vextrialogo.svg",

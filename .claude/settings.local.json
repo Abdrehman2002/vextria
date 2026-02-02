@@ -1,10 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(del:*)"
+      "Bash(del:*)",
+      "Bash(git remote add:*)"
     ],
-    "defaultMode": "acceptEdits",
     "deny": [],
-    "ask": []
+    "ask": [],
+    "defaultMode": "acceptEdits"
   }
 }

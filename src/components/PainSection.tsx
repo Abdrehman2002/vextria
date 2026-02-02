@@ -99,15 +99,18 @@ const PainSection = ({ onCallClick, callStatus }: PainSectionProps) => {
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
         {/* CENTERED HEADING */}
-        <h2 className="pain-section-headline text-center text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight mb-6 whitespace-nowrap">
-          <span className="text-white">Every Unanswered Call</span>{" "}
-          <span className="text-white/40">Is a Lost Job</span>
+        <h2 className="pain-section-headline text-center text-3xl xs:text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight mb-6">
+          <span className="text-white block sm:inline">Every Unanswered Call</span>{" "}
+          <span className="text-white/40 block sm:inline">Is a Lost Job</span>
         </h2>
 
         {/* REVENUE ANCHOR — high-impact, right under headline */}
         <div className="pain-reinforcement mb-12 lg:mb-16 text-center">
-          <p className="text-base sm:text-lg text-zinc-500">
+          <p className="text-base sm:text-lg text-zinc-500 mb-2">
             Just <span className="font-semibold text-zinc-300">2 missed calls per day</span> can cost a shop <span className="font-semibold text-zinc-300">$3,000–$6,000 per month.</span>
+          </p>
+          <p className="text-sm sm:text-base text-zinc-600">
+            That's oil changes, brake jobs, and diagnostics going to the shop down the street.
           </p>
         </div>
 
@@ -142,7 +145,7 @@ const PainSection = ({ onCallClick, callStatus }: PainSectionProps) => {
           </div>
 
           {/* RIGHT COLUMN — Rotating Gradient Panel + Call Card */}
-          <div className="pain-call-card relative mx-auto flex h-[40rem] w-full max-w-[60rem] items-center justify-center overflow-hidden rounded-3xl order-1 md:order-2">
+          <div className="pain-call-card relative mx-auto flex h-[32rem] sm:h-[36rem] md:h-[40rem] w-full max-w-[60rem] items-center justify-center overflow-hidden rounded-3xl order-1 md:order-2">
             {/* Spinning conic gradient — fills the entire panel */}
             <div className="absolute -inset-10 flex items-center justify-center">
               <div
@@ -196,7 +199,7 @@ const PainSection = ({ onCallClick, callStatus }: PainSectionProps) => {
                     </h3>
 
                     <p className="text-center text-xs sm:text-sm leading-relaxed mb-5 text-zinc-400">
-                     Calls to your shop are answered instantly — even when you’re busy or closed.
+                      Calls to your shop are answered instantly — even when you're busy or closed.
                     </p>
                   </>
                 )}
@@ -240,7 +243,7 @@ const PainSection = ({ onCallClick, callStatus }: PainSectionProps) => {
                 </button>
 
                 <p className="mt-4 text-center text-xs text-zinc-500 leading-relaxed">
-                  Live AI phone conversation — no forms, no waiting, no recordings.
+                  Live phone conversation — no forms, no waiting.
                 </p>
               </CardContent>
             </Card>

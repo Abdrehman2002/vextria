@@ -63,20 +63,19 @@ export default function FeaturesDetail() {
         {/* Header */}
         <div className="fd-header text-center" style={{ marginBottom: "64px" }}>
           <h2
-            className="text-white"
+            className="text-white text-3xl sm:text-4xl md:text-5xl"
             style={{
-              fontSize: "3rem",
               fontWeight: 600,
               lineHeight: 1.1,
               letterSpacing: "-0.02em",
               marginBottom: "16px",
             }}
           >
-            Dashboard?
+            Your Shop Dashboard
           </h2>
           <h3
+            className="text-2xl sm:text-3xl md:text-4xl"
             style={{
-              fontSize: "2.5rem",
               fontWeight: 700,
               lineHeight: 1.1,
               marginBottom: "16px",
@@ -122,8 +121,9 @@ export default function FeaturesDetail() {
             className="relative overflow-hidden"
             style={{
               borderRadius: "12px",
-              border: "1px solid rgba(255,255,255,0.08)",
+              border: "1px solid rgba(26, 96, 171, 0.3)",
               background: "#0a0a0a",
+              boxShadow: "0 0 20px rgba(26, 96, 171, 0.4), 0 0 40px rgba(74, 154, 232, 0.3)",
             }}
           >
             <video
@@ -175,14 +175,26 @@ export default function FeaturesDetail() {
               lineHeight: 1.7,
               color: "#9CA3AF",
               marginTop: "16px",
+              marginBottom: "8px",
             }}
           >
             Call activity, bookings, and revenue impact — updated live.
           </p>
+          <p
+            style={{
+              fontSize: "15px",
+              fontWeight: 500,
+              lineHeight: 1.7,
+              color: "#CBD5E1",
+              marginTop: "8px",
+            }}
+          >
+            Know exactly how many jobs were captured — and how much revenue was recovered.
+          </p>
         </div>
 
         {/* Bottom features — 3 columns, no cards */}
-        <div className="fd-features grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-12">
+        <div className="fd-features grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
           {[
             {
               Icon: Phone,

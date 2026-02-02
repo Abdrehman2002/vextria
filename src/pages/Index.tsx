@@ -76,9 +76,9 @@ const Index = () => {
         <Hero
           eyebrow="BUILT FOR AUTO REPAIR SHOPS"
           title="Never Miss a Call. Never Miss a Job."
-          subtitle="Vextria AI answers every inbound call for your auto care or repair shop, books appointments instantly, and eliminates lost revenue during busy hours — 24/7."
-          ctaLabel="Book Free Demo"
-          ctaHref="https://calendly.com/abdurrehman1711/30min"
+          subtitle="Vextria answers every inbound call for your auto care or repair shop, books appointments instantly, and eliminates lost revenue during busy hours — 24/7."
+          ctaLabel="Try It Here"
+          ctaHref="#pain"
         />
 
         {/* Pain / Problem Section */}

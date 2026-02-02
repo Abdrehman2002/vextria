@@ -17,7 +17,6 @@ const STEPS = [
       "Picks up on the first ring, 24/7",
       "Sounds human — not robotic or scripted",
       "Handles calls when your team is off the clock",
-      "Works during peak hours automatically",
     ],
   },
   {
@@ -29,7 +28,6 @@ const STEPS = [
       "Collects customer info and service needs",
       "Stays on script for your shop's workflow",
       "Routes and prioritizes based on intent",
-      "Adapts tone to match your brand",
     ],
   },
   {
@@ -40,7 +38,6 @@ const STEPS = [
     details: [
       "Every call logged with key details",
       "Pushes data to your CRM or shop tools",
-      "Your staff knows instantly what to act on",
       "No manual data entry required",
     ],
   },
@@ -162,8 +159,8 @@ const HowItWorksSection = () => {
 
         {/* THREE-STEP CARDS — ProcessSection style */}
         <div
-          className="hiw-steps-row grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-7 md:gap-8 lg:gap-10"
-          style={{ marginBottom: "64px" }}
+          className="hiw-steps-row grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 md:gap-8 lg:gap-10"
+          style={{ marginBottom: "48px", marginTop: "48px" }}
         >
           {STEPS.map((step, index) => {
             const Icon = step.icon;
@@ -179,7 +176,7 @@ const HowItWorksSection = () => {
                 onMouseMove={(e) => handleMouseMove(e, index)}
               >
                 <div
-                  className="relative h-full p-6 md:p-8 rounded-3xl border border-white/10 backdrop-blur-xl overflow-hidden transition-all duration-500 hover:border-white/20"
+                  className="relative h-full p-5 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl border border-white/10 backdrop-blur-xl overflow-hidden transition-all duration-500 hover:border-white/20"
                   style={{
                     background: "linear-gradient(135deg, rgba(255,255,255,0.07), transparent)",
                     boxShadow: isActive ? "0 0 20px rgba(74, 154, 232, 0.6), 0 20px 80px rgba(26, 96, 171, 0.5)" : "none",
