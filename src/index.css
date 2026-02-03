@@ -8,6 +8,9 @@
 /* Import Laptop Consistency Styles */
 @import './styles/laptop-consistency.css';
 
+/* Import Mobile Consistency Styles */
+@import './styles/mobile-consistency.css';
+
 /* Smooth scrolling animation */
 html {
   scroll-behavior: smooth;

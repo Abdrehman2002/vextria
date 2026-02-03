@@ -148,14 +148,16 @@ const Header = () => {
               </div>
             </Link>
 
-          {/* CTA Button - Right Side */}
-          <div className="hidden sm:flex items-center space-x-4">
-            <Button
-              className="btn-neon-aqua px-4 md:px-6 py-2 rounded-lg font-semibold text-sm md:text-base"
-              size="lg"
-            >
-              Get a Demo
-            </Button>
+          {/* Vextria Logo and Text - Right Side */}
+          <div className="hidden md:flex items-center gap-2">
+            <img
+              src="/vextrialogo2.svg"
+              alt="Vextria"
+              className="w-8 h-8"
+            />
+            <span className="text-lg font-bold bg-gradient-to-r from-[#5AADE8] via-[#A8D8F0] to-[#4A9AE8] bg-clip-text text-transparent">
+              Vextria
+            </span>
           </div>
           
           {/* Mobile menu button - Mobile Responsive */}

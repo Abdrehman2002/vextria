@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import { RetellWebClient } from 'retell-client-js-sdk';
 import { Hero } from '@/components/ui/hero-1';
+import MobileNavbar from '@/components/MobileNavbar';
 import PainSection from '@/components/PainSection';
 import HowItWorksSection from '@/components/HowItWorksSection';
 import LogoCarouselSection from '@/components/LogoCarouselSection';
@@ -71,6 +72,9 @@ const Index = () => {
 
   return (
     <div className="relative min-h-screen bg-background">
+      {/* Mobile Navbar */}
+      <MobileNavbar />
+
       {/* Main Content */}
       <main className="relative">
         <Hero

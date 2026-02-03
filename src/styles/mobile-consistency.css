@@ -1,0 +1,240 @@
+/* Mobile Consistency Styles - Below 768px */
+/* Ensures consistent experience across all mobile screens */
+
+@media (max-width: 767px) {
+  /* Hide desktop navbar */
+  header:not(.mobile-navbar) {
+    display: none !important;
+  }
+
+  /* Add top padding for mobile navbar */
+  body {
+    padding-top: 60px;
+  }
+
+  /* Hero Section - Fit to screen */
+  #hero,
+  section:first-of-type {
+    min-height: 100vh;
+    min-height: 100dvh; /* Dynamic viewport height for mobile browsers */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  /* Lock font sizes for all mobile screens */
+
+  /* Main section headings - consistent across all mobile sizes */
+  section h1 {
+    font-size: 2rem !important; /* 32px */
+    line-height: 1.2 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  section h2 {
+    font-size: 1.75rem !important; /* 28px */
+    line-height: 1.2 !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  section h3 {
+    font-size: 1.25rem !important; /* 20px */
+    line-height: 1.3 !important;
+    margin-bottom: 0.5rem !important;
+  }
+
+  section h4 {
+    font-size: 1rem !important; /* 16px */
+    line-height: 1.4 !important;
+  }
+
+  /* Body text - consistent size */
+  section p {
+    font-size: 0.875rem !important; /* 14px */
+    line-height: 1.6 !important;
+  }
+
+  /* Small text */
+  .text-xs,
+  small {
+    font-size: 0.75rem !important; /* 12px */
+  }
+
+  /* Standardize section padding */
+  section {
+    padding-top: 48px !important;
+    padding-bottom: 48px !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Container consistency */
+  .max-w-7xl,
+  .max-w-6xl,
+  .max-w-5xl,
+  .max-w-4xl,
+  .max-w-3xl {
+    max-width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Grid - always single column on mobile */
+  .grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  /* Card padding consistency */
+  .card,
+  [class*="card"],
+  .addon-card,
+  .hiw-step {
+    padding: 1.25rem !important;
+    border-radius: 1rem !important;
+  }
+
+  /* Button sizing */
+  button,
+  a[class*="button"],
+  a[class*="btn"] {
+    padding: 0.75rem 1.25rem !important;
+    font-size: 0.875rem !important;
+    border-radius: 0.5rem !important;
+  }
+
+  /* Icon sizes */
+  svg,
+  .lucide {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+  }
+
+  /* Specific component adjustments */
+
+  /* Pain Section */
+  #pain .pain-item span {
+    font-size: 1rem !important;
+  }
+
+  /* How It Works */
+  #how-it-works .hiw-step {
+    padding: 1.5rem !important;
+  }
+
+  /* Features/Dashboard */
+  #features video {
+    border-radius: 0.75rem !important;
+  }
+
+  /* FAQ Section */
+  #faq button {
+    padding: 1rem !important;
+    font-size: 0.875rem !important;
+  }
+
+  /* Footer */
+  footer {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  footer .footer-logo span {
+    font-size: 1.25rem !important;
+  }
+
+  /* Remove excessive spacing on mobile */
+  .mb-10,
+  .mb-12,
+  .mb-16,
+  .mb-20 {
+    margin-bottom: 2rem !important;
+  }
+
+  .mt-10,
+  .mt-12,
+  .mt-16,
+  .mt-20 {
+    margin-top: 2rem !important;
+  }
+
+  .py-16,
+  .py-20,
+  .py-24 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  /* Ensure images don't overflow */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Video responsiveness */
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Hide desktop-only elements */
+  .hidden-mobile,
+  .lg\\:flex:not(.mobile-show) {
+    display: none !important;
+  }
+}
+
+/* Extra Small Phones (below 375px) - Keep same as mobile */
+@media (max-width: 374px) {
+  /* Even smaller adjustments */
+  section h1 {
+    font-size: 1.75rem !important; /* 28px */
+  }
+
+  section h2 {
+    font-size: 1.5rem !important; /* 24px */
+  }
+
+  section p {
+    font-size: 0.813rem !important; /* 13px */
+  }
+
+  button,
+  a[class*="button"] {
+    padding: 0.625rem 1rem !important;
+    font-size: 0.813rem !important;
+  }
+}
+
+/* Tablets (768px - 1023px) - Hybrid approach */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Use tablet-specific sizing */
+  section h1 {
+    font-size: 2.5rem; /* 40px */
+  }
+
+  section h2 {
+    font-size: 2rem; /* 32px */
+  }
+
+  section h3 {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  section p {
+    font-size: 1rem; /* 16px */
+  }
+
+  /* Moderate padding */
+  section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  /* Two-column grid for tablets */
+  .grid:not(.grid-cols-3) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
