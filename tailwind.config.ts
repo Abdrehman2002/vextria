@@ -26,8 +26,9 @@ export default {
 			'sm': '640px',
 			'md': '768px',
 			'lg': '1024px',
-			'xl': '1280px',
-			'2xl': '1536px',
+			'laptop': '1024px', // Unified laptop breakpoint (1024px - 1920px+)
+			'xl': '1024px', // Keep same as laptop for consistency
+			'2xl': '1024px', // Keep same as laptop for consistency
 		},
 		extend: {
 			colors: {

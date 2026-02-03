@@ -5,6 +5,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import Laptop Consistency Styles */
+@import './styles/laptop-consistency.css';
+
 /* Smooth scrolling animation */
 html {
   scroll-behavior: smooth;
