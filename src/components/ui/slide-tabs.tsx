@@ -58,27 +58,26 @@ export const SlideTabs = ({
       {/* Logo Section - positioned on the left, overlapping with navbar */}
       <a
         href="#hero"
-        className="absolute left-1/2 flex items-center gap-2 md:gap-3 flex-shrink-0"
+        className="absolute left-1/2 flex items-center gap-2 flex-shrink-0"
         style={{
           transform: "translateX(calc(-100% - 12px))",
         }}
       >
         <img
-          src={logo.src}
+          src="/vextrialogo2.svg"
           alt={logo.alt}
-          className="w-8 h-8 md:w-10 md:h-10"
+          className="w-8 h-8"
           style={{
             filter: "drop-shadow(0 0 8px rgba(74, 154, 232, 0.6))",
           }}
         />
         <span
-          className="text-xl md:text-2xl font-bold tracking-tight whitespace-nowrap"
+          className="text-lg font-bold tracking-tight whitespace-nowrap"
           style={{
-            background: "linear-gradient(135deg, #4A9AE8 0%, #1A60AB 100%)",
+            background: "linear-gradient(135deg, #5AADE8 0%, #A8D8F0 50%, #4A9AE8 100%)",
             WebkitBackgroundClip: "text",
             WebkitTextFillColor: "transparent",
             backgroundClip: "text",
-            textShadow: "0 0 20px rgba(74, 154, 232, 0.5)",
           }}
         >
           {logo.title}
