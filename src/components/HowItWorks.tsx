@@ -1,147 +1,79 @@
-"use client";
+import React from 'react';
+import { Phone, Calendar, Bell, AlertCircle, Users, Clock, MessageSquare, XCircle } from 'lucide-react';
 
-import { useEffect, useRef, useState } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Phone, Calendar, Bell, Users, MessageSquare, XCircle } from "lucide-react";
-
-gsap.registerPlugin(ScrollTrigger);
-
-const steps = [
-  {
-    number: "01",
-    icon: Phone,
-    title: "Customer Calls Your Shop",
-    description: "Vextria answers instantly — during peak hours, after closing, or whenever your team is busy.",
-    bullets: [
-      "Captures name, phone number, and vehicle details",
-      "Understands the service request",
-      "Asks the right follow-up questions",
-      "Keeps the conversation natural and professional"
-    ],
-    subtext: "No voicemail. No hold music. No missed opportunity."
-  },
-  {
-    number: "02",
-    icon: Calendar,
-    title: "Books the Right Time Slot",
-    description: "Instead of guessing, Vextria helps schedule correctly the first time.",
-    bullets: [
-      "Estimates realistic job length",
-      "Checks calendar availability",
-      "Prevents double booking",
-      "Confirms appointment via text"
-    ],
-    subtext: "Your bays stay organized. Your schedule stays accurate."
-  },
-  {
-    number: "03",
-    icon: Bell,
-    title: "Sends Smart Reminders",
-    description: "Before the visit, Vextria keeps the customer engaged.",
-    bullets: [
-      "Sends appointment reminders automatically",
-      "Allows easy rescheduling",
-      "Reduces no-shows",
-      "Keeps your calendar full"
-    ],
-    subtext: "Fewer empty slots. More predictable revenue."
-  }
-];
-
-const painPoints = [
-  {
-    icon: Phone,
-    title: "Missed Calls",
-    description: "Customers hang up and call the next shop."
-  },
-  {
-    icon: Calendar,
-    title: "Double Booking",
-    description: "Wrong job length estimates create chaos."
-  },
-  {
-    icon: XCircle,
-    title: "No-Shows",
-    description: "Weak or late reminders leave bays empty."
-  },
-  {
-    icon: Users,
-    title: "Front Desk Overload",
-    description: "Service writers spend hours on the phone."
-  },
-  {
-    icon: MessageSquare,
-    title: "Lost Opportunities",
-    description: "Voicemail doesn't book jobs."
-  }
-];
-
-export function FrameworksSection() {
-  const sectionRef = useRef<HTMLDivElement>(null);
-  const headingRef = useRef<HTMLHeadingElement>(null);
-  const subheadingRef = useRef<HTMLParagraphElement>(null);
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 80%",
-          toggleActions: "play none none none",
-          once: true
-        }
-      });
-
-      tl.fromTo(
-        headingRef.current,
-        { y: 60, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" }
-      ).fromTo(
-        subheadingRef.current,
-        { y: 30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.6, ease: "power2.out" },
-        "-=0.4"
-      );
-
-      tl.fromTo(
-        ".step-card",
-        {
-          y: 60,
-          opacity: 0,
-        },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.8,
-          ease: "power2.out",
-          stagger: 0.2
-        },
-        "-=0.4"
-      );
-    });
-
-    return () => ctx.revert();
-  }, []);
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    const rect = sectionRef.current?.getBoundingClientRect();
-    if (rect) {
-      setMousePosition({
-        x: ((e.clientX - rect.left) / rect.width) * 100,
-        y: ((e.clientY - rect.top) / rect.height) * 100
-      });
+const HowItWorks = () => {
+  const steps = [
+    {
+      number: "01",
+      icon: Phone,
+      title: "Customer Calls Your Shop",
+      description: "Vextria answers instantly — during peak hours, after closing, or whenever your team is busy.",
+      bullets: [
+        "Captures name, phone number, and vehicle details",
+        "Understands the service request",
+        "Asks the right follow-up questions",
+        "Keeps the conversation natural and professional"
+      ],
+      subtext: "No voicemail. No hold music. No missed opportunity."
+    },
+    {
+      number: "02",
+      icon: Calendar,
+      title: "Books the Right Time Slot",
+      description: "Instead of guessing, Vextria helps schedule correctly the first time.",
+      bullets: [
+        "Estimates realistic job length",
+        "Checks calendar availability",
+        "Prevents double booking",
+        "Confirms appointment via text"
+      ],
+      subtext: "Your bays stay organized. Your schedule stays accurate."
+    },
+    {
+      number: "03",
+      icon: Bell,
+      title: "Sends Smart Reminders",
+      description: "Before the visit, Vextria keeps the customer engaged.",
+      bullets: [
+        "Sends appointment reminders automatically",
+        "Allows easy rescheduling",
+        "Reduces no-shows",
+        "Keeps your calendar full"
+      ],
+      subtext: "Fewer empty slots. More predictable revenue."
     }
-  };
+  ];
+
+  const painPoints = [
+    {
+      icon: Phone,
+      title: "Missed Calls",
+      description: "Customers hang up and call the next shop."
+    },
+    {
+      icon: Calendar,
+      title: "Double Booking",
+      description: "Wrong job length estimates create chaos."
+    },
+    {
+      icon: XCircle,
+      title: "No-Shows",
+      description: "Weak or late reminders leave bays empty."
+    },
+    {
+      icon: Users,
+      title: "Front Desk Overload",
+      description: "Service writers spend hours on the phone."
+    },
+    {
+      icon: MessageSquare,
+      title: "Lost Opportunities",
+      description: "Voicemail doesn't book jobs."
+    }
+  ];
 
   return (
-    <section
-      ref={sectionRef}
-      id="how-it-works"
-      className="relative py-28 px-6 bg-black overflow-hidden"
-      onMouseMove={handleMouseMove}
-    >
+    <section id="how-it-works" className="relative py-28 px-6 bg-black overflow-hidden">
       {/* Background Grid */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0" style={{
@@ -149,14 +81,6 @@ export function FrameworksSection() {
           backgroundSize: '4rem 4rem'
         }} />
       </div>
-
-      {/* Radial gradient that follows mouse */}
-      <div
-        className="absolute inset-0 opacity-30 pointer-events-none transition-opacity duration-700"
-        style={{
-          background: `radial-gradient(600px circle at ${mousePosition.x}% ${mousePosition.y}%, rgba(74, 154, 232, 0.35), transparent 60%)`
-        }}
-      ></div>
 
       <div className="relative max-w-[1200px] mx-auto">
         {/* Header Section */}
@@ -167,30 +91,19 @@ export function FrameworksSection() {
             </span>
           </div>
 
-          <h2
-            ref={headingRef}
-            className="font-bold mb-8"
-            style={{
-              fontSize: 'clamp(2rem, 4vw, 3.5rem)',
-              lineHeight: '1.1',
-              letterSpacing: '-0.01em'
-            }}
-          >
-            <span className="text-white">How It Works. </span>
-            <span className="bg-gradient-to-r from-[#5AADE8] via-[#A8D8F0] to-[#4A9AE8] bg-clip-text text-transparent">
-              Simple & Effective.
-            </span>
+          <h2 className="font-bold mb-8 text-white" style={{
+            fontSize: 'clamp(2rem, 4vw, 3.5rem)',
+            lineHeight: '1.1',
+            letterSpacing: '-0.01em'
+          }}>
+            From First Call to Confirmed Appointment — Automatically
           </h2>
 
-          <p
-            ref={subheadingRef}
-            className="text-[#A0A0B0] leading-relaxed"
-            style={{
-              fontSize: 'clamp(1rem, 1.5vw, 1.125rem)',
-              lineHeight: '1.6'
-            }}
-          >
-            Answer every call — without changing how your shop runs.
+          <p className="text-[#A0A0B0] leading-relaxed" style={{
+            fontSize: 'clamp(1rem, 1.5vw, 1.125rem)',
+            lineHeight: '1.6'
+          }}>
+            When a customer contacts your shop, Vextria handles the call, books the right slot, and sends reminders — without interrupting your team.
           </p>
         </div>
 
@@ -201,7 +114,7 @@ export function FrameworksSection() {
             return (
               <div
                 key={index}
-                className="step-card relative flex flex-col p-8 rounded-xl border border-white/10 bg-gradient-to-b from-[#0C0A14] to-[#000000] hover:border-[#4A9AE8]/40 transition-all duration-300 group"
+                className="relative flex flex-col p-8 rounded-xl border border-white/10 bg-gradient-to-b from-[#0C0A14] to-[#000000] hover:border-[#4A9AE8]/40 transition-all duration-300 group"
               >
                 {/* Background Number */}
                 <div className="absolute top-4 right-4 text-[120px] font-bold leading-none opacity-[0.03] select-none">
@@ -310,4 +223,6 @@ export function FrameworksSection() {
       </div>
     </section>
   );
-}
+};
+
+export default HowItWorks;
