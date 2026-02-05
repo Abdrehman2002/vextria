@@ -57,23 +57,43 @@ const PAIN_POINTS = [
   },
   {
     icon: Calendar,
-    title: "Double Booking",
-    description: "Wrong job length estimates create chaos.",
+    title: "Wrong Job Length",
+    description: "Poor estimates create scheduling chaos.",
   },
   {
-    icon: XCircle,
-    title: "No-Shows",
-    description: "Weak or late reminders leave bays empty.",
-  },
-  {
-    icon: Users,
-    title: "Front Desk Overload",
-    description: "Service writers spend hours on the phone.",
+    icon: Bell,
+    title: "Weak Reminders",
+    description: "Late or missing reminders lead to no-shows.",
   },
   {
     icon: MessageSquare,
-    title: "Lost Opportunities",
-    description: "Voicemail doesn't book jobs.",
+    title: "Spanish Calls",
+    description: "Language barriers lose potential customers.",
+  },
+  {
+    icon: XCircle,
+    title: "Lost Repeat Work",
+    description: "No follow-up means one-time customers.",
+  },
+  {
+    icon: Users,
+    title: "Front Desk Overloaded",
+    description: "Service writers buried in phone calls.",
+  },
+  {
+    icon: Phone,
+    title: "Parts Delays",
+    description: "Waiting on hold with suppliers wastes time.",
+  },
+  {
+    icon: MessageSquare,
+    title: "Messy Notes",
+    description: "Handwritten details get lost or misread.",
+  },
+  {
+    icon: Phone,
+    title: "Phone Tag Approvals",
+    description: "Back-and-forth calls delay repair decisions.",
   },
 ];
 
