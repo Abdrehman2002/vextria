@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Phone, MessageCircle, ClipboardList, ArrowRight } from "lucide-react";
+import { Phone, Calendar, Bell, Users, MessageSquare, XCircle, ArrowRight } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -12,34 +12,68 @@ const STEPS = [
     icon: Phone,
     title: "Customer Calls Your Shop",
     description:
-      "Vextria answers instantly — even during peak hours or after closing. No hold music, no missed calls.",
+      "Vextria answers instantly — during peak hours, after closing, or whenever your team is busy.",
     details: [
-      "Picks up on the first ring, 24/7",
-      "Sounds human — not robotic or scripted",
-      "Handles calls when your team is off the clock",
+      "Captures name, phone number, and vehicle details",
+      "Understands the service request",
+      "Asks the right follow-up questions",
+      "Keeps the conversation natural and professional",
     ],
+    subtext: "No voicemail. No hold music. No missed opportunity."
   },
   {
-    icon: MessageCircle,
-    title: "The Call Is Handled Live",
+    icon: Calendar,
+    title: "Books the Right Time Slot",
     description:
-      "The system speaks naturally, asks the right questions, and follows the rules you set for your shop.",
+      "Instead of guessing, Vextria helps schedule correctly the first time.",
     details: [
-      "Collects customer info and service needs",
-      "Stays on script for your shop's workflow",
-      "Routes and prioritizes based on intent",
+      "Estimates realistic job length",
+      "Checks calendar availability",
+      "Prevents double booking",
+      "Confirms appointment via text",
     ],
+    subtext: "Your bays stay organized. Your schedule stays accurate."
   },
   {
-    icon: ClipboardList,
-    title: "Your Team Gets the Update",
+    icon: Bell,
+    title: "Sends Smart Reminders",
     description:
-      "Call details and appointments are sent straight to your team and synced with your existing tools automatically.",
+      "Before the visit, Vextria keeps the customer engaged.",
     details: [
-      "Every call logged with key details",
-      "Pushes data to your CRM or shop tools",
-      "No manual data entry required",
+      "Sends appointment reminders automatically",
+      "Allows easy rescheduling",
+      "Reduces no-shows",
+      "Keeps your calendar full",
     ],
+    subtext: "Fewer empty slots. More predictable revenue."
+  },
+];
+
+const PAIN_POINTS = [
+  {
+    icon: Phone,
+    title: "Missed Calls",
+    description: "Customers hang up and call the next shop.",
+  },
+  {
+    icon: Calendar,
+    title: "Double Booking",
+    description: "Wrong job length estimates create chaos.",
+  },
+  {
+    icon: XCircle,
+    title: "No-Shows",
+    description: "Weak or late reminders leave bays empty.",
+  },
+  {
+    icon: Users,
+    title: "Front Desk Overload",
+    description: "Service writers spend hours on the phone.",
+  },
+  {
+    icon: MessageSquare,
+    title: "Lost Opportunities",
+    description: "Voicemail doesn't book jobs.",
   },
 ];
 
@@ -67,35 +101,27 @@ const HowItWorksSection = () => {
         }
       );
       gsap.fromTo(
-        ".hiw-outcome",
+        ".hiw-pain-header",
         { y: 20, opacity: 0 },
         {
           y: 0, opacity: 1, duration: 0.6, ease: "power2.out",
-          scrollTrigger: { trigger: ".hiw-outcome", start: "top 82%", once: true },
+          scrollTrigger: { trigger: ".hiw-pain-header", start: "top 82%", once: true },
         }
       );
       gsap.fromTo(
-        ".hiw-workflow",
+        ".hiw-pain-card",
         { y: 24, opacity: 0 },
         {
-          y: 0, opacity: 1, duration: 0.6, ease: "power2.out",
-          scrollTrigger: { trigger: ".hiw-workflow", start: "top 82%", once: true },
+          y: 0, opacity: 1, duration: 0.6, ease: "power2.out", stagger: 0.12,
+          scrollTrigger: { trigger: ".hiw-pain-grid", start: "top 78%", once: true },
         }
       );
       gsap.fromTo(
-        ".hiw-capability-col",
-        { y: 24, opacity: 0 },
-        {
-          y: 0, opacity: 1, duration: 0.6, ease: "power2.out", stagger: 0.14,
-          scrollTrigger: { trigger: ".hiw-capability", start: "top 78%", once: true },
-        }
-      );
-      gsap.fromTo(
-        ".hiw-cta",
+        ".hiw-closing",
         { y: 16, opacity: 0 },
         {
           y: 0, opacity: 1, duration: 0.6, ease: "power2.out",
-          scrollTrigger: { trigger: ".hiw-cta", start: "top 88%", once: true },
+          scrollTrigger: { trigger: ".hiw-closing", start: "top 88%", once: true },
         }
       );
     }, sectionRef);
@@ -134,6 +160,11 @@ const HowItWorksSection = () => {
 
         {/* HEADER */}
         <div className="hiw-header text-center w-full mx-auto mb-10 sm:mb-12 md:mb-20 lg:mb-24">
+          <div className="inline-block mb-4">
+            <span className="text-xs font-bold tracking-[0.2em] uppercase" style={{ color: "#5AADE8" }}>
+              HOW VEXTRIA WORKS
+            </span>
+          </div>
           <h2
             className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white mb-4 sm:mb-5 md:mb-6 lg:mb-8 px-2 sm:px-4"
             style={{
@@ -141,10 +172,10 @@ const HowItWorksSection = () => {
               textShadow: '0 0 40px rgba(74, 154, 232, 0.6), 0 0 80px rgba(26, 96, 171, 0.4)'
             }}
           >
-            How It Works.{" "}
-            <span className="relative inline-block">
+            From First Call to Confirmed Appointment —
+            <span className="relative inline-block ml-2">
               <span className="bg-gradient-to-r from-[#5AADE8] via-[#A8D8F0] to-[#4A9AE8] bg-clip-text text-transparent">
-                Simple & Effective.
+                Automatically
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-[#5AADE8] via-[#A8D8F0] to-[#4A9AE8] blur-2xl opacity-40"></div>
             </span>
@@ -153,14 +184,14 @@ const HowItWorksSection = () => {
             className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-300 leading-relaxed max-w-3xl mx-auto px-4 sm:px-6"
             style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.5)' }}
           >
-            Answer every call — without changing how your shop runs.
+            When a customer contacts your shop, Vextria handles the call, books the right slot, and sends reminders — without interrupting your team.
           </p>
         </div>
 
-        {/* THREE-STEP CARDS — ProcessSection style */}
+        {/* THREE-STEP CARDS */}
         <div
           className="hiw-steps-row grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 md:gap-8 lg:gap-10"
-          style={{ marginBottom: "48px", marginTop: "48px" }}
+          style={{ marginBottom: "80px", marginTop: "48px" }}
         >
           {STEPS.map((step, index) => {
             const Icon = step.icon;
@@ -200,7 +231,7 @@ const HowItWorksSection = () => {
                       opacity: 0.03,
                     }}
                   >
-                    {index + 1}
+                    0{index + 1}
                   </div>
 
                   {/* Icon badge */}
@@ -216,6 +247,13 @@ const HowItWorksSection = () => {
                     </div>
                   </div>
 
+                  {/* Step Number Badge */}
+                  <div className="relative z-10 mb-4">
+                    <span className="text-xs font-bold tracking-wider uppercase" style={{ color: "#5AADE8" }}>
+                      STEP 0{index + 1}
+                    </span>
+                  </div>
+
                   {/* Content */}
                   <div className="relative z-10">
                     <h3 className="text-xl md:text-2xl font-bold text-white mb-3 md:mb-4 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-white group-hover:to-gray-300 group-hover:bg-clip-text transition-all duration-300">
@@ -226,17 +264,24 @@ const HowItWorksSection = () => {
                     </p>
 
                     {/* Bullet details */}
-                    <ul className="space-y-2">
+                    <ul className="space-y-2 mb-6">
                       {step.details.map((detail, idx) => (
                         <li key={idx} className="flex items-center gap-2 text-xs md:text-sm text-gray-500 group-hover:text-gray-400 transition-colors">
                           <div
                             className="w-1.5 h-1.5 rounded-full flex-shrink-0"
-                            style={{ background: "#1A60AB" }}
+                            style={{ background: "#4A9AE8" }}
                           />
                           {detail}
                         </li>
                       ))}
                     </ul>
+
+                    {/* Subtext */}
+                    <div className="pt-4 border-t border-white/5">
+                      <p className="text-xs text-gray-600 italic leading-relaxed">
+                        {step.subtext}
+                      </p>
+                    </div>
                   </div>
 
                   {/* Arrow between cards — desktop only */}
@@ -251,18 +296,71 @@ const HowItWorksSection = () => {
           })}
         </div>
 
-        {/* OUTCOME LINE */}
-        <p
-          className="hiw-outcome text-center"
-          style={{
-            fontSize: "16px",
-            fontWeight: 500,
-            lineHeight: 1.6,
-            color: "#CBD5E1",
-          }}
-        >
-          Every caller is answered, scheduled, and followed up — without interrupting your team.
-        </p>
+        {/* PAIN SECTION */}
+        <div style={{ marginTop: "120px" }}>
+          {/* Pain Section Header */}
+          <div className="hiw-pain-header text-center mb-12 md:mb-16">
+            <h3
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
+              style={{
+                lineHeight: '1.2',
+                letterSpacing: '-0.01em',
+                textShadow: '0 0 30px rgba(74, 154, 232, 0.5)'
+              }}
+            >
+              What Happens Without Automation?
+            </h3>
+            <p className="text-base md:text-lg lg:text-xl text-gray-400 max-w-2xl mx-auto px-4">
+              Even great shops lose revenue through small operational gaps.
+            </p>
+          </div>
+
+          {/* Pain Points Grid */}
+          <div className="hiw-pain-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 mb-12 md:mb-16">
+            {PAIN_POINTS.map((pain, index) => {
+              const Icon = pain.icon;
+              return (
+                <div
+                  key={index}
+                  className="hiw-pain-card p-5 sm:p-6 rounded-2xl border border-white/5 backdrop-blur-xl transition-all duration-300 hover:border-white/10"
+                  style={{
+                    background: "linear-gradient(135deg, rgba(255,255,255,0.04), transparent)",
+                  }}
+                >
+                  <div className="flex items-start gap-4">
+                    <div
+                      className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center border flex-shrink-0"
+                      style={{
+                        background: "linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(185, 28, 28, 0.1))",
+                        borderColor: "rgba(239, 68, 68, 0.2)",
+                      }}
+                    >
+                      <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-red-400" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-white mb-1.5 text-base md:text-lg">
+                        {pain.title}
+                      </h4>
+                      <p className="text-sm md:text-base text-gray-500 leading-relaxed">
+                        {pain.description}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Closing Statement */}
+          <p
+            className="hiw-closing text-center text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto px-4"
+            style={{
+              fontWeight: 500,
+            }}
+          >
+            Most small to mid-size auto shops lose <span className="text-white font-semibold">20–40% of inbound opportunities</span> — not because of service quality, but because of manual workflows.
+          </p>
+        </div>
       </div>
     </section>
   );
