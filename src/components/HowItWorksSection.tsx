@@ -308,7 +308,7 @@ const HowItWorksSection = () => {
                 textShadow: '0 0 30px rgba(74, 154, 232, 0.5)'
               }}
             >
-              What Happens Without Automation?
+              What Happens Without Vextria?
             </h3>
             <p className="text-base md:text-lg lg:text-xl text-gray-400 max-w-2xl mx-auto px-4">
               Even great shops lose revenue through small operational gaps.
@@ -322,26 +322,27 @@ const HowItWorksSection = () => {
               return (
                 <div
                   key={index}
-                  className="hiw-pain-card p-5 sm:p-6 rounded-2xl border border-white/5 backdrop-blur-xl transition-all duration-300 hover:border-white/10"
+                  className="hiw-pain-card p-6 sm:p-7 md:p-8 rounded-2xl sm:rounded-3xl border border-white/[0.08] transition-all duration-300 hover:border-white/[0.12]"
                   style={{
-                    background: "linear-gradient(135deg, rgba(255,255,255,0.04), transparent)",
+                    background: "rgba(0, 0, 0, 0.4)",
+                    backdropFilter: "blur(10px)",
                   }}
                 >
                   <div className="flex items-start gap-4">
                     <div
-                      className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center border flex-shrink-0"
+                      className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center border flex-shrink-0"
                       style={{
-                        background: "linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(185, 28, 28, 0.1))",
-                        borderColor: "rgba(239, 68, 68, 0.2)",
+                        background: "rgba(239, 68, 68, 0.08)",
+                        borderColor: "rgba(239, 68, 68, 0.15)",
                       }}
                     >
-                      <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-red-400" />
+                      <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-red-400" />
                     </div>
-                    <div>
-                      <h4 className="font-semibold text-white mb-1.5 text-base md:text-lg">
+                    <div className="flex-1">
+                      <h4 className="font-bold text-white mb-2 text-lg md:text-xl">
                         {pain.title}
                       </h4>
-                      <p className="text-sm md:text-base text-gray-500 leading-relaxed">
+                      <p className="text-sm md:text-base text-gray-400 leading-relaxed">
                         {pain.description}
                       </p>
                     </div>
@@ -353,9 +354,10 @@ const HowItWorksSection = () => {
 
           {/* Closing Statement */}
           <p
-            className="hiw-closing text-center text-base md:text-lg lg:text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto px-4"
+            className="hiw-closing text-center text-base md:text-lg lg:text-xl leading-relaxed max-w-4xl mx-auto px-4"
             style={{
               fontWeight: 500,
+              color: "#D1D5DB"
             }}
           >
             Most small to mid-size auto shops lose <span className="text-white font-semibold">20–40% of inbound opportunities</span> — not because of service quality, but because of manual workflows.
