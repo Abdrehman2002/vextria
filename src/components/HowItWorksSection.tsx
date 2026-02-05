@@ -49,51 +49,45 @@ const STEPS = [
   },
 ];
 
-const PAIN_POINTS = [
+const REVENUE_IMPACT = [
   {
     icon: Phone,
+    stat: "20–40%",
     title: "Missed Calls",
-    description: "Customers hang up and call the next shop.",
+    description: "Customers hang up during peak hours or after closing.",
   },
   {
     icon: Calendar,
-    title: "Wrong Job Length",
-    description: "Poor estimates create scheduling chaos.",
-  },
-  {
-    icon: Bell,
-    title: "Weak Reminders",
-    description: "Late or missing reminders lead to no-shows.",
-  },
-  {
-    icon: MessageSquare,
-    title: "Spanish Calls",
-    description: "Language barriers lose potential customers.",
+    stat: "10–20%",
+    title: "No-Show Rate",
+    description: "Weak reminders leave bays empty.",
   },
   {
     icon: XCircle,
+    stat: "$5,000–$15,000",
     title: "Lost Repeat Work",
-    description: "No follow-up means one-time customers.",
+    description: "No follow-up means maintenance revenue disappears.",
   },
+];
+
+const OPERATIONAL_INEFFICIENCY = [
   {
     icon: Users,
+    stat: "3–4 Hours/Day",
     title: "Front Desk Overloaded",
     description: "Service writers buried in phone calls.",
   },
   {
-    icon: Phone,
-    title: "Parts Delays",
-    description: "Waiting on hold with suppliers wastes time.",
-  },
-  {
-    icon: MessageSquare,
-    title: "Messy Notes",
-    description: "Handwritten details get lost or misread.",
+    icon: Calendar,
+    stat: "1–2 Hours/Day",
+    title: "Wrong Job Length",
+    description: "Scheduling chaos creates idle bays.",
   },
   {
     icon: Phone,
+    stat: "2+ Hour Delays",
     title: "Phone Tag Approvals",
-    description: "Back-and-forth calls delay repair decisions.",
+    description: "Back-and-forth calls slow repairs.",
   },
 ];
 
@@ -335,53 +329,132 @@ const HowItWorksSection = () => {
             </p>
           </div>
 
-          {/* Pain Points Grid */}
-          <div className="hiw-pain-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 mb-12 md:mb-16">
-            {PAIN_POINTS.map((pain, index) => {
-              const Icon = pain.icon;
-              return (
-                <div
-                  key={index}
-                  className="hiw-pain-card p-6 sm:p-7 md:p-8 rounded-2xl sm:rounded-3xl border border-white/[0.08] transition-all duration-300 hover:border-white/[0.12]"
-                  style={{
-                    background: "rgba(0, 0, 0, 0.4)",
-                    backdropFilter: "blur(10px)",
-                  }}
-                >
-                  <div className="flex items-start gap-4">
-                    <div
-                      className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center border flex-shrink-0"
-                      style={{
-                        background: "rgba(239, 68, 68, 0.08)",
-                        borderColor: "rgba(239, 68, 68, 0.15)",
-                      }}
-                    >
-                      <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-red-400" />
+          {/* Revenue Impact Row */}
+          <div className="mb-16">
+            <p className="text-xs font-bold tracking-widest uppercase text-gray-500 text-center mb-6">
+              Revenue Impact
+            </p>
+            <div className="hiw-pain-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+              {REVENUE_IMPACT.map((item, index) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={index}
+                    className="hiw-pain-card p-6 sm:p-7 md:p-8 rounded-2xl sm:rounded-3xl border border-red-500/10 transition-all duration-300 hover:border-red-500/20"
+                    style={{
+                      background: "rgba(0, 0, 0, 0.4)",
+                      backdropFilter: "blur(10px)",
+                    }}
+                  >
+                    <div className="flex items-start gap-4 mb-4">
+                      <div
+                        className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center border flex-shrink-0"
+                        style={{
+                          background: "rgba(239, 68, 68, 0.08)",
+                          borderColor: "rgba(239, 68, 68, 0.15)",
+                        }}
+                      >
+                        <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-red-400" />
+                      </div>
                     </div>
-                    <div className="flex-1">
-                      <h4 className="font-bold text-white mb-2 text-lg md:text-xl">
-                        {pain.title}
-                      </h4>
-                      <p className="text-sm md:text-base text-gray-400 leading-relaxed">
-                        {pain.description}
-                      </p>
+                    <div className="text-4xl md:text-5xl font-bold text-white mb-3" style={{
+                      textShadow: '0 0 20px rgba(239, 68, 68, 0.3)'
+                    }}>
+                      {item.stat}
                     </div>
+                    <h4 className="font-bold text-white mb-2 text-lg md:text-xl">
+                      {item.title}
+                    </h4>
+                    <p className="text-sm md:text-base text-gray-400 leading-relaxed">
+                      {item.description}
+                    </p>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
 
-          {/* Closing Statement */}
-          <p
-            className="hiw-closing text-center text-base md:text-lg lg:text-xl leading-relaxed max-w-4xl mx-auto px-4"
-            style={{
-              fontWeight: 500,
-              color: "#D1D5DB"
-            }}
-          >
-            Most small to mid-size auto shops lose <span className="text-white font-semibold">20–40% of inbound opportunities</span> — not because of service quality, but because of manual workflows.
-          </p>
+          {/* Operational Inefficiency Row */}
+          <div className="mb-16">
+            <p className="text-xs font-bold tracking-widest uppercase text-gray-500 text-center mb-6">
+              Operational Inefficiency
+            </p>
+            <div className="hiw-pain-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+              {OPERATIONAL_INEFFICIENCY.map((item, index) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={index}
+                    className="hiw-pain-card p-6 sm:p-7 md:p-8 rounded-2xl sm:rounded-3xl border border-orange-500/10 transition-all duration-300 hover:border-orange-500/20"
+                    style={{
+                      background: "rgba(0, 0, 0, 0.4)",
+                      backdropFilter: "blur(10px)",
+                    }}
+                  >
+                    <div className="flex items-start gap-4 mb-4">
+                      <div
+                        className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center border flex-shrink-0"
+                        style={{
+                          background: "rgba(249, 115, 22, 0.08)",
+                          borderColor: "rgba(249, 115, 22, 0.15)",
+                        }}
+                      >
+                        <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-orange-400" />
+                      </div>
+                    </div>
+                    <div className="text-4xl md:text-5xl font-bold text-white mb-3" style={{
+                      textShadow: '0 0 20px rgba(249, 115, 22, 0.3)'
+                    }}>
+                      {item.stat}
+                    </div>
+                    <h4 className="font-bold text-white mb-2 text-lg md:text-xl">
+                      {item.title}
+                    </h4>
+                    <p className="text-sm md:text-base text-gray-400 leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Summary Card */}
+          <div className="max-w-4xl mx-auto">
+            <div
+              className="p-8 md:p-12 rounded-3xl border text-center"
+              style={{
+                background: "linear-gradient(135deg, rgba(239, 68, 68, 0.05), rgba(249, 115, 22, 0.05))",
+                backdropFilter: "blur(12px)",
+                borderColor: "rgba(239, 68, 68, 0.2)",
+                boxShadow: "0 0 40px rgba(239, 68, 68, 0.2)",
+              }}
+            >
+              <p className="text-sm font-bold tracking-wider uppercase text-gray-400 mb-4">
+                Estimated Monthly Leakage
+              </p>
+              <div className="text-6xl md:text-7xl font-bold text-white mb-4" style={{
+                textShadow: '0 0 30px rgba(239, 68, 68, 0.5)'
+              }}>
+                $18,400
+              </div>
+              <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-6 max-w-2xl mx-auto">
+                Based on industry averages for small-to-mid size auto repair shops handling 15–25 calls per day.
+              </p>
+              <p className="text-sm text-gray-500 mb-8">
+                This does not include upsells, recurring maintenance loss, or delayed approvals.
+              </p>
+              <button
+                className="px-8 py-4 rounded-xl font-bold text-white transition-all duration-300 hover:scale-105"
+                style={{
+                  background: "linear-gradient(135deg, #EF4444 0%, #F97316 100%)",
+                  boxShadow: "0 0 20px rgba(239, 68, 68, 0.5)",
+                }}
+              >
+                See How Vextria Recovers This →
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
