@@ -6,7 +6,6 @@ import PainSection from '@/components/PainSection';
 import HowItWorksSection from '@/components/HowItWorksSection';
 import LogoCarouselSection from '@/components/LogoCarouselSection';
 import FeaturesDetail from '@/components/ui/features-detail';
-import { FrameworksSection } from '@/components/FrameworksSection';
 import FAQSection from '@/components/FAQSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
@@ -106,11 +105,6 @@ const Index = () => {
         {/* Features Detail with Dashboard */}
         <section id="features">
           <FeaturesDetail />
-        </section>
-
-
-        <section id="frameworks">
-          <FrameworksSection />
         </section>
 
         <section id="faq">
