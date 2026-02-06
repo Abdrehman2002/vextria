@@ -21,6 +21,7 @@ export const SlideTabs = ({
     { label: "Problem", href: "#pain" },
     { label: "How It Works", href: "#how-it-works" },
     { label: "Dashboard", href: "#features" },
+    { label: "Florida Pilot", href: "#pilot" },
     { label: "Add-Ons", href: "#frameworks" },
     { label: "FAQ", href: "#faq" },
   ],

@@ -10,6 +10,7 @@ const MobileNavbar = () => {
     { name: 'Problem', href: '#pain' },
     { name: 'How It Works', href: '#how-it-works' },
     { name: 'Dashboard', href: '#features' },
+    { name: 'Florida Pilot', href: '#pilot' },
     { name: 'Add-Ons', href: '#frameworks' },
     { name: 'FAQ', href: '#faq' },
   ];
