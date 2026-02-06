@@ -19,13 +19,15 @@ export function FloatingCallWidget() {
   return (
     <button
       onClick={handleClick}
-      className="fixed bottom-6 right-6 flex items-center gap-3 px-6 py-4 rounded-xl font-bold text-white shadow-2xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_40px_rgba(139,92,246,0.6)] group"
+      className="flex items-center gap-3 px-6 py-4 rounded-xl font-bold text-white shadow-2xl transition-all duration-300 hover:scale-105 group"
       style={{
+        position: "fixed",
+        bottom: "24px",
+        right: "24px",
         zIndex: 9999,
-        background:
-          "linear-gradient(135deg, #6366f1 0%, #8b5cf6 25%, #3b82f6 50%, #06b6d4 100%)",
-        boxShadow:
-          "0 10px 40px rgba(139, 92, 246, 0.5), 0 0 30px rgba(99, 102, 241, 0.4)",
+        background: "linear-gradient(135deg, #1557A0, #5A3DE8)",
+        boxShadow: "0 4px 24px rgba(107,76,255,0.5)",
+        animation: "ctaGlow 2.5s ease-in-out infinite",
       }}
     >
       <div className="relative">
