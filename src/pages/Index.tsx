@@ -12,6 +12,7 @@ import FAQSection from '@/components/FAQSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import { FloatingCallWidget } from '@/components/ui/FloatingCallWidget';
+import { MorphPanel } from '@/components/ui/ai-input';
 
 const AUTOCAREAGENT_ID = 'agent_68d22a69f45a3ee37168684831';
 
@@ -136,6 +137,18 @@ const Index = () => {
 
       {/* Floating Call Widget - Outside relative container for proper viewport-fixed positioning */}
       <FloatingCallWidget />
+
+      {/* AI Input Widget - Fixed to bottom-right of viewport */}
+      <div
+        style={{
+          position: 'fixed',
+          bottom: '24px',
+          right: '24px',
+          zIndex: 9998,
+        }}
+      >
+        <MorphPanel />
+      </div>
     </>
   );
 };
