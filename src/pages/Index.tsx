@@ -11,6 +11,7 @@ import { FrameworksSection } from '@/components/FrameworksSection';
 import FAQSection from '@/components/FAQSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import { FloatingCallWidget } from '@/components/ui/FloatingCallWidget';
 
 const AUTOCAREAGENT_ID = 'agent_68d22a69f45a3ee37168684831';
 
@@ -130,6 +131,9 @@ const Index = () => {
 
       {/* Footer */}
       <Footer />
+
+      {/* Floating Call Widget */}
+      <FloatingCallWidget />
     </div>
   );
 };
