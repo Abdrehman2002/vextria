@@ -6,6 +6,7 @@ import PainSection from '@/components/PainSection';
 import HowItWorksSection from '@/components/HowItWorksSection';
 import LogoCarouselSection from '@/components/LogoCarouselSection';
 import FeaturesDetail from '@/components/ui/features-detail';
+import { FloridaPilotSection } from '@/components/FloridaPilotSection';
 import { FrameworksSection } from '@/components/FrameworksSection';
 import FAQSection from '@/components/FAQSection';
 import ContactSection from '@/components/ContactSection';
@@ -106,6 +107,11 @@ const Index = () => {
         {/* Features Detail with Dashboard */}
         <section id="features">
           <FeaturesDetail />
+        </section>
+
+        {/* Florida Pilot Program */}
+        <section id="pilot">
+          <FloridaPilotSection />
         </section>
 
         {/* Frameworks/Add-Ons Section */}
