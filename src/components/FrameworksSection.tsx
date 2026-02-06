@@ -3,77 +3,44 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Phone, Calendar, Bell, Users, MessageSquare, XCircle } from "lucide-react";
+import { Star, RefreshCw, ArrowRight, CheckCircle } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const steps = [
+const addons = [
   {
-    number: "01",
-    icon: Phone,
-    title: "Customer Calls Your Shop",
-    description: "Vextria answers instantly — during peak hours, after closing, or whenever your team is busy.",
-    bullets: [
-      "Captures name, phone number, and vehicle details",
-      "Understands the service request",
-      "Asks the right follow-up questions",
-      "Keeps the conversation natural and professional"
+    id: 1,
+    icon: Star,
+    title: "Google Review Follow-Up Agent",
+    tagline: "Turn happy customers into more Google reviews.",
+    description: "Follows up after service to thank customers and request a Google review when feedback is positive.",
+    color: "#1A60AB",
+    gradient: "from-[#1A60AB] via-[#1557A0] to-[#0F4E95]",
+    glowColor: "rgba(26, 96, 171, 0.6)",
+    features: [
+      "Increases 5-star reviews",
+      "Improves local search visibility",
+      "No awkward asking at the counter",
+      "Runs automatically after service"
     ],
-    subtext: "No voicemail. No hold music. No missed opportunity."
+    cta: "Learn about the Review Add-On"
   },
   {
-    number: "02",
-    icon: Calendar,
-    title: "Books the Right Time Slot",
-    description: "Instead of guessing, Vextria helps schedule correctly the first time.",
-    bullets: [
-      "Estimates realistic job length",
-      "Checks calendar availability",
-      "Prevents double booking",
-      "Confirms appointment via text"
+    id: 2,
+    icon: RefreshCw,
+    title: "Service Follow-Up & Repeat Business Agent",
+    tagline: "Turn one-time jobs into repeat customers.",
+    description: "Follows up after service to thank customers and remind them about future maintenance.",
+    color: "#2E7BD4",
+    gradient: "from-[#2E7BD4] via-[#1557A0] to-[#0F4E95]",
+    glowColor: "rgba(26, 96, 171, 0.6)",
+    features: [
+      "Increases repeat visits",
+      "Keeps your shop top of mind",
+      "Reduces customer drop-off",
+      "Works quietly in the background"
     ],
-    subtext: "Your bays stay organized. Your schedule stays accurate."
-  },
-  {
-    number: "03",
-    icon: Bell,
-    title: "Sends Smart Reminders",
-    description: "Before the visit, Vextria keeps the customer engaged.",
-    bullets: [
-      "Sends appointment reminders automatically",
-      "Allows easy rescheduling",
-      "Reduces no-shows",
-      "Keeps your calendar full"
-    ],
-    subtext: "Fewer empty slots. More predictable revenue."
-  }
-];
-
-const painPoints = [
-  {
-    icon: Phone,
-    title: "Missed Calls",
-    description: "Customers hang up and call the next shop."
-  },
-  {
-    icon: Calendar,
-    title: "Double Booking",
-    description: "Wrong job length estimates create chaos."
-  },
-  {
-    icon: XCircle,
-    title: "No-Shows",
-    description: "Weak or late reminders leave bays empty."
-  },
-  {
-    icon: Users,
-    title: "Front Desk Overload",
-    description: "Service writers spend hours on the phone."
-  },
-  {
-    icon: MessageSquare,
-    title: "Lost Opportunities",
-    description: "Voicemail doesn't book jobs."
+    cta: "Learn about the Follow-Up Add-On"
   }
 ];
 
@@ -106,7 +73,7 @@ export function FrameworksSection() {
       );
 
       tl.fromTo(
-        ".step-card",
+        ".addon-card",
         {
           y: 60,
           opacity: 0,
@@ -138,17 +105,20 @@ export function FrameworksSection() {
   return (
     <section
       ref={sectionRef}
-      id="how-it-works"
-      className="relative py-28 px-6 bg-black overflow-hidden"
+      className="relative py-12 sm:py-16 md:py-20 lg:py-24 pb-12 sm:pb-16 md:pb-24 lg:pb-32 overflow-hidden bg-gradient-to-b from-black via-[#0A0510] to-black"
       onMouseMove={handleMouseMove}
     >
-      {/* Background Grid */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'linear-gradient(to right, #1F1F2E 1px, transparent 1px), linear-gradient(to bottom, #1F1F2E 1px, transparent 1px)',
-          backgroundSize: '4rem 4rem'
-        }} />
-      </div>
+      {/* Background */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(74, 154, 232, 0.2),transparent_50%)]"></div>
+
+      {/* Animated Grid Pattern */}
+      <div className="absolute inset-0 opacity-[0.04]" style={{
+        backgroundImage: `
+          linear-gradient(to right, #1A60AB 1px, transparent 1px),
+          linear-gradient(to bottom, #1A60AB 1px, transparent 1px)
+        `,
+        backgroundSize: '60px 60px'
+      }}></div>
 
       {/* Radial gradient that follows mouse */}
       <div
@@ -158,156 +128,146 @@ export function FrameworksSection() {
         }}
       ></div>
 
-      <div className="relative max-w-[1200px] mx-auto">
-        {/* Header Section */}
-        <div className="text-center max-w-[800px] mx-auto mb-20">
-          <div className="inline-block mb-4">
-            <span className="text-xs font-bold tracking-[0.2em] uppercase text-[#5AADE8]">
-              HOW VEXTRIA WORKS
-            </span>
-          </div>
-
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 relative z-10">
+        {/* Header */}
+        <div className="text-center w-full max-w-7xl mx-auto mb-10 sm:mb-12 md:mb-16 lg:mb-20">
           <h2
             ref={headingRef}
-            className="font-bold mb-8"
+            className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-white mb-4 sm:mb-5 md:mb-6 lg:mb-8 px-2 sm:px-4"
             style={{
-              fontSize: 'clamp(2rem, 4vw, 3.5rem)',
               lineHeight: '1.1',
-              letterSpacing: '-0.01em'
+              textShadow: '0 0 40px rgba(74, 154, 232, 0.6), 0 0 80px rgba(26, 96, 171, 0.4)'
             }}
           >
-            <span className="text-white">How It Works. </span>
-            <span className="bg-gradient-to-r from-[#5AADE8] via-[#A8D8F0] to-[#4A9AE8] bg-clip-text text-transparent">
-              Simple & Effective.
+            Add-Ons That Drive Reviews{" "}
+            <span className="relative inline-block">
+              <span className="bg-gradient-to-r from-[#5AADE8] via-[#2E7BD4] to-[#1A60AB] bg-clip-text text-transparent">
+                and Repeat Business
+              </span>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#5AADE8] via-[#A8D8F0] to-[#4A9AE8] blur-2xl opacity-40"></div>
             </span>
           </h2>
-
           <p
             ref={subheadingRef}
-            className="text-[#A0A0B0] leading-relaxed"
-            style={{
-              fontSize: 'clamp(1rem, 1.5vw, 1.125rem)',
-              lineHeight: '1.6'
-            }}
+            className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-gray-300 leading-relaxed max-w-4xl mx-auto px-4 sm:px-6"
+            style={{ textShadow: '0 2px 10px rgba(0, 0, 0, 0.5)' }}
           >
-            Answer every call — without changing how your shop runs.
+            Optional upgrades that help auto repair shops grow their reputation and keep customers coming back.
           </p>
         </div>
 
-        {/* Steps Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-24">
-          {steps.map((step, index) => {
-            const IconComponent = step.icon;
-            return (
-              <div
-                key={index}
-                className="step-card relative flex flex-col p-8 rounded-xl border border-white/10 bg-gradient-to-b from-[#0C0A14] to-[#000000] hover:border-[#4A9AE8]/40 transition-all duration-300 group"
-              >
-                {/* Background Number */}
-                <div className="absolute top-4 right-4 text-[120px] font-bold leading-none opacity-[0.03] select-none">
-                  {step.number}
-                </div>
-
-                {/* Icon */}
-                <div className="relative mb-6 w-12 h-12 rounded-lg bg-gradient-to-br from-[#4A9AE8]/20 to-[#1A60AB]/20 flex items-center justify-center border border-[#4A9AE8]/30 group-hover:border-[#4A9AE8]/60 transition-all duration-300">
-                  <IconComponent className="w-6 h-6 text-[#5AADE8]" />
-                </div>
-
-                {/* Step Number Badge */}
-                <div className="mb-4">
-                  <span className="text-xs font-bold tracking-wider text-[#5AADE8] uppercase">
-                    STEP {step.number}
-                  </span>
-                </div>
-
-                {/* Title */}
-                <h3 className="text-xl font-bold text-white mb-3 leading-tight">
-                  {step.title}
-                </h3>
-
-                {/* Description */}
-                <p className="text-[#D6D6E8] text-sm mb-5 leading-relaxed">
-                  {step.description}
-                </p>
-
-                {/* Bullets */}
-                <ul className="space-y-2.5 mb-6 flex-grow">
-                  {step.bullets.map((bullet, i) => (
-                    <li key={i} className="flex items-start gap-2.5 text-[#A0A0B0] text-sm">
-                      <span className="w-1 h-1 rounded-full bg-[#4A9AE8] mt-2 flex-shrink-0" />
-                      <span className="leading-relaxed">{bullet}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                {/* Subtext */}
-                <div className="pt-4 border-t border-white/5">
-                  <p className="text-xs text-[#777799] italic leading-relaxed">
-                    {step.subtext}
-                  </p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* Pain Section */}
-        <div className="mt-32">
-          {/* Pain Section Header */}
-          <div className="text-center mb-16">
-            <h3 className="font-bold text-white mb-4" style={{
-              fontSize: 'clamp(1.75rem, 3vw, 2.5rem)',
-              lineHeight: '1.2',
-              letterSpacing: '-0.01em'
-            }}>
-              What Happens Without Automation?
-            </h3>
-            <p className="text-[#A0A0B0] max-w-[700px] mx-auto" style={{
-              fontSize: 'clamp(1rem, 1.5vw, 1.125rem)',
-              lineHeight: '1.6'
-            }}>
-              Even great shops lose revenue through small operational gaps.
-            </p>
-          </div>
-
-          {/* Pain Points Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            {painPoints.map((pain, index) => {
-              const IconComponent = pain.icon;
-              return (
-                <div
-                  key={index}
-                  className="p-6 rounded-xl border border-white/5 bg-[#0C0A14]/80 hover:border-white/10 transition-all duration-300"
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-red-500/10 to-red-600/10 flex items-center justify-center border border-red-500/20 flex-shrink-0">
-                      <IconComponent className="w-5 h-5 text-red-400" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-white mb-1.5 text-base">
-                        {pain.title}
-                      </h4>
-                      <p className="text-[#A0A0B0] text-sm leading-relaxed">
-                        {pain.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-          {/* Closing Statement */}
-          <div className="text-center max-w-[900px] mx-auto">
-            <p className="text-[#D6D6E8] leading-relaxed" style={{
-              fontSize: 'clamp(1rem, 1.5vw, 1.125rem)',
-              lineHeight: '1.6'
-            }}>
-              Most small to mid-size auto shops lose <span className="text-white font-semibold">20–40% of inbound opportunities</span> — not because of service quality, but because of manual workflows.
-            </p>
-          </div>
+        {/* Add-On Cards Grid - 2 columns */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-7 md:gap-8 lg:gap-10 max-w-7xl mx-auto px-2 sm:px-0">
+          {addons.map((addon) => (
+            <AddonCard key={addon.id} addon={addon} />
+          ))}
         </div>
       </div>
     </section>
+  );
+}
+
+interface AddonCardProps {
+  addon: typeof addons[0];
+}
+
+function AddonCard({ addon }: AddonCardProps) {
+  const cardRef = useRef<HTMLDivElement>(null);
+  const [isHovered, setIsHovered] = useState(false);
+  const Icon = addon.icon;
+
+  return (
+    <div
+      ref={cardRef}
+      className="addon-card group relative h-full"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {/* Card Container - No glassmorphism, clean dark design */}
+      <div
+        className="relative h-full bg-black border border-white/10 rounded-3xl p-6 md:p-8 overflow-hidden transition-all duration-500 hover:border-[#1A60AB]/40"
+        style={{
+          boxShadow: isHovered
+            ? `0 0 30px rgba(26, 96, 171, 0.5), 0 20px 60px rgba(26, 96, 171, 0.3)`
+            : '0 4px 20px rgba(0,0,0,0.4)'
+        }}
+      >
+        {/* Subtle gradient overlay on hover */}
+        <div className={`absolute inset-0 bg-gradient-to-br ${addon.gradient} opacity-0 group-hover:opacity-5 rounded-3xl transition-opacity duration-700`}></div>
+
+        {/* Content */}
+        <div className="relative z-10 flex flex-col h-full">
+          {/* Icon */}
+          <div className="mb-6 md:mb-8">
+            <div
+              className={`w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-gradient-to-br ${addon.gradient} flex items-center justify-center transition-all duration-500 group-hover:scale-105`}
+              style={{
+                boxShadow: `0 8px 30px -5px ${addon.glowColor}`,
+              }}
+            >
+              <Icon className="w-8 h-8 md:w-10 md:h-10 text-white" />
+            </div>
+          </div>
+
+          {/* Title & Tagline */}
+          <div className="mb-4 md:mb-5">
+            <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-2 md:mb-3 leading-tight">
+              {addon.title}
+            </h3>
+            <p className="text-sm md:text-base font-medium text-gray-400">
+              {addon.tagline}
+            </p>
+          </div>
+
+          {/* Description */}
+          <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-6 md:mb-8">
+            {addon.description}
+          </p>
+
+          {/* Features List */}
+          <div className="space-y-3 md:space-y-4 mb-6 md:mb-8 flex-grow">
+            {addon.features.map((feature, idx) => (
+              <div key={idx} className="flex items-start gap-3">
+                <CheckCircle
+                  className="w-5 h-5 md:w-6 md:h-6 flex-shrink-0 mt-0.5"
+                  style={{ color: addon.color }}
+                />
+                <span className="text-sm md:text-base text-gray-200 leading-relaxed">
+                  {feature}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          {/* CTA Link */}
+          <div className="pt-6 border-t border-white/10 mt-auto">
+            <a
+              href="#"
+              className="inline-flex items-center gap-2 text-sm md:text-base font-semibold group/link transition-all duration-300"
+              style={{ color: addon.color }}
+            >
+              <span className="relative">
+                {addon.cta}
+                <div
+                  className="absolute bottom-0 left-0 h-0.5 w-0 group-hover/link:w-full transition-all duration-300"
+                  style={{ backgroundColor: addon.color }}
+                ></div>
+              </span>
+              <ArrowRight
+                className="w-4 h-4 md:w-5 md:h-5 group-hover/link:translate-x-1 transition-transform duration-300"
+              />
+            </a>
+          </div>
+        </div>
+
+        {/* Corner accent */}
+        <div
+          className="absolute top-0 right-0 w-32 h-32 md:w-40 md:h-40 opacity-10 group-hover:opacity-20 transition-all duration-700"
+          style={{
+            background: `radial-gradient(circle at top right, ${addon.color}, transparent 70%)`,
+          }}
+        ></div>
+      </div>
+    </div>
   );
 }
