@@ -73,68 +73,70 @@ const Index = () => {
   };
 
   return (
-    <div className="relative min-h-screen bg-background">
-      {/* Mobile Navbar */}
-      <MobileNavbar />
+    <>
+      <div className="relative min-h-screen bg-background">
+        {/* Mobile Navbar */}
+        <MobileNavbar />
 
-      {/* Main Content */}
-      <main className="relative">
-        <Hero
-          eyebrow="BUILT FOR AUTO REPAIR SHOPS"
-          title="Never Miss a Call. Never Miss a Job."
-          subtitle="Vextria answers every inbound call for your auto care or repair shop, books appointments instantly, and eliminates lost revenue during busy hours — 24/7."
-          ctaLabel="Try It Here"
-          ctaHref="#pain"
-        />
-
-        {/* Pain / Problem Section */}
-        <section id="pain">
-          <PainSection
-            onCallClick={painCallStatus === 'connected' ? endPainCall : startPainCall}
-            callStatus={painCallStatus}
+        {/* Main Content */}
+        <main className="relative">
+          <Hero
+            eyebrow="BUILT FOR AUTO REPAIR SHOPS"
+            title="Never Miss a Call. Never Miss a Job."
+            subtitle="Vextria answers every inbound call for your auto care or repair shop, books appointments instantly, and eliminates lost revenue during busy hours — 24/7."
+            ctaLabel="Try It Here"
+            ctaHref="#pain"
           />
-        </section>
 
-        {/* How It Works */}
-        <section id="how-it-works">
-          <HowItWorksSection />
-        </section>
+          {/* Pain / Problem Section */}
+          <section id="pain">
+            <PainSection
+              onCallClick={painCallStatus === 'connected' ? endPainCall : startPainCall}
+              callStatus={painCallStatus}
+            />
+          </section>
 
-        {/* Logo Carousel */}
-        <section id="partners">
-          <LogoCarouselSection />
-        </section>
+          {/* How It Works */}
+          <section id="how-it-works">
+            <HowItWorksSection />
+          </section>
 
-        {/* Features Detail with Dashboard */}
-        <section id="features">
-          <FeaturesDetail />
-        </section>
+          {/* Logo Carousel */}
+          <section id="partners">
+            <LogoCarouselSection />
+          </section>
 
-        {/* Florida Pilot Program */}
-        <section id="pilot">
-          <FloridaPilotSection />
-        </section>
+          {/* Features Detail with Dashboard */}
+          <section id="features">
+            <FeaturesDetail />
+          </section>
 
-        {/* Frameworks/Add-Ons Section */}
-        <section id="frameworks">
-          <FrameworksSection />
-        </section>
+          {/* Florida Pilot Program */}
+          <section id="pilot">
+            <FloridaPilotSection />
+          </section>
 
-        <section id="faq">
-          <FAQSection />
-        </section>
+          {/* Frameworks/Add-Ons Section */}
+          <section id="frameworks">
+            <FrameworksSection />
+          </section>
 
-        <section id="contact">
-          <ContactSection />
-        </section>
-      </main>
+          <section id="faq">
+            <FAQSection />
+          </section>
 
-      {/* Footer */}
-      <Footer />
+          <section id="contact">
+            <ContactSection />
+          </section>
+        </main>
 
-      {/* Floating Call Widget */}
+        {/* Footer */}
+        <Footer />
+      </div>
+
+      {/* Floating Call Widget - Outside relative container for proper viewport-fixed positioning */}
       <FloatingCallWidget />
-    </div>
+    </>
   );
 };
 
