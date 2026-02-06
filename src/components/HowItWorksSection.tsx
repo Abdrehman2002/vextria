@@ -312,9 +312,9 @@ const HowItWorksSection = () => {
         {/* PAIN SECTION */}
         <div style={{ marginTop: "120px" }}>
           {/* Pain Section Header */}
-          <div className="hiw-pain-header text-center mb-12 md:mb-16">
+          <div className="hiw-pain-header text-center mb-8 md:mb-10">
             <h3
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4"
+              className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3"
               style={{
                 lineHeight: '1.2',
                 letterSpacing: '-0.01em',
@@ -323,23 +323,23 @@ const HowItWorksSection = () => {
             >
               What Happens Without Vextria?
             </h3>
-            <p className="text-base md:text-lg lg:text-xl text-gray-400 max-w-2xl mx-auto px-4">
+            <p className="text-sm md:text-base lg:text-lg text-gray-400 max-w-2xl mx-auto px-4">
               Even great shops lose revenue through small operational gaps.
             </p>
           </div>
 
           {/* Revenue Impact Row */}
-          <div className="mb-16">
-            <p className="text-xs font-bold tracking-widest uppercase text-gray-500 text-center mb-6">
+          <div className="mb-10">
+            <p className="text-xs font-bold tracking-widest uppercase text-gray-500 text-center mb-4">
               Revenue Impact
             </p>
-            <div className="hiw-pain-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+            <div className="hiw-pain-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
               {REVENUE_IMPACT.map((item, index) => {
                 const Icon = item.icon;
                 return (
                   <div
                     key={index}
-                    className="hiw-pain-card p-6 sm:p-7 md:p-8 rounded-2xl sm:rounded-3xl border border-red-500/10 transition-all duration-300 hover:border-red-500/20"
+                    className="hiw-pain-card p-5 sm:p-6 md:p-7 rounded-2xl sm:rounded-3xl border border-red-500/10 transition-all duration-300 hover:border-red-500/20"
                     style={{
                       background: "rgba(0, 0, 0, 0.4)",
                       backdropFilter: "blur(10px)",
@@ -356,15 +356,15 @@ const HowItWorksSection = () => {
                         <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-red-400" />
                       </div>
                     </div>
-                    <div className="text-4xl md:text-5xl font-bold text-white mb-3" style={{
+                    <div className="text-3xl md:text-4xl font-bold text-white mb-2" style={{
                       textShadow: '0 0 20px rgba(239, 68, 68, 0.3)'
                     }}>
                       {item.stat}
                     </div>
-                    <h4 className="font-bold text-white mb-2 text-lg md:text-xl">
+                    <h4 className="font-bold text-white mb-1.5 text-base md:text-lg">
                       {item.title}
                     </h4>
-                    <p className="text-sm md:text-base text-gray-400 leading-relaxed">
+                    <p className="text-xs md:text-sm text-gray-400 leading-relaxed">
                       {item.description}
                     </p>
                   </div>
@@ -374,17 +374,17 @@ const HowItWorksSection = () => {
           </div>
 
           {/* Operational Inefficiency Row */}
-          <div className="mb-16">
-            <p className="text-xs font-bold tracking-widest uppercase text-gray-500 text-center mb-6">
+          <div className="mb-10">
+            <p className="text-xs font-bold tracking-widest uppercase text-gray-500 text-center mb-4">
               Operational Inefficiency
             </p>
-            <div className="hiw-pain-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+            <div className="hiw-pain-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
               {OPERATIONAL_INEFFICIENCY.map((item, index) => {
                 const Icon = item.icon;
                 return (
                   <div
                     key={index}
-                    className="hiw-pain-card p-6 sm:p-7 md:p-8 rounded-2xl sm:rounded-3xl border border-orange-500/10 transition-all duration-300 hover:border-orange-500/20"
+                    className="hiw-pain-card p-5 sm:p-6 md:p-7 rounded-2xl sm:rounded-3xl border border-orange-500/10 transition-all duration-300 hover:border-orange-500/20"
                     style={{
                       background: "rgba(0, 0, 0, 0.4)",
                       backdropFilter: "blur(10px)",
@@ -401,15 +401,15 @@ const HowItWorksSection = () => {
                         <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-orange-400" />
                       </div>
                     </div>
-                    <div className="text-4xl md:text-5xl font-bold text-white mb-3" style={{
+                    <div className="text-3xl md:text-4xl font-bold text-white mb-2" style={{
                       textShadow: '0 0 20px rgba(249, 115, 22, 0.3)'
                     }}>
                       {item.stat}
                     </div>
-                    <h4 className="font-bold text-white mb-2 text-lg md:text-xl">
+                    <h4 className="font-bold text-white mb-1.5 text-base md:text-lg">
                       {item.title}
                     </h4>
-                    <p className="text-sm md:text-base text-gray-400 leading-relaxed">
+                    <p className="text-xs md:text-sm text-gray-400 leading-relaxed">
                       {item.description}
                     </p>
                   </div>
@@ -419,9 +419,9 @@ const HowItWorksSection = () => {
           </div>
 
           {/* Summary Card */}
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-3xl mx-auto">
             <div
-              className="p-8 md:p-12 rounded-3xl border text-center"
+              className="p-6 md:p-8 rounded-2xl border text-center"
               style={{
                 background: "linear-gradient(135deg, rgba(239, 68, 68, 0.05), rgba(249, 115, 22, 0.05))",
                 backdropFilter: "blur(12px)",
@@ -429,22 +429,22 @@ const HowItWorksSection = () => {
                 boxShadow: "0 0 40px rgba(239, 68, 68, 0.2)",
               }}
             >
-              <p className="text-sm font-bold tracking-wider uppercase text-gray-400 mb-4">
+              <p className="text-xs font-bold tracking-wider uppercase text-gray-400 mb-3">
                 Estimated Monthly Leakage
               </p>
-              <div className="text-6xl md:text-7xl font-bold text-white mb-4" style={{
+              <div className="text-4xl md:text-5xl font-bold text-white mb-3" style={{
                 textShadow: '0 0 30px rgba(239, 68, 68, 0.5)'
               }}>
                 $18,400
               </div>
-              <p className="text-base md:text-lg text-gray-300 leading-relaxed mb-6 max-w-2xl mx-auto">
+              <p className="text-sm md:text-base text-gray-300 leading-relaxed mb-4 max-w-xl mx-auto">
                 Based on industry averages for small-to-mid size auto repair shops handling 15–25 calls per day.
               </p>
-              <p className="text-sm text-gray-500 mb-8">
+              <p className="text-xs text-gray-500 mb-6">
                 This does not include upsells, recurring maintenance loss, or delayed approvals.
               </p>
               <button
-                className="px-8 py-4 rounded-xl font-bold text-white transition-all duration-300 hover:scale-105"
+                className="px-6 py-3 rounded-xl font-bold text-white transition-all duration-300 hover:scale-105 text-sm md:text-base"
                 style={{
                   background: "linear-gradient(135deg, #EF4444 0%, #F97316 100%)",
                   boxShadow: "0 0 20px rgba(239, 68, 68, 0.5)",
