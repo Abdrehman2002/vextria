@@ -23,16 +23,15 @@ const STEPS = [
   },
   {
     icon: Calendar,
-    title: "Books the Right Time Slot",
+    title: "Books the Right Time — Every Time",
     description:
       "Instead of guessing, Vextria helps schedule correctly the first time.",
     details: [
-      "Estimates realistic job length",
-      "Checks calendar availability",
-      "Prevents double booking",
-      "Confirms appointment via text",
+      "Knows your bay count",
+      "Prevents scheduling overlaps",
+      "Avoids double booking",
     ],
-    subtext: "Your bays stay organized. Your schedule stays accurate."
+    subtext: "Your calendar stays optimized automatically."
   },
   {
     icon: Bell,
